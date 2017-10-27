@@ -1,0 +1,8 @@
+
+# /etc/postfix/mysql-virtual-alias-maps.cf
+
+user = {MAILDBUSER}
+password = {MAILDBPASS}
+hosts = 127.0.0.1
+dbname = {MAILDBNAME}
+query = SELECT destination FROM virtual_aliases WHERE source='%s'

@@ -1,0 +1,26 @@
+[global_config]
+  title_hide_sizetext = True
+  title_transmit_bg_color = "#007fbf"
+  borderless = True
+  title_inactive_fg_color = "#ffffff"
+  title_inactive_bg_color = "#666666"
+[keybindings]
+[profiles]
+  [[default]]
+    palette = "#000000:#ff4230:#9bff00:#cd5800:#44d4ff:#c1435d:#2fff3d:#faebd7:#404040:#ff5048:#ffe03c:#ff7400:#4e83ff:#ff4669:#40ff4d:#ffffff"
+    background_image = None
+    background_darkness = 0.92
+    background_type = transparent
+    use_system_font = False
+    foreground_color = "#ebebeb"
+    font = Inconsolata for Powerline Medium 11
+    background_color = "#2b2b2b"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

@@ -1,0 +1,12 @@
+
+[Unit]
+# Service description shown in status messages.
+Description=Let's Encrypt renewal service
+
+[Service]
+# Type of the service. Run and exit immediately.
+Type=oneshot
+
+# Renew certificates by running certbot. Stop nginx beforehand and then restart.
+ExecStart=/usr/bin/certbot renew --pre-hook "/usr/bin/systemctl stop nginx.service" --post-hook "/usr/bin/systemctl start nginx.service" --agree-tos
+

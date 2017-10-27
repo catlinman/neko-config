@@ -1,0 +1,11 @@
+
+[Unit]
+# Service description shown in status messages.
+Description=ZNC SSL certificate renewal
+
+[Service]
+# Type of the service. Run and exit immediately.
+Type=oneshot
+
+# Run the associated shell script. Make sure it has execution flags.
+ExecStart=/home/neko/nekoconfig/config/letsencrypt/znc-ssl.sh

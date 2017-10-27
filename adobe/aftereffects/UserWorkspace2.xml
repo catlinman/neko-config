@@ -1,0 +1,1677 @@
+<?xml version='1.0'?>
+<prop.map version='4'>
+<prop.list>
+<prop.pair>
+<key>DVA_Wrkspce</key>
+<string>1.2</string>
+</prop.pair>
+<prop.pair>
+<key>MonitorInfo</key>
+<prop.list>
+<prop.pair>
+<key>Monitor-0</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>0</int>
+<int type='signed' size='32'>0</int>
+<int type='signed' size='32'>1920</int>
+<int type='signed' size='32'>1080</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Monitor-1</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-1920</int>
+<int type='signed' size='32'>0</int>
+<int type='signed' size='32'>1920</int>
+<int type='signed' size='32'>1080</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>NumMonitors</key>
+<int type='unsigned' size='32'>2</int>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>SerCfgMax</key>
+<int type='unsigned' size='32'>2</int>
+</prop.pair>
+<prop.pair>
+<key>TopLevelFrame-0</key>
+<prop.list>
+<prop.pair>
+<key>HasLeftBar</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>HasRightBar</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>HasStatBar</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>HasToolBar</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.5</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.41170636</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.59266055</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.59266055</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>FrameProxy</key>
+<prop.list>
+<prop.pair>
+<key>HidTabState-0</key>
+<string>&lt;prop.list&gt;
+                                                &lt;prop.pair&gt;
+                                                &lt;key&gt;FrameViewFlags&lt;/key&gt;
+                                                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;4&lt;/int&gt;
+                                                &lt;/prop.pair&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-1</key>
+<string>&lt;prop.list&gt;
+                                                &lt;prop.pair&gt;
+                                                &lt;key&gt;FrameViewFlags&lt;/key&gt;
+                                                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;4&lt;/int&gt;
+                                                &lt;/prop.pair&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_Capsules</string>
+<string>AE Lumetri Scopes</string>
+</array>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>FrameProxy</key>
+<prop.list>
+<prop.pair>
+<key>HidTabState-0</key>
+<string>&lt;prop.list&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-1</key>
+<string>&lt;prop.list&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-2</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-3</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-4</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>ConsolePanel</string>
+<string>AE Media Browser Panel</string>
+<string>AE Layer</string>
+<string>AE Footage</string>
+<string>AE Flow</string>
+</array>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<false/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>FrameProxy</key>
+<prop.list>
+<prop.pair>
+<key>HidTabState-0</key>
+<string>&lt;prop.list&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-1</key>
+<string>&lt;prop.list&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-2</key>
+<string>&lt;prop.list&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-3</key>
+<string>&lt;prop.list&gt;
+                                                &lt;/prop.list&gt;</string>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-4</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_MokaPalette</string>
+<string>AEGP_MotionSketch</string>
+<string>AEGP_Smoother</string>
+<string>AEGP_Wiggler</string>
+<string>AE CEP Extension-com.adobe.DesignLibraries.angular</string>
+</array>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<false/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.16822916</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.57242066</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE Project</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;1&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewClientHeights</key>
+<array>
+<array.type><int type='unsigned' size='32'/></array.type>
+<int type='unsigned' size='32'>144</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>7</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewOpen</key>
+<array>
+<array.type><bool/></array.type>
+<true/>
+</array>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE Effects Palette</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;1&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>HidTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;1&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>ReanimTabs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE Render Queue</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>4</int>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE Timeline</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;4&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;1&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<false/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>SzPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-8</int>
+<int type='signed' size='32'>-8</int>
+<int type='signed' size='32'>1936</int>
+<int type='signed' size='32'>1096</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>ToolBarMinimized</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>ToolBarTabType</key>
+<string>AEGP_ToolPal</string>
+</prop.pair>
+<prop.pair>
+<key>WinState</key>
+<prop.list>
+<prop.pair>
+<key>MaxPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-1</int>
+<int type='signed' size='32'>-1</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>MinPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-1</int>
+<int type='signed' size='32'>-1</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>NormalPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>20</int>
+<int type='signed' size='32'>20</int>
+<int type='signed' size='32'>1900</int>
+<int type='signed' size='32'>1060</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>ShowCmd</key>
+<int type='signed' size='32'>3</int>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>TopLevelFrame-1</key>
+<prop.list>
+<prop.pair>
+<key>HasLeftBar</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>HasRightBar</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>HasStatBar</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>HasToolBar</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.5</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.80509353</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.9270497</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.15389971</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.40401146</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.67375886</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.50877196</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewClientHeights</key>
+<array>
+<array.type><int type='unsigned' size='32'/></array.type>
+<int type='unsigned' size='32'>100</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>7</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewOpen</key>
+<array>
+<array.type><bool/></array.type>
+<true/>
+</array>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_Info</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewClientHeights</key>
+<array>
+<array.type><int type='unsigned' size='32'/></array.type>
+<int type='unsigned' size='32'>100</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>7</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewOpen</key>
+<array>
+<array.type><bool/></array.type>
+<true/>
+</array>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_TimePal</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.70744681</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.48120302</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewClientHeights</key>
+<array>
+<array.type><int type='unsigned' size='32'/></array.type>
+<int type='unsigned' size='32'>100</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>7</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewOpen</key>
+<array>
+<array.type><bool/></array.type>
+<true/>
+</array>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_Align</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>FrameProxy</key>
+<prop.list>
+<prop.pair>
+<key>HidTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_CharacterPalette</string>
+</array>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<false/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>FrameProxy</key>
+<prop.list>
+<prop.pair>
+<key>HidTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_ParagraphPalette</string>
+</array>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<false/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Splitter</key>
+<prop.list>
+<prop.pair>
+<key>Orient</key>
+<false/>
+</prop.pair>
+<prop.pair>
+<key>Place</key>
+<float>0.46314102</float>
+</prop.pair>
+<prop.pair>
+<key>Sub1</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewClientHeights</key>
+<array>
+<array.type><int type='unsigned' size='32'/></array.type>
+<int type='unsigned' size='32'>246</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>7</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewOpen</key>
+<array>
+<array.type><bool/></array.type>
+<true/>
+</array>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_TrackerPalette</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_PaintPal</string>
+<string>AEGP_BrushPalette</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-1</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>1</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>4</int>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE Metadata Panel</string>
+<string>AE Composition</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;4&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-1</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;4&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewClientHeights</key>
+<array>
+<array.type><int type='unsigned' size='32'/></array.type>
+<int type='unsigned' size='32'>1019</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>7</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewOpen</key>
+<array>
+<array.type><bool/></array.type>
+<true/>
+</array>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AEGP_AudioPal</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2</key>
+<prop.list>
+<prop.pair>
+<key>Frame</key>
+<prop.list>
+<prop.pair>
+<key>CurrTab</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>IsFocused</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>StackedViewClientHeights</key>
+<array>
+<array.type><int type='unsigned' size='32'/></array.type>
+<int type='unsigned' size='32'>1018</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>StackedViewFlags</key>
+<int type='signed' size='32'>7</int>
+</prop.pair>
+<prop.pair>
+<key>StackedViewOpen</key>
+<array>
+<array.type><bool/></array.type>
+<true/>
+</array>
+</prop.pair>
+<prop.pair>
+<key>TabIDs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE Effect Controls</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>VisTabState-0</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;FrameViewFlags&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;7&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Locked&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;TabID&lt;/key&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>Sub1Vis</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>Sub2Vis</key>
+<false/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>SzPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-1932</int>
+<int type='signed' size='32'>-1</int>
+<int type='signed' size='32'>1940</int>
+<int type='signed' size='32'>1086</int>
+</array>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>UserName</key>
+<ustring>Catlinman Dual Monitor</ustring>
+</prop.pair>
+<prop.pair>
+<key>WSInstanceData</key>
+<prop.list>
+<prop.pair>
+<key>FrameReanim-0</key>
+<prop.list>
+<prop.pair>
+<key>HiddenTabs</key>
+<array>
+<array.type><string/></array.type>
+</array>
+</prop.pair>
+<prop.pair>
+<key>RemovedTabs</key>
+<array>
+<array.type><string/></array.type>
+<string>ProgressPanel</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>WinSerData</key>
+<string>&lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasLeftBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasRightBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasStatBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasToolBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Splitter&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Orient&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Place&lt;/key&gt;
+                &lt;float&gt;0.5&lt;/float&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub1&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;FrameProxy&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HidTabState-0&lt;/key&gt;
+                &lt;string&gt;&amp;lt;prop.list&amp;gt;
+                &amp;lt;/prop.list&amp;gt;
+                &lt;/string&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;TabIDs&lt;/key&gt;
+                &lt;array&gt;
+                &lt;array.type&gt;&lt;string/&gt;&lt;/array.type&gt;
+                &lt;string&gt;ProgressPanel&lt;/string&gt;
+                &lt;/array&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub1Vis&lt;/key&gt;
+                &lt;true/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub2Vis&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;SzPos&lt;/key&gt;
+                &lt;array&gt;
+                &lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;661&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;344&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;334&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;242&lt;/int&gt;
+                &lt;/array&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>FrameReanim-1</key>
+<prop.list>
+<prop.pair>
+<key>HiddenTabs</key>
+<array>
+<array.type><string/></array.type>
+</array>
+</prop.pair>
+<prop.pair>
+<key>RemovedTabs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE CEP Extension-com.adobe.ccx.open</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>WinSerData</key>
+<string>&lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasLeftBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasRightBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasStatBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasToolBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Splitter&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Orient&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Place&lt;/key&gt;
+                &lt;float&gt;0.5&lt;/float&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub1&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;FrameProxy&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HidTabState-0&lt;/key&gt;
+                &lt;string&gt;&amp;lt;prop.list&amp;gt;
+                &amp;lt;/prop.list&amp;gt;
+                &lt;/string&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;TabIDs&lt;/key&gt;
+                &lt;array&gt;
+                &lt;array.type&gt;&lt;string/&gt;&lt;/array.type&gt;
+                &lt;string&gt;AE CEP Extension-com.adobe.ccx.open&lt;/string&gt;
+                &lt;/array&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub1Vis&lt;/key&gt;
+                &lt;true/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub2Vis&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;SzPos&lt;/key&gt;
+                &lt;array&gt;
+                &lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;450&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;309&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;830&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;475&lt;/int&gt;
+                &lt;/array&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>FrameReanim-2</key>
+<prop.list>
+<prop.pair>
+<key>HiddenTabs</key>
+<array>
+<array.type><string/></array.type>
+</array>
+</prop.pair>
+<prop.pair>
+<key>RemovedTabs</key>
+<array>
+<array.type><string/></array.type>
+<string>AE CEP Extension-KLR</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>WinSerData</key>
+<string>&lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasLeftBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasRightBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasStatBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HasToolBar&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Splitter&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Orient&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Place&lt;/key&gt;
+                &lt;float&gt;0.5&lt;/float&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub1&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;FrameProxy&lt;/key&gt;
+                &lt;prop.list&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;HidTabState-0&lt;/key&gt;
+                &lt;string&gt;&amp;lt;prop.list&amp;gt;
+                &amp;lt;prop.pair&amp;gt;
+                &amp;lt;key&amp;gt;FrameViewFlags&amp;lt;/key&amp;gt;
+                &amp;lt;int type=&amp;apos;signed&amp;apos; size=&amp;apos;32&amp;apos;&amp;gt;7&amp;lt;/int&amp;gt;
+                &amp;lt;/prop.pair&amp;gt;
+                &amp;lt;/prop.list&amp;gt;
+                &lt;/string&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;TabIDs&lt;/key&gt;
+                &lt;array&gt;
+                &lt;array.type&gt;&lt;string/&gt;&lt;/array.type&gt;
+                &lt;string&gt;AE CEP Extension-KLR&lt;/string&gt;
+                &lt;/array&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub1Vis&lt;/key&gt;
+                &lt;true/&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;Sub2Vis&lt;/key&gt;
+                &lt;false/&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;
+                &lt;/prop.pair&gt;
+                &lt;prop.pair&gt;
+                &lt;key&gt;SzPos&lt;/key&gt;
+                &lt;array&gt;
+                &lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;649&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;84&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;324&lt;/int&gt;
+                &lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;353&lt;/int&gt;
+                &lt;/array&gt;
+                &lt;/prop.pair&gt;
+                &lt;/prop.list&gt;</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>FrameReanimMax</key>
+<int type='unsigned' size='32'>3</int>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.map>

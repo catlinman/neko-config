@@ -1,0 +1,15 @@
+
+[Unit]
+# Timer description shown on status.
+Description=Weekly updating of ZNC SSL certificates after Let's Encrypt renewal
+
+[Timer]
+# Upgrade certificates weekly. Randomize timeframe to avoid heavy server load.
+# Match up execution to worst case scenario Let's Encrypt time window.
+OnCalendar=Mon *-*-* 01:00:00
+Persistent=true
+RandomizedDelaySec=1m
+
+[Install]
+WantedBy=timers.target
+

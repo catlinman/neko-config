@@ -1,0 +1,18 @@
+
+[Unit]
+# General service description.
+Description=Syncplay server service
+
+[Service]
+# Service is non forking.
+Type=simple
+
+# Execution on start of service.
+ExecStart=/opt/syncplay/systemd/syncplay.sh
+
+# User to run under.
+User=syncplay
+
+[Install]
+# Target file for service management.
+WantedBy=multi-user.target

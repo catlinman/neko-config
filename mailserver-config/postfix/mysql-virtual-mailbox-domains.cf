@@ -1,0 +1,8 @@
+
+# /etc/postfix/mysql-virtual-mailbox-domains.cf
+
+user = {MAILDBUSER}
+password = {MAILDBPASS}
+hosts = 127.0.0.1
+dbname = {MAILDBNAME}
+query = SELECT 1 FROM virtual_domains WHERE name='%s'

@@ -1,0 +1,83 @@
+
+# /etc/postfix/main.cf
+
+# See /usr/share/postfix/main.cf.dist for a commented, more complete version
+
+# Debian specific:  Specifying a file name will cause the first
+# line of that file to be used as the name.  The Debian default
+# is /etc/mailname.
+#myorigin = /etc/mailname
+
+# Disable backwards compatability.
+compatibility_level = 2
+
+# SPF policy time limit.
+policy-spf_time_limit = 3600s
+
+smtpd_banner = $myhostname ESMTP $mail_name
+biff = no
+
+# appending .domain is the MUA's job.
+append_dot_mydomain = no
+
+# Uncomment the next line to generate "delayed mail" warnings
+#delay_warning_time = 4h
+
+readme_directory = no
+
+# TLS parameters using Let's Encrypt
+smtpd_tls_exclude_ciphers = aNULL, eNULL, EXPORT, DES, RC4, MD5, PSK, aECDH, EDH-DSS-DES-CBC3-SHA, EDH-RSA-DES-CBC3-SHA, KRB5-DES, CBC3-SHA
+smtpd_tls_cert_file = /etc/letsencrypt/live/nekodrop.com/fullchain.pem
+smtpd_tls_key_file = /etc/letsencrypt/live/nekodrop.com/privkey.pem
+smtpd_tls_dh1024_param_file = /etc/ssl/certs/dhparam.pem
+smtpd_use_tls = yes
+smtpd_tls_auth_only = yes
+smtpd_tls_security_level = encrypt
+smtp_tls_security_level = encrypt
+
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+
+smtpd_recipient_restrictions =
+    permit_sasl_authenticated
+    permit_mynetworks
+    reject_unauth_destination
+    check_policy_service unix:private/policy-spf
+
+smtpd_relay_restrictions =
+	permit_mynetworks
+	permit_sasl_authenticated
+	reject_unauth_destination
+
+# smtpd_sender_restrictions = reject_unknown_sender_domain
+
+# See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
+# information on enabling SSL in the smtp client.
+
+myhostname = {FQDN}
+alias_maps = hash:/etc/postfix/aliases
+alias_database = hash:/etc/postfix/aliases
+myorigin = {FQDN}
+mydestination = localhost
+relayhost =
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all
+
+# Tells Postfix to use Dovecot's LMTP instead of its own LDA to save emails to the local mailboxes.
+virtual_transport = lmtp:unix:private/dovecot-lmtp
+
+# Tells Postfix you're using MySQL to store virtual domains, and gives the paths to the database connections.
+virtual_mailbox_domains = mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf
+virtual_mailbox_maps = mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf
+virtual_alias_maps = mysql:/etc/postfix/mysql-virtual-alias-maps.cf
+
+milter_protocol = 6
+milter_default_action = tempfail
+
+# DKIM
+non_smtpd_milters=inet:127.0.0.1:8891
+smtpd_milters=inet:127.0.0.1:8891
+

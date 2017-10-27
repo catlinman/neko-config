@@ -1,0 +1,14 @@
+
+[Unit]
+# Timer description shown on status.
+Description=Weekly renewal of Let's Encrypt's certificates
+
+[Timer]
+# Upgrade certificates weekly. Randomize timeframe to avoid heavy server load.
+OnCalendar=weekly
+Persistent=true
+RandomizedDelaySec=1h
+
+[Install]
+WantedBy=timers.target
+
