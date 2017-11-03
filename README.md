@@ -1,6 +1,46 @@
 
 # Nekoconfig #
 
-This folder contains application configurations.
+Nekoconfig is a repository containing most of my public configuration files
+as well as application themes and syntax highlighting settings for different
+kinds of code editing environments.
 
-I'll add more information soon
+There are also some basic template configuration files that you can use to
+get a headstart when setting up some applications.
+
+## What's included? ##
+
+- Blender startup and configuration file
+- Rainmeter layout configuration file
+- Both Unix Vim (.vimrc) and Windows gVim (_vimrc) configuration files
+- cmder setup with mintty and wsltty running zsh
+- i3 window manager configuration files
+- Terminator terminal profile configuration
+- Postfix, Dovecot, SpamAssassin, DKIM & DMARC
+- LetsEncrypt quick setups and systemd service
+- Adobe application workspaces
+- nginx configuration
+- Syncplay systemd service
+
+## Origin ##
+
+This repository used to house a lot of different things but it was rebuilt to
+only contain application configuration files. This means that for any previous
+commits made to the files in this repository before November 2017 you should
+have a look at the original repository over at
+[nekoconfig-origin](https://github.com/catlinman/nekoconfig-origin).
+
+If you are looking for the split off repositories, here's a quick list.
+
+- [Nekobeat](https://github.com/catlinman/nekobeat)
+- [Python Scripts](https://github.com/catlinman/pyscripts)
+- [Windows Scripts](https://github.com/catlinman/winscripts)
+- [Shocky Commands](https://github.com/catlinman/shockycommands)
+- [Garble Pot](https://github.com/catlinman/garblepot)
+- [Hivecom ZNC Skin](https://github.com/catlinman/hivecom-znc)
+- [Hivecom Teamspeak Skin](https://github.com/catlinman/hivecom-teamspeak)
+
+## License ##
+
+This repository is released under the MIT license. For more information please
+refer to [LICENSE](https://github.com/catlinman/nekoconfig/blob/master/LICENSE)
