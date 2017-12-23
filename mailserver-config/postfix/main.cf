@@ -31,9 +31,9 @@ smtpd_tls_cert_file = /etc/letsencrypt/live/nekodrop.com/fullchain.pem
 smtpd_tls_key_file = /etc/letsencrypt/live/nekodrop.com/privkey.pem
 smtpd_tls_dh1024_param_file = /etc/ssl/certs/dhparam.pem
 smtpd_use_tls = yes
-smtpd_tls_auth_only = yes
-smtpd_tls_security_level = encrypt
-smtp_tls_security_level = encrypt
+smtpd_tls_auth_only = no
+smtpd_tls_security_level = may
+smtp_tls_security_level = may
 
 smtpd_sasl_type = dovecot
 smtpd_sasl_path = private/auth
@@ -55,10 +55,10 @@ smtpd_relay_restrictions =
 # See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
 # information on enabling SSL in the smtp client.
 
-myhostname = {FQDN}
+myhostname = alpha.nekodrop.com
 alias_maps = hash:/etc/postfix/aliases
 alias_database = hash:/etc/postfix/aliases
-myorigin = {FQDN}
+myorigin = alpha.nekodrop.com
 mydestination = localhost
 relayhost =
 mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
@@ -80,4 +80,3 @@ milter_default_action = tempfail
 # DKIM
 non_smtpd_milters=inet:127.0.0.1:8891
 smtpd_milters=inet:127.0.0.1:8891
-
