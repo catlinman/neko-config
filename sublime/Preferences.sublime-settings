@@ -1,0 +1,10 @@
+{
+	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"theme": "Seti.sublime-theme"
+}

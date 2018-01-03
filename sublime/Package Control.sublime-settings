@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoSpell",
+		"DistractionFreeWindow",
+		"LaTeX-cwl",
+		"LaTeXing",
+		"LiveReload",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"Schemr",
+		"Seti_UI",
+		"Seti_UX",
+		"Sync Settings",
+		"Themr",
+		"Writing Style"
+	]
+}

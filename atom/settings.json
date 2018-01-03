@@ -1,0 +1,220 @@
+{
+	"activate-power-mode": {
+		"autoToggle": false
+	},
+	"atom-beautify": {
+		"cpp": {
+			"beautify_on_save": true,
+			"configPath": "~/Nekocloud/Projects/nekoconfig/uncrustify.cfg"
+		},
+		"cs": {
+			"beautify_on_save": true,
+			"configPath": "~/Nekocloud/Projects/nekoconfig/uncrustify.cfg"
+		},
+		"css": {
+			"preserve_newlines": true
+		},
+		"general": {
+			"_analyticsUserId": "83234c70-1d1a-424d-ab10-205e6b54991b"
+		},
+		"html": {
+			"beautify_on_save": true
+		},
+		"java": {
+			"beautify_on_save": true,
+			"configPath": "~/Nekocloud/Shared/nekoconfig/config/uncrustify.cfg"
+		},
+		"js": {
+			"end_with_newline": true
+		},
+		"json": {
+			"beautify_on_save": true
+		},
+		"markdown": {},
+		"php": {
+			"beautify_on_save": true,
+			"default_beautifier": "PHPCBF",
+			"standard": "~/Nekocloud/Shared/github/nekoconfig/config/phpcbf.xml"
+		},
+		"python": {
+			"beautify_on_save": true,
+			"ignore": [
+				"E501"
+			]
+		},
+		"ruby": {
+			"beautify_on_save": true
+		},
+		"sass": {
+			"beautify_on_save": true
+		},
+		"scss": {
+			"convert_quotes": "single",
+			"preserve_newlines": true
+		},
+		"xml": {
+			"beautify_on_save": true
+		}
+	},
+	"atom-clock": {
+		"dateFormat": "dddd D/M/Y - HH:mm",
+		"showClockIcon": true
+	},
+	"atom-maven": {
+		"mavenHome": "C:\\Program Files\\Maven\\bin"
+	},
+	"atom-package-deps": {
+		"ignored": []
+	},
+	"autocomplete-python": {
+		"useKite": false
+	},
+	"battery-status": {},
+	"core": {
+		"autoHideMenuBar": true,
+		"disabledPackages": [
+		],
+		"telemetryConsent": "limited",
+		"themes": [
+			"seti-ui",
+			"seti-classic-syntax"
+		],
+		"titleBar": "custom",
+		"uriHandlerRegistration": "always"
+	},
+	"document-outline": {
+		"showByDefault": true
+	},
+	"editor": {
+		"fontSize": 10,
+		"showIndentGuide": true,
+		"tabLength": 4,
+		"tabType": "soft"
+	},
+	"editor-background": {
+		"box3d": {
+			"shadowOpacity": 0
+		},
+		"image": {
+			"opacity": 50,
+			"repeat": "repeat",
+			"url": "https://github.com/catlinman/nekoconfig/raw/master/skin/HexCat/config/bg.png"
+		},
+		"other": {
+			"transparentTabBar": false
+		},
+		"text": {
+			"blur": 0,
+			"opacity": 0
+		}
+	},
+	"exception-reporting": {
+		"userId": "3a952176-b4d2-2770-c3df-2eab055dc8cd"
+	},
+	"fonts": {
+		"fontFamily": "Inconsolata"
+	},
+	"git-plus": {
+		"general": {
+			"_analyticsUserId": "5c02ae9a-f631-4f52-803c-be7e7126bd04"
+		}
+	},
+	"linter": {},
+	"linter-js-standard": {
+		"honorStyleSettings": false,
+		"lintHtmlFiles": true
+	},
+	"linter-pep8": {
+		"ignoreErrorCodes": [
+			"E501"
+		]
+	},
+	"linter-processing": {},
+	"linter-pycodestyle": {
+		"ignoreErrorCodes": [
+			"E501"
+		]
+	},
+	"linter-scss-lint": {
+		"additionalArguments": "-x Indentation"
+	},
+	"linter-spell": {
+		"markdownWords": [
+			"mysql",
+			"irc",
+			"hexchat"
+		],
+		"spellPath": "aspell"
+	},
+	"linter-ui-default": {
+		"panelHeight": 106,
+		"showPanel": true
+	},
+	"minimap": {
+		"plugins": {
+			"codeglance": true,
+			"codeglanceDecorationsZIndex": 0,
+			"cursorline": true,
+			"cursorlineDecorationsZIndex": 0,
+			"find-and-replace": true,
+			"find-and-replaceDecorationsZIndex": 0,
+			"git-diff": true,
+			"git-diffDecorationsZIndex": 0,
+			"highlight-selected": true,
+			"highlight-selectedDecorationsZIndex": 0,
+			"linter": true,
+			"linterDecorationsZIndex": 0,
+			"pigments": true,
+			"pigmentsDecorationsZIndex": 0
+		}
+	},
+	"minimap-linter": {},
+	"pigments": {
+		"extendAutocompleteToColorValue": true,
+		"extendAutocompleteToVariables": true
+	},
+	"platformio-ide-terminal": {
+		"core": {},
+		"style": {
+			"fontSize": "10"
+		}
+	},
+	"processing-preview": {
+		"liveUpdate": false
+	},
+	"seti-ui": {
+		"compactView": true
+	},
+	"spell-check": {
+		"grammars": [
+			"source.asciidoc",
+			"source.gfm",
+			"text.git-commit",
+			"text.plain",
+			"text.plain.null-grammar",
+			"text.html.php",
+			"source.python",
+			"source.moon",
+			"text.html.basic",
+			"source.java"
+		]
+	},
+	"split-diff": {
+		"diffWords": true,
+		"ignoreWhitespace": true,
+		"leftEditorColor": "red",
+		"rightEditorColor": "green",
+		"scrollSyncType": "Vertical + Horizontal",
+		"syncHorizontalScroll": true
+	},
+	"sync-settings": {},
+	"tool-bar": {
+		"iconSize": "12px",
+		"position": "Right"
+	},
+	"tool-bar-markdown-writer": {},
+	"tree-view": {},
+	"welcome": {
+		"showOnStartup": false
+	}
+}

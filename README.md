@@ -10,9 +10,11 @@ get a headstart when setting up some applications.
 
 ## What's included? ##
 
-- Blender startup and configuration file
-- Rainmeter layout configuration file
+- Atom configuration
+- SublimeText 3 SyncSettings configuration
+- zshrc configuration file
 - Both Unix Vim (.vimrc) and Windows gVim (_vimrc) configuration files
+- Blender startup and configuration file
 - cmder setup with mintty and wsltty running zsh
 - i3 window manager configuration files
 - Terminator terminal profile configuration
@@ -21,6 +23,32 @@ get a headstart when setting up some applications.
 - Adobe application workspaces
 - nginx configuration
 - Syncplay systemd service
+
+## Screenshots ##
+
+### Atom ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/atom/preview.png)
+
+### Sublime Text 3 ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/sublime/preview.png)
+
+### Vim ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/vim/preview.png)
+
+### Blender ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/blender/preview.png)
+
+### HexChat ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/hexchat/preview.png)
+
+### i3 ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/i3wm/preview.png)
 
 ## Origin ##
 
