@@ -42,13 +42,18 @@ get a headstart when setting up some applications.
 
 ![](https://github.com/catlinman/nekoconfig/blob/master/blender/preview.png)
 
+### i3 ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/i3wm/preview.png)
+
+### zsh ###
+
+![](https://github.com/catlinman/nekoconfig/blob/master/zsh/preview.png)
+
 ### HexChat ###
 
 ![](https://github.com/catlinman/nekoconfig/blob/master/hexchat/preview.png)
 
-### i3 ###
-
-![](https://github.com/catlinman/nekoconfig/blob/master/i3wm/preview.png)
 
 ## Origin ##
 
