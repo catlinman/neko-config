@@ -1,8 +1,15 @@
+
+# Nekoconfig ZSH setup. Requires oh-my-zsh to run. You can get it via this command:
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Feeling like you don't have curl? You can use wget to download it as well!
+# sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Quick command to check if a program exists.
-exists() { [ ! -z `which "$1"` ]; }
+exists() { [ -x "$(command -v $1)" ]; }
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -17,7 +24,7 @@ ZSH_THEME="nekoshell"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -35,7 +42,7 @@ ZSH_THEME="nekoshell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -53,8 +60,10 @@ HIST_STAMPS="dd.mm.yyyy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+# Note: I have some plugins like OSX and Arch. You probably don't need these.
 plugins=(git rust pyenv pip ruby rails arch osx zsh-autosuggestions zsh-syntax-highlighting zsh-256color command-time zsh-syntax-highlighting-filetypes)
+
+# To install the plugins from my custom setup simply "source plugins.sh".
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,49 +81,37 @@ else
     source $HOME/.zsh_path
 fi
 
-# User configuration
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
+# Don't forget to uncomment the locale in /etc/locale.gen and run locale-gen as root
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if exists vim; then
+    if [[ -n $SSH_CONNECTION ]]; then
+        export EDITOR='vim'
+    else
+        export EDITOR='mvim'
+    fi
+fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+export ARCHFLAGS="-arch x86_64"
 
 # Custom key bindings go in this section.
 bindkey "[C" forward-word
 bindkey "[D" backward-word
 
 # Base16 Shell support. Install via: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-# Don't forget to set your theme via base16 and tab completion. I personally use base16_seti-ui.
+# Don't forget to set your theme via base16 and tab completion. I personally use base16_seti.
 BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+[[ -n $PS1 ]] && [[ -s $BASE16_SHELL/profile_helper.sh ]] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Custom dircolors setup.
-if whence dircolors >/dev/null; then
-    eval $(dircolors -b $HOME/.dircolors)
+if whence dircolors > /dev/null; then
+    eval $(dircolors -b "$HOME/.dircolors")
     alias ls='ls --color'
-    
+
 else
     export CLICOLOR=1
     source .osxcolors
@@ -127,4 +124,13 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 if exists exa; then
     alias ls="exa"
     alias la="exa -laagh --git"
+fi
+
+# Create an extra alias just for pasting. Uses netcat if available.
+# Example: echo You can now paste like this! | tb
+if exists nc; then
+    alias tb="nc termbin.com 9999"
+    
+else
+    alias tb="(exec 3<>/dev/tcp/termbin.com/9999; cat >&3; cat <&3; exec 3<&-)"
 fi

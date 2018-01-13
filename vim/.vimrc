@@ -4,7 +4,7 @@ set nocompatible
 filetype off
 
 " ###    GENERAL VUNDLE INFORMATION     ###
-" 
+"
 " Install Vundle before doing anything else.
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "
@@ -34,7 +34,12 @@ Plugin 'gmarik/Vundle.vim'
 " Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Lokaltog/powerline-fonts' "requires the powerline fonts to be installed and activated
+
+" Airline requires the powerline fonts to be installed and activated.
+" Ignore this if we are running on just the linux kernal terminal.
+if $TERM != "linux"
+    Plugin 'Lokaltog/powerline-fonts'
+endif
 
 " Color scheme
 Plugin 'chriskempson/base16-vim'
@@ -91,7 +96,14 @@ syntax on
 set background=dark
 set t_Co=256
 let base16colorspace=256
-colorscheme base16-seti-ui
+
+if $TERM == 'linux'
+    colorscheme default
+
+else
+    colorscheme base16-seti
+
+endif
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
@@ -123,7 +135,7 @@ filetype indent plugin on
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
-let g:mta_filetypes = {
+let g:mta_filetypes={
     \ 'html' : 1,
     \ 'xhtml' : 1,
     \ 'xml' : 1,
@@ -144,28 +156,39 @@ if has('gui_running')
 
     if has('gui_win32')
         set guifont=Inconsolata_for_Powerline:h9:cANSI
+
     else
         set guifont=Inconsolata\ for\ Powerline\ 9
+
     endif
 endif
 
 " Airline configuration.
 if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
+    let g:airline_symbols={}
 endif
 
-let g:airline_symbols.space = "\ua0"
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = "wombat"
+if $TERM == 'linux'
+    let g:airline_left_sep='|'
+    let g:airline_left_alt_sep='|'
+    let g:airline_right_sep='|'
+    let g:airline_right_alt_sep='|'
+    let g:airline_theme='luna'
+
+else
+    let g:airline_symbols.space='\ua0'
+    let g:airline_powerline_fonts=1
+    let g:airline#extensions#tabline#enabled=1
+    let g:airline_theme='wombat'
+
+endif
 
 " Indent guide configuration.
-let g:indent_guides_guide_size = 1
-let g:indent_guides_color_change_percent = 0
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size=1
+let g:indent_guides_color_change_percent=0
+let g:indent_guides_enable_on_vim_startup=1
 
 " Snippet configuration.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-b>'
+let g:UltiSnipsJumpBackwardTrigger='<c-z>'

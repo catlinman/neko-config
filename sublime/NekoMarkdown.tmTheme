@@ -772,8 +772,6 @@
             <string>markup.raw.block.markdown</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#242d33</string>
                 <key>foreground</key>
                 <string>#888888</string>
             </dict>

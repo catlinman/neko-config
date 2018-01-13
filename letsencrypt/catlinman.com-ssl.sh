@@ -6,6 +6,8 @@ certbot certonly --expand --renew-by-default --standalone \
 	-d www.catlinman.com \
 	-d dev.catlinman.com \
 	-d cloud.catlinman.com \
+    -d openly.catlinman.com \
+    -d comrelay.catlinman.com \
 	-d ask.catlinman.com \
 	-d twitter.catlinman.com \
 	-d facebook.catlinman.com \
@@ -21,4 +23,3 @@ certbot certonly --expand --renew-by-default --standalone \
 	-d legacy.catlinman.com
 
 systemctl start nginx.service # Restart the nginx server.
-

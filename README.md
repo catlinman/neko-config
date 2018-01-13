@@ -18,11 +18,15 @@ get a headstart when setting up some applications.
 - cmder setup with mintty and wsltty running zsh
 - i3 window manager configuration files
 - Terminator terminal profile configuration
+- SSH configuration with 2FA and public keys
 - Postfix, Dovecot, SpamAssassin, DKIM & DMARC
 - LetsEncrypt quick setups and systemd service
+- Fail2Ban configuration with additional suggestions
 - Adobe application workspaces
 - nginx configuration
 - Syncplay systemd service
+- Uncrustify setup for C-Languages
+- PHP Code Beautifier and Fixer configuration (phpcbf)
 
 ## Screenshots ##
 
