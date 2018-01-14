@@ -4,7 +4,8 @@ systemctl stop nginx.service # Stop the nginx server as it is listening on port 
 certbot certonly --standalone --renew-by-default --expand \
 	-d nekodrop.com \
 	-d www.nekodrop.com \
-	-d alpha.nekodrop.com
+	-d alpha.nekodrop.com \
+    -d files.alpha.nekodrop.com \
+    -d relay.alpha.nekodrop.com
 
 systemctl start nginx.service # Restart the nginx server.
-

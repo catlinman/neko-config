@@ -160,6 +160,9 @@ action_mw = %(banaction)s[name=%(__name__)s, bantime="%(bantime)s", port="%(port
 action_mwl = %(banaction)s[name=%(__name__)s, bantime="%(bantime)s", port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
              %(mta)s-whois-lines[name=%(__name__)s, sender="%(sender)s", dest="%(destemail)s", logpath=%(logpath)s, chain="%(chain)s"]
 
+action_mwm = %(banaction)s[name=%(__name__)s, bantime="%(bantime)s", port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
+             %(mta)s-whois-matches[name=%(__name__)s, dest="%(destemail)s" chain="%(chain)s"]
+
 # See the IMPORTANT note in action.d/xarf-login-attack for when to use this action
 # Ban & send a xarf e-mail to abuse contact of IP address and include relevant log lines to the destemail.
 action_xarf = %(banaction)s[name=%(__name__)s, bantime="%(bantime)s", port="%(port)s", protocol="%(protocol)s", chain="%(chain)s"]
@@ -196,9 +199,9 @@ action_badips_report = badips[category="%(__name__)s", agent="%(fail2ban_agent)s
 action_abuseipdb = abuseipdb
 
 # Choose default action. To change, just override value of 'action' with the
-# interpolation to the chosen action shortcut (e.g.  action_mw, action_mwl, etc) in jail.local
-# globally (section [DEFAULT]) or per specific section
-action = %(action_mwl)s
+# interpolation to the chosen action shortcut (e.g.  action_mw, action_mwl, etc)
+# in jail.local globally (section [DEFAULT]) or per specific section.
+action = %(action_mwm)s
 
 
 #         88                  88
