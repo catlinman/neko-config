@@ -230,6 +230,7 @@ enabled = false
 port    = ssh
 filter  = sshd-ddos
 logpath = /var/log/auth.log
+backend = polling
 
 [dropbear]
 enabled = false
@@ -241,6 +242,7 @@ backend = %(dropbear_backend)s
 enabled = false
 port    = ssh
 logpath = %(auditd_log)s
+backend = polling
 
 # ------------------------------- HTTP Servers ------------------------------- #
 
@@ -248,6 +250,7 @@ logpath = %(auditd_log)s
 enabled  = false
 port     = http,https
 logpath  = %(apache_error_log)s
+backend  = polling
 
 # Ban hosts which agent identifies spammer robots crawling the web for email addresses.
 [apache-badbots]
@@ -256,35 +259,41 @@ port     = http,https
 logpath  = %(apache_access_log)s
 bantime  = 48h
 maxretry = 1
+backend  = polling
 
 [apache-noscript]
 enabled = false
 port    = http,https
 logpath = %(apache_error_log)s
+backend = polling
 
 [apache-overflows]
 enabled  = false
 port     = http,https
 logpath  = %(apache_error_log)s
 maxretry = 2
+backend  = polling
 
 [apache-nohome]
 enabled  = false
 port     = http,https
 logpath  = %(apache_error_log)s
 maxretry = 2
+backend  = polling
 
 [apache-botsearch]
 enabled  = false
 port     = http,https
 logpath  = %(apache_error_log)s
 maxretry = 2
+backend  = polling
 
 [apache-fakegooglebot]
 enabled  = false
 port     = http,https
 logpath  = %(apache_access_log)s
 maxretry = 1
+backend  = polling
 ignorecommand = %(ignorecommands_dir)s/apache-fakegooglebot <ip>
 
 [apache-modsecurity]
@@ -292,23 +301,27 @@ enabled  = false
 port     = http,https
 logpath  = %(apache_error_log)s
 maxretry = 2
+backend  = polling
 
 [apache-shellshock]
 enabled  = false
 port     = http,https
 logpath  = %(apache_error_log)s
 maxretry = 1
+backend  = polling
 
 [openhab-auth]
 enabled = false
 filter  = openhab
 action  = iptables-allports[name=NoAuthFailures]
 logpath = /opt/openhab/logs/request.log
+backend = polling
 
 [nginx-http-auth]
 enabled = false
 port    = http,https
-logpath = /var/log/nginx/error.log
+logpath = %(nginx_error_log)s
+backend = polling
 
 [nginx-noscript]
 enabled  = false
@@ -316,28 +329,32 @@ port     = http,https
 filter   = nginx-noscript
 logpath  = /var/log/nginx/access.log
 maxretry = 6
+backend  = polling
 
 # Ban hosts which agent identifies spammer robots crawling the web for email addresses.
 [nginx-badbots]
 enabled  = false
 port     = http,https
 filter   = nginx-badbots
-logpath  = /var/log/nginx/access.log
+logpath  = %(nginx_access_log)s
 maxretry = 2
+backend  = polling
 
 [nginx-nohome]
 enabled  = false
 port     = http,https
 filter   = nginx-nohome
-logpath  = /var/log/nginx/access.log
+logpath  = %(nginx_access_log)s
 maxretry = 2
+backend  = polling
 
 [nginx-noproxy]
 enabled  = false
 port     = http,https
 filter   = nginx-noproxy
-logpath  = /var/log/nginx/access.log
+logpath  = %(nginx_access_log)s
 maxretry = 2
+backend  = polling
 
 # To use 'nginx-limit-req' jail you should have `ngx_http_limit_req_module`
 # and define `limit_req` and `limit_req_zone` as described in nginx documentation
@@ -347,12 +364,14 @@ maxretry = 2
 enabled = false
 port    = http,https
 logpath = %(nginx_error_log)s
+backend = polling
 
 [nginx-botsearch]
 enabled  = false
 port     = http,https
 logpath  = %(nginx_error_log)s
 maxretry = 2
+backend  = polling
 
 [nginx-dos]
 enabled  = false
@@ -362,6 +381,7 @@ logpath  = %(nginx_access_log)s
 findtime = 60
 bantime  = 172800
 maxretry = 240
+backend  = polling
 
 # Ban attackers that try to use PHP's URL-fopen() functionality
 # through GET/POST variables. - Experimental, with more than a year
@@ -371,17 +391,20 @@ enabled = false
 port    = http,https
 logpath = %(nginx_access_log)s
           %(apache_access_log)s
+backend = polling
 
 [suhosin]
 enabled = false
 port    = http,https
 logpath = %(suhosin_log)s
+backend = polling
 
 # Same as above for Apache's mod_auth. It catches wrong authentifications.
 [lighttpd-auth]
 enabled = false
 port    = http,https
 logpath = %(lighttpd_error_log)s
+backend = polling
 
 # ---------------------- Webmail and Groupware Servers ---------------------- #
 
@@ -389,6 +412,7 @@ logpath = %(lighttpd_error_log)s
 enabled = false
 port    = http,https
 logpath = %(roundcube_errors_log)s
+backend = polling
 # Use following line in your jail.local if roundcube logs to journal.
 # backend = %(syslog_backend)s
 
@@ -396,27 +420,32 @@ logpath = %(roundcube_errors_log)s
 enabled = false
 port    = http,https
 logpath = /var/log/openwebmail.log
+backend = polling
 
 [horde]
 enabled = false
 port    = http,https
 logpath = /var/log/horde/horde.log
+backend = polling
 
 [groupoffice]
 enabled = false
 port    = http,https
 logpath = /home/groupoffice/log/info.log
+backend = polling
 
 # Monitor SOGo groupware server. Without proxy this would be: port = 20000
 [sogo-auth]
 enabled = false
 port    = http,https
 logpath = /var/log/sogo/sogo.log
+backend = polling
 
 [tine20]
 enabled = false
 logpath = /var/log/tine20/tine20.log
 port    = http,https
+backend = polling
 
 # ----------------------------- Web applications ----------------------------- #
 
@@ -430,12 +459,14 @@ backend = %(syslog_backend)s
 enabled = false
 port    = http,https
 logpath = /var/log/tomcat*/catalina.out
+backend = polling
 
 # Ban clients brute-forcing the monit gui login.
 [monit]
 enabled = false
 port    = 2812
 logpath = /var/log/monit
+backend = polling
 
 [webmin-auth]
 enabled = false
@@ -455,11 +486,13 @@ backend = %(syslog_backend)s
 enabled = false
 port    =  80,443,3128,8080
 logpath = /var/log/squid/access.log
+backend = polling
 
 [3proxy]
 enabled = false
 port    = 3128
 logpath = /var/log/3proxy.log
+backend = polling
 
 # ---------------------------- FTP Servers ---------------------------- #
 
@@ -500,6 +533,7 @@ logpath = %(vsftpd_log)s
 enabled = false
 port    = smtp,465,submission
 logpath = /root/path/to/assp/logs/maillog.txt
+backend = polling
 
 [courier-smtp]
 enabled = false
@@ -558,7 +592,8 @@ backend = %(dovecot_backend)s
 enabled = false
 port    = pop3,pop3s,imap,imaps
 filter  = dovecot-pop3imap
-logpath = /var/log/mail.log
+logpath = %(dovecot_log)s
+backend = %(dovecot_backend)s
 
 [sieve]
 enabled = false
@@ -614,6 +649,7 @@ backend = %(syslog_backend)s
 enabled = false
 port    = smtp,465,submission,imap2,imap3,imaps,pop3,pop3s,http,https,socks
 logpath = /var/lib/squirrelmail/prefs/squirrelmail_access_log
+backend = polling
 
 [cyrus-imap]
 enabled = false
@@ -653,6 +689,7 @@ backend = %(syslog_backend)s
 enabled = false
 port    = domain,953
 logpath = /var/log/named/security.log
+backend = polling
 
 [nsd]
 enabled = false
@@ -660,6 +697,7 @@ port    = 53
 action  = %(banaction)s[name=%(__name__)s-tcp, port="%(port)s", protocol="tcp", chain="%(chain)s", actname=%(banaction)s-tcp]
           %(banaction)s[name=%(__name__)s-udp, port="%(port)s", protocol="udp", chain="%(chain)s", actname=%(banaction)s-udp]
 logpath = /var/log/nsd.log
+backend = polling
 
 # ------------------------------ Miscellaneous ------------------------------ #
 
@@ -671,6 +709,7 @@ action   = %(banaction)s[name=%(__name__)s-tcp, port="%(port)s", protocol="tcp",
            %(mta)s-whois[name=%(__name__)s, dest="%(destemail)s"]
 logpath  = /var/log/asterisk/messages
 maxretry = 10
+backend  = polling
 
 [freeswitch]
 enabled  = false
@@ -680,6 +719,7 @@ action   = %(banaction)s[name=%(__name__)s-tcp, port="%(port)s", protocol="tcp",
            %(mta)s-whois[name=%(__name__)s, dest="%(destemail)s"]
 logpath  = /var/log/freeswitch.log
 maxretry = 10
+backend  = polling
 
 # To log wrong MySQL access attempts add to /etc/my.cnf in [mysqld] or
 # equivalent section:
@@ -704,6 +744,7 @@ enabled = false
 # Change port when running with "--shardsvr" or "--configsvr" runtime operation
 port     = 27017
 logpath  = /var/log/mongodb/mongodb.log
+backend  = polling
 
 # Jail for more extended banning of persistent abusers
 # !!! WARNINGS !!!
@@ -718,6 +759,7 @@ logpath   = /var/log/fail2ban.log
 banaction = %(banaction_allports)s
 bantime   = 1w
 findtime  = 1d
+backend   = polling
 
 # Generic filter for PAM. Has to be used with action which bans all
 # ports such as iptables-allports, shorewall
@@ -745,6 +787,7 @@ logpath = /var/log/stunnel4/stunnel.log
 enabled = false
 port    = 5222
 logpath = /var/log/ejabberd/ejabberd.log
+backend = polling
 
 # Firewall: http://www.cstrike-planet.com/faq/6
 [counter-strike]
@@ -753,7 +796,8 @@ logpath = /opt/cstrike/logs/L[0-9]*.log
 tcpport = 27030,27031,27032,27033,27034,27035,27036,27037,27038,27039
 udpport = 1200,27000,27001,27002,27003,27004,27005,27006,27007,27008,27009,27010,27011,27012,27013,27014,27015
 action  = %(banaction)s[name=%(__name__)s-tcp, port="%(tcpport)s", protocol="tcp", chain="%(chain)s", actname=%(banaction)s-tcp]
-           %(banaction)s[name=%(__name__)s-udp, port="%(udpport)s", protocol="udp", chain="%(chain)s", actname=%(banaction)s-udp]
+          %(banaction)s[name=%(__name__)s-udp, port="%(udpport)s", protocol="udp", chain="%(chain)s", actname=%(banaction)s-udp]
+backend = polling
 
 # Consider a low maxretry and a long bantime.
 # Nobody except your own Nagios server should ever probe nrpe.
@@ -769,16 +813,19 @@ maxretry = 1
 enabled   = false
 logpath   = /opt/sun/comms/messaging64/log/mail.log_current
 banaction = %(banaction_allports)s
+backend   = polling
 
 [directadmin]
 enabled = false
 logpath = /var/log/directadmin/login.log
 port    = 2222
+backend = polling
 
 [portsentry]
-enabled = false
+enabled  = false
 logpath  = /var/lib/portsentry/portsentry.history
 maxretry = 1
+backend  = polling
 
 # This pass2allow example allows FTP traffic after successful HTTP authentication
 # knocking_url variable must be overridden to some secret value in jail.local.
@@ -794,6 +841,7 @@ returntype   = DROP
 bantime      = 1h
 maxretry     = 1
 findtime     = 1
+backend      = polling
 
 # Teamspeak server query. You might have to change the log location.
 [teamspeak]
@@ -805,6 +853,7 @@ maxretry = 3
 bantime  = 86400
 findtime = 7800
 action   = iptables-multiport[name="teamspeak", port="2008,2010,9987,10011,30033,41144"]
+backend  = polling
 
 # AKA mumble-server
 [murmur]
@@ -813,12 +862,14 @@ port    = 64738
 action  = %(banaction)s[name=%(__name__)s-tcp, port="%(port)s", protocol=tcp, chain="%(chain)s", actname=%(banaction)s-tcp]
           %(banaction)s[name=%(__name__)s-udp, port="%(port)s", protocol=udp, chain="%(chain)s", actname=%(banaction)s-udp]
 logpath = /var/log/mumble-server/mumble-server.log
+backend = polling
 
 # For Mac OS Screen Sharing Service (VNC)
 [screensharingd]
 enabled     = false
 logpath     = /var/log/system.log
 logencoding = utf-8
+backend     = polling
 
 # HAProxy by default doesn't log to file. You'll need to set it up to forward logs
 # to a syslog server which would then write them to disk. See"haproxy-http-auth"
@@ -826,15 +877,18 @@ logencoding = utf-8
 [haproxy-http-auth]
 enabled = false
 logpath = /var/log/haproxy.log
+backend = polling
 
 [slapd]
 enabled = false
 port    = ldap,ldaps
 filter  = slapd
 logpath = /var/log/slapd.log
+backend = polling
 
 [domino-smtp]
 enabled = false
 port    = smtp,ssmtp
 filter  = domino-smtp
 logpath = /home/domino01/data/IBM_TECHNICAL_SUPPORT/console.log
+backend = polling
