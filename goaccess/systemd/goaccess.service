@@ -1,0 +1,21 @@
+
+[Unit]
+# General service description.
+Description=GoAccess autostart service for realtime monitoring
+
+[Service]
+# Service is non forking.
+Type=simple
+
+# Execution on start of service.
+ExecStart=/srv/goaccess/systemd/goaccess.sh
+
+# User to run under. Make sure it is also in the log group.
+User=goaccess
+
+# Set the working directory.
+WorkingDirectory=/srv/goaccess/
+
+[Install]
+# Target file for service management.
+WantedBy=multi-user.target
