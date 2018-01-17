@@ -27,6 +27,7 @@ get a headstart when setting up some applications.
 - Syncplay systemd service
 - Uncrustify setup for C-Languages
 - PHP Code Beautifier and Fixer configuration (phpcbf)
+- GoAccess Service & nginx Proxy Setup
 
 ## Screenshots ##
 

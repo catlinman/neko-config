@@ -397,17 +397,25 @@ bantime  = 30
 maxretry = 300
 backend  = polling
 
+<<<<<<< HEAD
 # Single user Denail of Service attack filter. Compared to the DDoS version
 # which should only be enabled during an attack, this filter watches for clients
 # making large bursts of requests in a very short period of time. Just like
 # with the previous filter recidive takes care of the rest if the attack
 # doesn't stop after the last ban.
+=======
+# Single user Denail of Service
+>>>>>>> a54b2a979bb4688b6525dca834ab0b666c94dcf5
 [nginx-dos]
 enabled  = false
 port     = http,https
 filter   = nginx-dos
 logpath  = %(nginx_access_log)s
+<<<<<<< HEAD
 findtime = 1
+=======
+findtime = 10
+>>>>>>> a54b2a979bb4688b6525dca834ab0b666c94dcf5
 bantime  = 30
 maxretry = 1000
 backend  = polling
