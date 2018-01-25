@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "activate-power-mode",
-		"version": "2.6.0"
+		"version": "2.7.0"
 	},
 	{
 		"name": "advanced-open-file",
@@ -29,7 +29,7 @@
 	},
 	{
 		"name": "atom-clock",
-		"version": "0.1.15"
+		"version": "0.1.16"
 	},
 	{
 		"name": "atom-dark-syntax",
@@ -62,10 +62,6 @@
 		"name": "atom-light-ui",
 		"version": "0.46.0",
 		"theme": "ui"
-	},
-	{
-		"name": "atom-math",
-		"version": "0.0.9"
 	},
 	{
 		"name": "atom-minify",
@@ -146,7 +142,7 @@
 	},
 	{
 		"name": "autocomplete-plus",
-		"version": "2.38.0"
+		"version": "2.40.0"
 	},
 	{
 		"name": "autocomplete-python",
@@ -273,7 +269,7 @@
 	},
 	{
 		"name": "docblockr",
-		"version": "0.13.4"
+		"version": "0.13.5"
 	},
 	{
 		"name": "emmet",
@@ -438,7 +434,7 @@
 	},
 	{
 		"name": "language-crystal-actual",
-		"version": "0.37.0"
+		"version": "0.37.2"
 	},
 	{
 		"name": "language-csharp",
@@ -470,7 +466,7 @@
 	},
 	{
 		"name": "language-html",
-		"version": "0.48.4"
+		"version": "0.48.5"
 	},
 	{
 		"name": "language-hyperlink",
@@ -597,6 +593,10 @@
 		"version": "0.2.2"
 	},
 	{
+		"name": "language-viml",
+		"version": "1.1.6"
+	},
+	{
 		"name": "language-xml",
 		"version": "0.35.2"
 	},
@@ -651,6 +651,10 @@
 	{
 		"name": "linter-eslint",
 		"version": "8.4.0"
+	},
+	{
+		"name": "linter-gcc",
+		"version": "0.7.1"
 	},
 	{
 		"name": "linter-htmlhint",
@@ -908,7 +912,7 @@
 	},
 	{
 		"name": "settings-view",
-		"version": "0.253.0"
+		"version": "0.253.1-0"
 	},
 	{
 		"name": "snippets",
@@ -926,7 +930,7 @@
 	},
 	{
 		"name": "spell-check",
-		"version": "0.72.3"
+		"version": "0.72.5"
 	},
 	{
 		"name": "status-bar",
@@ -982,7 +986,7 @@
 	},
 	{
 		"name": "tool-bar",
-		"version": "1.1.1"
+		"version": "1.1.4"
 	},
 	{
 		"name": "tool-bar-atom",

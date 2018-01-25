@@ -19,4 +19,3 @@
 # To see everything as it is set, please view goaccess.conf.
 
 /usr/local/bin/goaccess -p /srv/goaccess/systemd/goaccess.conf
-
