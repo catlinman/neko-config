@@ -6,5 +6,11 @@
 		"Markdown",
 		"Vintage"
 	],
-	"theme": "Seti.sublime-theme"
+	"rulers":
+	[
+		80
+	],
+	"spell_check": true,
+	"theme": "Seti.sublime-theme",
+	"translate_tabs_to_spaces": true
 }

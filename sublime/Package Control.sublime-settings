@@ -6,18 +6,23 @@
 	"installed_packages":
 	[
 		"AutoSpell",
+		"Color Highlighter",
 		"DistractionFreeWindow",
 		"LaTeX-cwl",
 		"LaTeXing",
 		"LiveReload",
 		"Markdown Preview",
 		"MarkdownEditing",
+		"MarkdownFootnotes",
+		"OmniMarkupPreviewer",
 		"Package Control",
 		"Schemr",
 		"Seti_UI",
 		"Seti_UX",
 		"Sync Settings",
 		"Themr",
+		"WordCount",
+		"Wrap Plus",
 		"Writing Style"
 	]
 }

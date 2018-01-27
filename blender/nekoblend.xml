@@ -24,7 +24,7 @@
         <wcol_tool>
           <ThemeWidgetColors outline="#404040"
                              inner="#333333ff"
-                             inner_sel="#ffcf3dff"
+                             inner_sel="#e5bb37ff"
                              item="#404040ff"
                              text="#ffffff"
                              text_sel="#000000"
@@ -241,12 +241,12 @@
       <ThemeView3D grid="#646464"
                    clipping_border_3d="#313131ff"
                    wire="#1e1e1e"
-                   wire_edit="#ffa549"
+                   wire_edit="#e5bb37"
                    gp_vertex="#000000"
                    gp_vertex_select="#fffb00"
                    gp_vertex_size="3"
                    text_grease_pencil="#b5e61d"
-                   object_selected="#ffef7d"
+                   object_selected="#e5bb37"
                    object_active="#ffce3d"
                    object_grouped="#339443"
                    object_grouped_active="#84ff00"
@@ -255,7 +255,7 @@
                    empty="#cdcdcd"
                    lamp="#dbac00b9"
                    speaker="#229cd8"
-                   vertex="#ff7600"
+                   vertex="#e5bb37"
                    vertex_select="#ffffff"
                    vertex_size="6"
                    vertex_bevel="#00a5ff"
@@ -1006,16 +1006,16 @@
                        handle_vertex_select="#ffff00"
                        handle_vertex_size="5">
         <space>
-          <ThemeSpaceGeneric back="#393939"
+          <ThemeSpaceGeneric back="#1a1a1a"
                              title="#ffcf40"
-                             text="#000000"
+                             text="#ffffff"
                              text_hi="#ffffff"
                              header="#1a1a1a"
                              header_text="#000000"
                              header_text_hi="#ffffff"
                              button="#1a1a1a80"
                              button_title="#ffcf40"
-                             button_text="#000000"
+                             button_text="#ffffff"
                              button_text_hi="#ffffff"
                              tab_active="#595959"
                              tab_inactive="#1a1a1a"
@@ -1032,8 +1032,8 @@
         </space>
         <space_list>
           <ThemeSpaceListGeneric list="#666666"
-                                 list_title="#000000"
-                                 list_text="#000000"
+                                 list_title="#414141"
+                                 list_text="#ffffff"
                                  list_text_hi="#ffffff">
           </ThemeSpaceListGeneric>
         </space_list>
