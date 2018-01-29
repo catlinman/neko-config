@@ -1,6 +1,6 @@
-gtk-color-scheme	= "base_color:#1A1A1A\nfg_color:#F3F3F5\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#ffce3d\nselected_fg_color:#1A1A1A\ntext_color:#F3F3F5\nbg_color:#1A1A1A\ninsensitive_bg_color:#101010\ntooltip_bg_color:#1A1A1A\nlink_color:#30A0FF"
+gtk-color-scheme	= "base_color:#1A1A1A\nfg_color:#F3F3F5\ntooltip_fg_color:#FFFFFF\nselected_bg_color:#FFC445\nselected_fg_color:#1A1A1A\ntext_color:#F3F3F5\nbg_color:#0C0C0C\ninsensitive_bg_color:#101010\ntooltip_bg_color:#1A1A1A\nlink_color:#30A0FF"
 
-gtk-icon-sizes		= "gtk-button=16,16" # This makes button icons smaller.
+gtk-icon-sizes		 = "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
 gtk-primary-button-warps-slider = 1
 
@@ -11,8 +11,7 @@ style "default" {
   xthickness = 1
   ythickness = 1
 
-  # Style Properties#1A1A1AFF
-#101010FF
+  # Style Properties
   GtkWidget::focus-line-width = 1
   GtkMenuBar::window-dragging = 1
   GtkToolbar::window-dragging = 1
@@ -38,7 +37,7 @@ style "default" {
   GtkRange::slider-width = 15
   GtkRange::stepper-size = 0
 
-  GtkScrollbar::activate-slider = 1
+  GtkScrollbar::activate-slider = 1#232323FF
   GtkScrollbar::has-backward-stepper = 0  
   GtkScrollbar::has-forward-stepper = 0
   GtkScrollbar::min-slider-length = 32
@@ -687,7 +686,7 @@ style "scrollbar" {
 style "menubar" {
 
   bg[PRELIGHT] = "#FFF"	
-  bg[NORMAL] = "#1A1A1A"
+  bg[NORMAL] = "#0C0C0C"
   fg[NORMAL] = @text_color
   fg[SELECTED] = @text_color
   fg[INSENSITIVE] = shade(0.5, @selected_fg_color)

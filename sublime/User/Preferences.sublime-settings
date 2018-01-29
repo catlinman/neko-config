@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"color_scheme": "Packages/DA UI/DA Dark.tmTheme",
 	"font_size": 10,
 	"ignored_packages":
 	[
@@ -10,7 +10,8 @@
 	[
 		80
 	],
+	"skin": "DA UI/Origin",
 	"spell_check": true,
-	"theme": "Seti.sublime-theme",
+	"theme": "DA.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

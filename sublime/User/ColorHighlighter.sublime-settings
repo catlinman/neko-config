@@ -1,4 +1,20 @@
-{	
+{
+	"experimental":
+	{
+		"asynchronosly_update_color_scheme": true
+	},
+	"file_extensions":
+	[
+		".css",
+		".scss",
+		".sass",
+		".less",
+		".tmTheme",
+		".sublime-settings",
+		".html",
+		".htm",
+		".qss"
+	],
 	"search_colors_in":
 	{
 		"all_content":
