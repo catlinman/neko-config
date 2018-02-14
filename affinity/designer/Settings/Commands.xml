@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.CommandsSettings">
+	<Commands>
+		<Command type="Serif.Interop.Persona.UserInterface.UseFillCheckbox, Serif.Interop.Persona, Version=1.6.2.97, Culture=neutral, PublicKeyToken=null">
+			<Properties>
+				<Property key="PenUseFill">
+					<Value xsi:type="xsd:boolean">True</Value>
+				</Property>
+				<Property key="PencilUseFill">
+					<Value xsi:type="xsd:boolean">False</Value>
+				</Property>
+			</Properties>
+		</Command>
+	</Commands>
+</Settings>

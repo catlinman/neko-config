@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.SnappingSettings">
+	<SnappingEnabled>False</SnappingEnabled>
+	<ScreenTolerance>8</ScreenTolerance>
+	<ScreenMinSize>8</ScreenMinSize>
+	<NodeToolSnapToNodes>False</NodeToolSnapToNodes>
+	<NodeToolSnapOffCurve>False</NodeToolSnapOffCurve>
+	<NodeToolSnapAllSelectedNodes>False</NodeToolSnapAllSelectedNodes>
+	<ShowSnappingCandidates>False</ShowSnappingCandidates>
+	<OnlySnapToVisible>True</OnlySnapToVisible>
+	<Guides>True</Guides>
+	<Margin>True</Margin>
+	<MarginCentre>True</MarginCentre>
+	<PageEdge>True</PageEdge>
+	<PageCentre>True</PageCentre>
+	<Grid>False</Grid>
+	<CandidateBounds>True</CandidateBounds>
+	<CandidateBoundsCentre>True</CandidateBoundsCentre>
+	<GapsAndSpans>False</GapsAndSpans>
+	<IndividualBounds>False</IndividualBounds>
+	<CandidateKeyPoints>False</CandidateKeyPoints>
+	<CandidateGeometry>False</CandidateGeometry>
+	<Construction>False</Construction>
+	<ConstructionOnAxis>False</ConstructionOnAxis>
+	<QuantizePixelMovement>True</QuantizePixelMovement>
+	<ForcePixelSnapping>False</ForcePixelSnapping>
+	<CandidateSource>0</CandidateSource>
+</Settings>

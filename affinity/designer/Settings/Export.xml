@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.ExportSettings">
+	<Format>SVG</Format>
+	<ExportFormats>
+		<ExportFormat Format="PNG" Preset="PNG-24" />
+		<ExportFormat Format="JPEG" Preset="JPEG (Best quality)" />
+		<ExportFormat Format="SVG" Preset="SVG (for web)" />
+	</ExportFormats>
+</Settings>
