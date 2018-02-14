@@ -14,7 +14,6 @@ get a headstart when setting up some applications.
 - SublimeText 3 SyncSettings configuration
 - zshrc configuration file
 - Both Unix Vim (.vimrc) and Windows gVim (_vimrc) configuration files
-- Foobar2000 modified CaTRoX theme with ton of extra features
 - Blender startup and configuration file
 - cmder setup with mintty and wsltty running zsh
 - i3 window manager configuration files
@@ -44,10 +43,6 @@ get a headstart when setting up some applications.
 
 ![](https://github.com/catlinman/nekoconfig/blob/master/vim/preview.png)
 
-### Foobar2000 ###
-
-![](https://github.com/catlinman/nekoconfig/blob/master/foobar2000/preview.png)
-
 ### Blender ###
 
 ![](https://github.com/catlinman/nekoconfig/blob/master/blender/preview.png)
@@ -75,6 +70,7 @@ have a look at the original repository over at
 
 If you are looking for the split off repositories, here's a quick list.
 
+- [Foobar2000](https://github.com/catlinman/foobar2000)
 - [Nekobeat](https://github.com/catlinman/nekobeat)
 - [Python Scripts](https://github.com/catlinman/pyscripts)
 - [Windows Scripts](https://github.com/catlinman/winscripts)
