@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.ApplicationSettings">
+	<ShowRulers>False</ShowRulers>
+	<ShowWelcomeScreen>True</ShowWelcomeScreen>
+	<ShowAdvancedHistogram>True</ShowAdvancedHistogram>
+	<CheckSpellingWhileTyping>True</CheckSpellingWhileTyping>
+	<ClipToCanvas>True</ClipToCanvas>
+	<LockGridColours>True</LockGridColours>
+	<SwatchListMode>False</SwatchListMode>
+	<SelectedPaletteType>0</SelectedPaletteType>
+	<SwatchCellWidth>0</SwatchCellWidth>
+	<SelectedPaletteName>Grays</SelectedPaletteName>
+	<PrimaryGridColour>
+		<R>204</R>
+		<G>204</G>
+		<B>204</B>
+		<A>89</A>
+	</PrimaryGridColour>
+	<SecondaryGridColour>
+		<R>204</R>
+		<G>204</G>
+		<B>204</B>
+		<A>45</A>
+	</SecondaryGridColour>
+	<HorizontalAlignTo>0</HorizontalAlignTo>
+	<VerticalAlignTo>0</VerticalAlignTo>
+</Settings>

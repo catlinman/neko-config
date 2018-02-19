@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WindowProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Objects>
+		<WndProfObject xsi:type="MainSite" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0">
+			<Roots>
+				<DockRoot FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Fill" DockedHeightValue="0" DockedHeightType="Fill" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0">
+					<Shelves>
+						<Shelf FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Fill" DockedHeightValue="0" DockedHeightType="Fill" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" Orientation="Horizontal">
+							<Objects>
+								<WndProfObject xsi:type="Shelf" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Orientation="Vertical">
+									<Objects>
+										<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="400" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" IsSnapChildren="true">
+											<Pages>
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="250" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="MacroPage" IsSizeableWhenFloating="false" />
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="LibraryPage" IsSizeableWhenFloating="false" />
+											</Pages>
+										</WndProfObject>
+									</Objects>
+								</WndProfObject>
+								<WndProfObject xsi:type="DocumentGroup" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="200" DockedWidthType="Fill" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" />
+								<WndProfObject xsi:type="Shelf" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" Orientation="Vertical">
+									<Objects>
+										<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="260" FloatingHeightType="Fixed" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="260" DockedHeightType="Fixed" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+											<Pages>
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="0" FloatingHeightType="Auto" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="0" DockedHeightType="Auto" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="ScopePage" IsSizeableWhenFloating="false" />
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="260" FloatingHeightType="Fixed" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="260" DockedHeightType="Fixed" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="ColourPage" IsSizeableWhenFloating="false" />
+											</Pages>
+										</WndProfObject>
+										<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="1655" FloatingTop="336" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+											<Pages>
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="1655" FloatingTop="336" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="LayerPage" IsSizeableWhenFloating="false" />
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="400" FloatingHeightType="Stretch" FloatingLeft="1706" FloatingTop="373" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" Id="ChannelsPage" IsSizeableWhenFloating="false" />
+											</Pages>
+										</WndProfObject>
+										<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="260" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" IsSnapChildren="true">
+											<Pages>
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="SnapshotsPage" IsSizeableWhenFloating="false" />
+												<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="270" FloatingHeightType="Fixed" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="270" DockedHeightType="Fixed" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="Preview32BitPage" IsSizeableWhenFloating="false" />
+											</Pages>
+										</WndProfObject>
+									</Objects>
+								</WndProfObject>
+							</Objects>
+						</Shelf>
+					</Shelves>
+				</DockRoot>
+			</Roots>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="100" FloatingHeightType="Auto" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="80" DockedHeightType="Auto" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="CharacterPage" IsSizeableWhenFloating="false" />
+						<Page FloatingWidthValue="100" FloatingWidthType="Stretch" FloatingHeightValue="100" FloatingHeightType="Auto" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="80" DockedHeightType="Auto" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="ParagraphPage" IsSizeableWhenFloating="false" />
+						<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="300" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="GlyphsPage" IsSizeableWhenFloating="false" />
+						<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="TextStylesPage" IsSizeableWhenFloating="false" />
+						<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="440" FloatingHeightType="Fill" FloatingLeft="NaN" FloatingTop="NaN" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="300" DockedHeightType="Fixed" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="CloneBrushSourcesPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="280" FloatingWidthType="Stretch" FloatingHeightValue="283" FloatingHeightType="Auto" FloatingLeft="678" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="260" FloatingHeightType="Auto" FloatingLeft="678" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="260" DockedHeightType="Auto" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="280" FloatingWidthType="Stretch" FloatingHeightValue="260" FloatingHeightType="Auto" FloatingLeft="678" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="260" DockedHeightType="Auto" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="HistogramPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="678" FloatingWidthType="Stretch" FloatingHeightValue="767" FloatingHeightType="Stretch" FloatingLeft="0" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="0" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="678" FloatingWidthType="Stretch" FloatingHeightValue="767" FloatingHeightType="Stretch" FloatingLeft="0" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="NavigatorPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="282" FloatingWidthType="Stretch" FloatingHeightValue="393" FloatingHeightType="Fill" FloatingLeft="1638" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="240" FloatingHeightType="Fill" FloatingLeft="1638" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="282" FloatingWidthType="Stretch" FloatingHeightValue="393" FloatingHeightType="Stretch" FloatingLeft="1638" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="SwatchPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="370" FloatingWidthType="Stretch" FloatingHeightValue="1080" FloatingHeightType="Stretch" FloatingLeft="958" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="958" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="370" FloatingWidthType="Stretch" FloatingHeightValue="1080" FloatingHeightType="Stretch" FloatingLeft="958" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="AdjustmentPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="310" FloatingWidthType="Stretch" FloatingHeightValue="496" FloatingHeightType="Stretch" FloatingLeft="1328" FloatingTop="586" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="496" FloatingHeightType="Stretch" FloatingLeft="1328" FloatingTop="586" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="310" FloatingWidthType="Stretch" FloatingHeightValue="496" FloatingHeightType="Stretch" FloatingLeft="1328" FloatingTop="586" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="HistoryPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="369" FloatingWidthType="Stretch" FloatingHeightValue="575" FloatingHeightType="Stretch" FloatingLeft="1270" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="1270" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="369" FloatingWidthType="Stretch" FloatingHeightValue="575" FloatingHeightType="Stretch" FloatingLeft="1270" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="EffectsPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="281" FloatingWidthType="Stretch" FloatingHeightValue="130" FloatingHeightType="Auto" FloatingLeft="677" FloatingTop="283" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="100" FloatingHeightType="Auto" FloatingLeft="677" FloatingTop="283" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="100" DockedHeightType="Auto" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="281" FloatingWidthType="Stretch" FloatingHeightValue="100" FloatingHeightType="Auto" FloatingLeft="677" FloatingTop="283" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="100" DockedHeightType="Auto" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="TransformPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="282" FloatingWidthType="Stretch" FloatingHeightValue="307" FloatingHeightType="Stretch" FloatingLeft="1638" FloatingTop="773" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="260" FloatingHeightType="Stretch" FloatingLeft="1638" FloatingTop="773" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="282" FloatingWidthType="Stretch" FloatingHeightValue="307" FloatingHeightType="Stretch" FloatingLeft="1638" FloatingTop="773" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="InfoPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="400" FloatingHeightType="Stretch" FloatingLeft="503" FloatingTop="352" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="400" FloatingHeightType="Stretch" FloatingLeft="503" FloatingTop="352" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="200" FloatingHeightType="Stretch" FloatingLeft="503" FloatingTop="352" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="StylePage" IsSizeableWhenFloating="false" />
+						<Page FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="400" FloatingHeightType="Stretch" FloatingLeft="503" FloatingTop="352" DockedWidthValue="269" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="false" IsCollapsed="false" Display="0" Id="StockPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="282" FloatingWidthType="Stretch" FloatingHeightValue="380" FloatingHeightType="Stretch" FloatingLeft="1638" FloatingTop="393" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="380" FloatingHeightType="Stretch" FloatingLeft="1638" FloatingTop="393" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="282" FloatingWidthType="Stretch" FloatingHeightValue="380" FloatingHeightType="Stretch" FloatingLeft="1638" FloatingTop="393" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="ExifPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="280" FloatingWidthType="Stretch" FloatingHeightValue="484" FloatingHeightType="Stretch" FloatingLeft="678" FloatingTop="283" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="400" FloatingHeightType="Stretch" FloatingLeft="678" FloatingTop="283" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="280" FloatingWidthType="Stretch" FloatingHeightValue="484" FloatingHeightType="Stretch" FloatingLeft="678" FloatingTop="283" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="BatchPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+		<WndProfObject xsi:type="FloatSite" FloatingWidthValue="310" FloatingWidthType="Stretch" FloatingHeightValue="586" FloatingHeightType="Stretch" FloatingLeft="1328" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="1">
+			<Objects>
+				<WndProfObject xsi:type="Book" FloatingWidthValue="265" FloatingWidthType="Stretch" FloatingHeightValue="504" FloatingHeightType="Stretch" FloatingLeft="1328" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="false" IsVisible="true" IsCollapsed="false" Display="0" IsSnapChildren="true">
+					<Pages>
+						<Page FloatingWidthValue="310" FloatingWidthType="Stretch" FloatingHeightValue="586" FloatingHeightType="Stretch" FloatingLeft="1328" FloatingTop="0" DockedWidthValue="265" DockedWidthType="Stretch" DockedHeightValue="200" DockedHeightType="Stretch" IsSelected="true" IsVisible="true" IsCollapsed="false" Display="0" Id="BrushPage" IsSizeableWhenFloating="false" />
+					</Pages>
+				</WndProfObject>
+			</Objects>
+		</WndProfObject>
+	</Objects>
+</WindowProfile>

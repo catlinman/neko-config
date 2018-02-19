@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.UserInterfaceSettings">
+	<AutoCommitFilters>True</AutoCommitFilters>
+	<MonochromaticIconography>False</MonochromaticIconography>
+	<ShowSelectionInLayersPanel>False</ShowSelectionInLayersPanel>
+	<StudioVisible>True</StudioVisible>
+	<StatusBarVisible>True</StatusBarVisible>
+	<AlwaysShowBrushCrosshair>False</AlwaysShowBrushCrosshair>
+	<AutoLockBackground>True</AutoLockBackground>
+	<TooltipDelay>400</TooltipDelay>
+	<ActiveScheme>Dark</ActiveScheme>
+	<ShowBrushPreviews>True</ShowBrushPreviews>
+	<ShowLinesInPoints>True</ShowLinesInPoints>
+	<ShowTextInPoints>True</ShowTextInPoints>
+	<PixelPrecision>1</PixelPrecision>
+	<PointPrecision>1</PointPrecision>
+	<InchPrecision>3</InchPrecision>
+	<FootPrecision>3</FootPrecision>
+	<YardPrecision>3</YardPrecision>
+	<MillimetrePrecision>1</MillimetrePrecision>
+	<CentimetrePrecision>2</CentimetrePrecision>
+	<MetrePrecision>3</MetrePrecision>
+	<FillFlyoutDefaultTypeModel>Wheel</FillFlyoutDefaultTypeModel>
+	<ColourSpace>RGB</ColourSpace>
+	<ColourDepths>
+		<ColourDepth>EightBit</ColourDepth>
+		<ColourDepth>EightBit</ColourDepth>
+		<ColourDepth>Percentage</ColourDepth>
+		<ColourDepth>EightBit</ColourDepth>
+		<ColourDepth>Percentage</ColourDepth>
+		<ColourDepth>Percentage</ColourDepth>
+		<ColourDepth>EightBit</ColourDepth>
+	</ColourDepths>
+</Settings>

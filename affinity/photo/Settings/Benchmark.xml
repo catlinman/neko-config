@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BenchmarkSettings">
+	<Adapters>
+		<AdapterDriverPair>
+			<AdapterName>NVIDIA GeForce GTX 650 Ti BOOST</AdapterName>
+			<DriverVersion>22.21.13.8494</DriverVersion>
+		</AdapterDriverPair>
+		<AdapterDriverPair>
+			<AdapterName>NVIDIA GeForce GTX 650 Ti BOOST</AdapterName>
+			<DriverVersion>22.21.13.8494</DriverVersion>
+		</AdapterDriverPair>
+	</Adapters>
+	<ApplicationVersion>1.5.0.45</ApplicationVersion>
+</Settings>
