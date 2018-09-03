@@ -27,21 +27,21 @@
 
 # - Connection options. The most important being the port. - #
 Port 32641
-#AddressFamily any
-#ListenAddress 0.0.0.0
-#ListenAddress ::
+# AddressFamily any
+# ListenAddress 0.0.0.0
+# ListenAddress ::
 
 # - Custom host key settings. - #
-#HostKey /etc/ssh/ssh_host_rsa_key
-#HostKey /etc/ssh/ssh_host_dsa_key
-#HostKey /etc/ssh/ssh_host_ecdsa_key
-#HostKey /etc/ssh/ssh_host_ed25519_key
+# HostKey /etc/ssh/ssh_host_rsa_key
+# HostKey /etc/ssh/ssh_host_dsa_key
+# HostKey /etc/ssh/ssh_host_ecdsa_key
+# HostKey /etc/ssh/ssh_host_ed25519_key
 
 # - We ignore enforcing strict policies as fail2ban will handle the most. - #
-#LoginGraceTime 2m
-#StrictModes yes
-#MaxAuthTries 6
-#MaxSessions 10
+# LoginGraceTime 2m
+# StrictModes yes
+# MaxAuthTries 6
+# MaxSessions 10
 
 # - Log additional information such as failed logins. - #
 LogLevel VERBOSE
