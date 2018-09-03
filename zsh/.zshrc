@@ -103,7 +103,7 @@ bindkey "[C" forward-word
 bindkey "[D" backward-word
 
 # Base16 Shell support. Install via: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-# Don't forget to set your theme via base16 and tab completion. I personally use base16_seti.
+# Don't forget to set your theme via base16 and tab completion. I personally use base16_neko which is a fork of base16_seti.
 BASE16_SHELL=$HOME/.config/base16-shell/
 [[ -n $PS1 ]] && [[ -s $BASE16_SHELL/profile_helper.sh ]] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
@@ -114,7 +114,7 @@ if whence dircolors > /dev/null; then
 
 else
     export CLICOLOR=1
-    source .osxcolors
+    source ~/.osxcolors
 fi
 
 # Colored completion - use LS_COLORS.
@@ -125,6 +125,10 @@ if exists exa; then
     alias ls="exa"
     alias la="exa -laagh --git"
 fi
+
+# Fix issues relating to GPG key signing.
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # Create an extra alias just for pasting. Uses netcat if available.
 # Example: echo You can now paste like this! | tb

@@ -66,6 +66,9 @@ mailbox_size_limit = 0
 recipient_delimiter = +
 inet_interfaces = all
 
+# Maximum message size.
+message_size_limit = 104857600
+
 # Tells Postfix to use Dovecot's LMTP instead of its own LDA to save emails to the local mailboxes.
 virtual_transport = lmtp:unix:private/dovecot-lmtp
 

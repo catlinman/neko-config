@@ -52,6 +52,9 @@ Plugin 'ap/vim-css-color'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'majutsushi/tagbar'
 
+" Colorizer color highlighting (Implements 'ColorHighlight')
+Plugin 'chrisbra/Colorizer'
+
 " Git
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
@@ -67,6 +70,7 @@ Plugin 'honza/vim-snippets'
 
 " Languages
 Plugin 'rust-lang/rust.vim'
+Plugin 'tmux-plugins/vim-tmux'
 
 " Python dependent plugins (Implements 'MinimapToggle')
 if has("python") || has("python3")
@@ -91,19 +95,21 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Set the Base16 colorscheme. Make sure that Base16 Shell is installed.
+" Set the Base16 color scheme. Make sure that Base16 Shell is installed.
 syntax on
-set background=dark
 set t_Co=256
 let base16colorspace=256
 
-if $TERM == 'linux'
-    colorscheme default
+" Load the default color scheme so some plugins don't break.
+colorscheme default
 
-else
-    colorscheme base16-seti
+if $TERM != 'linux'
+    colorscheme base16-neko
 
 endif
+
+" Set the correct background.
+set background=dark
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
@@ -117,6 +123,7 @@ set expandtab
 set shiftwidth=4
 set autoindent
 set softtabstop=4
+set ts=4 sw=4 
 
 " Change backspace behavior.
 set backspace=indent,eol,start
@@ -144,6 +151,10 @@ let g:mta_filetypes={
     \}
 
 highlight Pmenu ctermfg=blue ctermbg=black
+
+" Colorizer configuration.
+let g:colorizer_auto_filetype='css,html,less,scss,sass,txt,md,vue,j2'
+let g:colorizer_skip_comments = 1
 
 " gVim configuration.
 if has('gui_running')
@@ -176,7 +187,6 @@ if $TERM == 'linux'
     let g:airline_theme='luna'
 
 else
-    let g:airline_symbols.space='\ua0'
     let g:airline_powerline_fonts=1
     let g:airline#extensions#tabline#enabled=1
     let g:airline_theme='wombat'
@@ -184,11 +194,18 @@ else
 endif
 
 " Indent guide configuration.
+let g:indent_guides_auto_colors = 0
 let g:indent_guides_guide_size=1
 let g:indent_guides_color_change_percent=0
 let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+
+" Indent guide colors.
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=black
 
 " Snippet configuration.
 let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<c-b>'
 let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+

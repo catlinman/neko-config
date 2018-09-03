@@ -4,13 +4,13 @@
 ![](https://github.com/catlinman/nekoconfig/blob/master/atom/preview.png)
 
 This is my full Atom configuration. I use Atom as my main work application and
-IDE for every programming language I know and work with on a regular basis. This
-means that my setup turns Atom into a full fledged IDE with A LOT of features
-and plugins.
+IDE for every programming language I know and work with on a regular basis.
+This means that my setup turns Atom into a full fledged IDE with A LOT of
+features and plugins.
 
-Loading times are rather high and most people will shy away but it makes my life
-much nicer in the long run. For fast editing of files I use Sublime Text 3 and
-as such I justify my Atom being such a beast in contrast.
+Loading times are rather high and most people will shy away but it makes my
+life much nicer in the long run. For fast editing of files I use Sublime Text 3
+and as such I justify my Atom being such a beast in contrast.
 
 ## Installation ##
 

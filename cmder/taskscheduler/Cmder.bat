@@ -1,5 +1,5 @@
 @echo off
-SET CMDER_ROOT=%~dp0
+SET CMDER_ROOT=%~dp0..
 
 :: Remove Trailing '\'
 @if "%CMDER_ROOT:~-1%" == "\" SET CMDER_ROOT=%CMDER_ROOT:~0,-1%

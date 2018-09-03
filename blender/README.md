@@ -18,5 +18,4 @@ themes tab. In the bottom of the window select *install theme* and browse to
 the XML file. After that should have the theme selected and ready to go.
 
 For the startup scene and user preferences replace the equivalent files in your
-Blender version directory located in the application data directory. This replaces
-everything including your startup file so make sure you have a backup just in case!
+Blender version directory located in the application data directory. This replaces everything including your startup file so make sure you have a backup just in case!

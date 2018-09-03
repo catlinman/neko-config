@@ -1,0 +1,44 @@
+{
+    "extends": [
+        "stylelint-config-standard"
+    ],
+    "plugins": [
+        "stylelint-scss"
+    ],
+    "rules": {
+        "indentation": 4,
+        "string-quotes": "double",
+        "no-duplicate-selectors": true,
+        "color-hex-case": "lower",
+        "color-named": "always-where-possible",
+        "color-no-hex": true,
+        "selector-combinator-space-after": "always",
+        "selector-attribute-operator-space-before": "always",
+        "selector-attribute-operator-space-after": "always",
+        "selector-attribute-brackets-space-inside": "never",
+        "declaration-no-important": true,
+        "declaration-colon-space-after": "always",
+        "property-no-vendor-prefix": true,
+        "value-no-vendor-prefix": true,
+        "comment-whitespace-inside": "always",
+        "comment-empty-line-before": "always",
+        "at-rule-no-vendor-prefix": true,
+        "rule-empty-line-before": ["always-multi-line", {
+            except: ["after-single-line-comment", "first-nested"]
+        }],
+        "selector-list-comma-newline-after": "never-multi-line",
+        "selector-pseudo-element-colon-notation": "double",
+        "selector-pseudo-class-parentheses-space-inside": "never",
+        "selector-no-vendor-prefix": true,
+        "selector-type-no-unknown": [true, {
+            "ignoreTypes": ["/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/"],
+        }],
+        "media-feature-range-operator-space-before": "always",
+        "media-feature-range-operator-space-after": "always",
+        "media-feature-parentheses-space-inside": "never",
+        "media-feature-name-no-vendor-prefix": true,
+        "media-feature-colon-space-before": "never",
+        "media-feature-colon-space-after": "always",
+        "font-family-no-missing-generic-family-keyword": true,
+    }
+}

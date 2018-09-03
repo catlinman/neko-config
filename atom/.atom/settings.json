@@ -5,14 +5,17 @@
 	"atom-beautify": {
 		"cpp": {
 			"beautify_on_save": true,
-			"configPath": "~/Nekocloud/Projects/nekoconfig/uncrustify.cfg"
+			"configPath": "~/Nekocloud/Projects/nekoconfig/uncrustify/uncrustify.cfg"
 		},
 		"cs": {
 			"beautify_on_save": true,
-			"configPath": "~/Nekocloud/Projects/nekoconfig/uncrustify.cfg"
+			"configPath": "C:\\Program Files (x86)\\Uncrustify\\cfg\\defaults.cfg"
 		},
 		"css": {
 			"preserve_newlines": true
+		},
+		"elm": {
+			"beautify_on_save": true
 		},
 		"general": {
 			"_analyticsUserId": "83234c70-1d1a-424d-ab10-205e6b54991b"
@@ -30,7 +33,6 @@
 		"json": {
 			"beautify_on_save": true
 		},
-		"markdown": {},
 		"php": {
 			"beautify_on_save": true,
 			"default_beautifier": "PHPCBF",
@@ -43,6 +45,10 @@
 			]
 		},
 		"ruby": {
+			"beautify_on_save": true,
+			"default_beautifier": "Ruby Beautify"
+		},
+		"rust": {
 			"beautify_on_save": true
 		},
 		"sass": {
@@ -52,27 +58,67 @@
 			"convert_quotes": "single",
 			"preserve_newlines": true
 		},
+		"vue": {
+			"beautify_on_save": true,
+			"end_with_comma": true,
+			"end_with_newline": true,
+			"eval_code": true,
+			"keep_array_indentation": true,
+			"keep_function_indentation": true
+		},
 		"xml": {
 			"beautify_on_save": true
 		}
 	},
 	"atom-clock": {
 		"dateFormat": "dddd D/M/Y - HH:mm",
-		"showClockIcon": true
+		"showClockIcon": true,
+		"showTooltip": true
+	},
+	"atom-ide-ui": {
+		"use": {
+			"atom-ide-diagnostics-ui": "never",
+			"atom-ide-terminal": "always"
+		}
 	},
 	"atom-maven": {
 		"mavenHome": "C:\\Program Files\\Maven\\bin"
 	},
 	"atom-package-deps": {
-		"ignored": []
+		"ignored": [
+			"java-plus"
+		]
 	},
 	"autocomplete-python": {
 		"useKite": false
 	},
-	"battery-status": {},
+	"city-lights-ui": {
+		"fontSize": 10,
+		"tabSize": "small"
+	},
 	"core": {
 		"autoHideMenuBar": true,
 		"disabledPackages": [
+			"python-tools",
+			"spell-check",
+			"markdown-preview",
+			"haxe",
+			"autocomplete-ruby",
+			"battery-status",
+			"atom-autocomplete-php"
+		],
+		"ignoredNames": [
+			".git",
+			".hg",
+			".svn",
+			".DS_Store",
+			"._*",
+			"Thumbs.db",
+			"desktop.ini",
+			".pioenvs",
+			".piolibdeps",
+			".clang_complete",
+			".gcc-flags.json"
 		],
 		"telemetryConsent": "limited",
 		"themes": [
@@ -80,13 +126,30 @@
 			"seti-classic-syntax"
 		],
 		"titleBar": "custom",
-		"uriHandlerRegistration": "always"
+		"uriHandlerRegistration": "always",
+		"useTreeSitterParsers": true
 	},
 	"document-outline": {
 		"showByDefault": true
 	},
+	"double-tag": {
+		"allowEndTagSync": true,
+		"enabledScopes": [
+			"text.html",
+			"text.html.basic",
+			"text.xml",
+			"text.marko",
+			"source.js.jsx",
+			"source.tsx",
+			"text.html.erb",
+			"text.html.php",
+			"text.html.php.blade",
+			"text.html.vue",
+			"meta.tag.other.html"
+		]
+	},
 	"editor": {
-		"fontSize": 10,
+		"fontSize": 11,
 		"showIndentGuide": true,
 		"tabLength": 4,
 		"tabType": "soft"
@@ -98,7 +161,7 @@
 		"image": {
 			"opacity": 50,
 			"repeat": "repeat",
-			"url": "https://github.com/catlinman/nekoconfig/raw/master/skin/HexCat/config/bg.png"
+			"url": "https://github.com/catlinman/nekoconfig/raw/master/hexchat/config/bg.png"
 		},
 		"other": {
 			"transparentTabBar": false
@@ -111,6 +174,12 @@
 	"exception-reporting": {
 		"userId": "3a952176-b4d2-2770-c3df-2eab055dc8cd"
 	},
+	"figlet": {
+		"defaultFont": "Univers"
+	},
+	"file-icons": {
+		"strategies": {}
+	},
 	"fonts": {
 		"fontFamily": "Inconsolata"
 	},
@@ -119,17 +188,41 @@
 			"_analyticsUserId": "5c02ae9a-f631-4f52-803c-be7e7126bd04"
 		}
 	},
-	"linter": {},
+	"ide-python": {
+		"pylsPlugins": {
+			"pydocstyle": {
+				"convention": "pep257",
+				"enabled": true
+			}
+		}
+	},
+	"line-ending-selector": {
+		"defaultLineEnding": "LF"
+	},
+	"linter-eslint": {
+		"disableWhenNoEslintConfig": false,
+		"fixOnSave": true
+	},
+	"linter-gcc": {
+		"gccDefaultCppFlags": "-c -Wall -std=c++11 -fsyntax-only"
+	},
 	"linter-js-standard": {
 		"honorStyleSettings": false,
 		"lintHtmlFiles": true
+	},
+	"linter-jshint": {
+		"lintInlineJavaScript": true,
+		"scopes": [
+			"source.js",
+			"source.js-semantic",
+			"javascript"
+		]
 	},
 	"linter-pep8": {
 		"ignoreErrorCodes": [
 			"E501"
 		]
 	},
-	"linter-processing": {},
 	"linter-pycodestyle": {
 		"ignoreErrorCodes": [
 			"E501"
@@ -146,9 +239,17 @@
 		],
 		"spellPath": "aspell"
 	},
+	"linter-stylelint": {
+		"disableWhenNoConfig": false,
+		"useStandard": true
+	},
 	"linter-ui-default": {
-		"panelHeight": 106,
-		"showPanel": true
+		"panelHeight": 146,
+		"showPanel": true,
+		"useBusySignal": false
+	},
+	"linter-xo": {
+		"fixOnSave": true
 	},
 	"minimap": {
 		"plugins": {
@@ -168,13 +269,14 @@
 			"pigmentsDecorationsZIndex": 0
 		}
 	},
-	"minimap-linter": {},
+	"nekoatom": {
+		"compactView": true
+	},
 	"pigments": {
 		"extendAutocompleteToColorValue": true,
 		"extendAutocompleteToVariables": true
 	},
 	"platformio-ide-terminal": {
-		"core": {},
 		"style": {
 			"fontSize": "10"
 		}
@@ -182,8 +284,12 @@
 	"processing-preview": {
 		"liveUpdate": false
 	},
+	"save-session": {
+		"dataSaveFolder": "/Users/catlinman/.atom/packages/save-session/projects"
+	},
 	"seti-ui": {
-		"compactView": true
+		"compactView": true,
+		"disableAnimations": true
 	},
 	"spell-check": {
 		"grammars": [
@@ -207,13 +313,29 @@
 		"scrollSyncType": "Vertical + Horizontal",
 		"syncHorizontalScroll": true
 	},
-	"sync-settings": {},
+	"symbols-tree-view": {
+		"autoHide": true,
+		"autoToggle": true,
+		"defaultWidth": 300
+	},
+	"sync-settings": {
+		"quietUpdateCheck": true,
+		"removeObsoletePackages": true
+	},
+	"terminal-plus": {
+		"core": {
+			"mapTerminalsTo": "Folder",
+			"shell": "C:\\Windows\\System32\\cmd.exe"
+		}
+	},
 	"tool-bar": {
 		"iconSize": "12px",
 		"position": "Right"
 	},
-	"tool-bar-markdown-writer": {},
-	"tree-view": {},
+	"tree-view": {
+		"hideIgnoredNames": true,
+		"hideVcsIgnoredFiles": true
+	},
 	"welcome": {
 		"showOnStartup": false
 	}

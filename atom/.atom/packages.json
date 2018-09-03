@@ -5,7 +5,7 @@
 	},
 	{
 		"name": "about",
-		"version": "1.7.8"
+		"version": "1.10.0"
 	},
 	{
 		"name": "activate-power-mode",
@@ -13,11 +13,11 @@
 	},
 	{
 		"name": "advanced-open-file",
-		"version": "0.16.7"
+		"version": "0.16.8"
 	},
 	{
 		"name": "archive-view",
-		"version": "0.64.1"
+		"version": "0.65.1"
 	},
 	{
 		"name": "atom-autocomplete-php",
@@ -25,7 +25,7 @@
 	},
 	{
 		"name": "atom-beautify",
-		"version": "0.30.9"
+		"version": "0.33.0"
 	},
 	{
 		"name": "atom-clock",
@@ -33,12 +33,12 @@
 	},
 	{
 		"name": "atom-dark-syntax",
-		"version": "0.28.0",
+		"version": "0.29.0",
 		"theme": "syntax"
 	},
 	{
 		"name": "atom-dark-ui",
-		"version": "0.53.0",
+		"version": "0.53.2",
 		"theme": "ui"
 	},
 	{
@@ -48,6 +48,22 @@
 	{
 		"name": "atom-html-preview",
 		"version": "0.2.5"
+	},
+	{
+		"name": "atom-ide-debugger-native-gdb",
+		"version": "0.7.3"
+	},
+	{
+		"name": "atom-ide-debugger-node",
+		"version": "0.7.3"
+	},
+	{
+		"name": "atom-ide-debugger-python",
+		"version": "0.7.3"
+	},
+	{
+		"name": "atom-ide-ui",
+		"version": "0.13.0"
 	},
 	{
 		"name": "atom-jinja2",
@@ -60,7 +76,7 @@
 	},
 	{
 		"name": "atom-light-ui",
-		"version": "0.46.0",
+		"version": "0.46.2",
 		"theme": "ui"
 	},
 	{
@@ -90,15 +106,19 @@
 	},
 	{
 		"name": "autocomplete-atom-api",
-		"version": "0.10.5"
+		"version": "0.10.7"
 	},
 	{
 		"name": "autocomplete-bibtex",
-		"version": "1.1.0"
+		"version": "1.2.1"
+	},
+	{
+		"name": "autocomplete-clang",
+		"version": "0.11.5"
 	},
 	{
 		"name": "autocomplete-css",
-		"version": "0.17.4"
+		"version": "0.17.5"
 	},
 	{
 		"name": "autocomplete-emojis",
@@ -110,7 +130,7 @@
 	},
 	{
 		"name": "autocomplete-html",
-		"version": "0.8.3"
+		"version": "0.8.4"
 	},
 	{
 		"name": "autocomplete-html-entities",
@@ -121,32 +141,28 @@
 		"version": "1.2.7"
 	},
 	{
-		"name": "autocomplete-java-minus",
-		"version": "0.14.0"
-	},
-	{
 		"name": "autocomplete-json",
 		"version": "5.5.2"
 	},
 	{
 		"name": "autocomplete-lua",
-		"version": "0.9.0"
+		"version": "0.9.1"
 	},
 	{
 		"name": "autocomplete-modules",
-		"version": "1.8.0"
+		"version": "2.1.6"
 	},
 	{
 		"name": "autocomplete-paths",
-		"version": "2.12.1"
+		"version": "2.12.2"
 	},
 	{
 		"name": "autocomplete-plus",
-		"version": "2.40.0"
+		"version": "2.40.7"
 	},
 	{
 		"name": "autocomplete-python",
-		"version": "1.10.5"
+		"version": "1.10.10"
 	},
 	{
 		"name": "autocomplete-ruby",
@@ -154,15 +170,15 @@
 	},
 	{
 		"name": "autocomplete-snippets",
-		"version": "1.11.2"
+		"version": "1.12.0"
 	},
 	{
 		"name": "autocomplete-xml",
-		"version": "0.9.4"
+		"version": "0.10.1"
 	},
 	{
 		"name": "autoflow",
-		"version": "0.29.0"
+		"version": "0.29.4"
 	},
 	{
 		"name": "autosave",
@@ -170,7 +186,7 @@
 	},
 	{
 		"name": "background-tips",
-		"version": "0.27.1"
+		"version": "0.28.0"
 	},
 	{
 		"name": "base16-tomorrow-dark-theme",
@@ -184,7 +200,7 @@
 	},
 	{
 		"name": "battery-status",
-		"version": "0.11.7"
+		"version": "0.11.10"
 	},
 	{
 		"name": "better-window-title",
@@ -196,11 +212,11 @@
 	},
 	{
 		"name": "bookmarks",
-		"version": "0.44.4"
+		"version": "0.45.1"
 	},
 	{
 		"name": "bracket-matcher",
-		"version": "0.88.0"
+		"version": "0.89.2"
 	},
 	{
 		"name": "build",
@@ -232,16 +248,16 @@
 	},
 	{
 		"name": "city-lights-ui",
-		"version": "1.3.1",
+		"version": "1.5.3",
 		"theme": "ui"
 	},
 	{
 		"name": "color-picker",
-		"version": "2.2.5"
+		"version": "2.3.0"
 	},
 	{
 		"name": "command-palette",
-		"version": "0.42.0"
+		"version": "0.43.5"
 	},
 	{
 		"name": "cordova-snippets",
@@ -253,7 +269,12 @@
 	},
 	{
 		"name": "dalek",
-		"version": "0.2.1"
+		"version": "0.2.2"
+	},
+	{
+		"name": "dark-flat-ui",
+		"version": "1.2.4",
+		"theme": "ui"
 	},
 	{
 		"name": "deprecation-cop",
@@ -261,7 +282,7 @@
 	},
 	{
 		"name": "dev-live-reload",
-		"version": "0.47.1"
+		"version": "0.48.1"
 	},
 	{
 		"name": "devdocs",
@@ -269,7 +290,11 @@
 	},
 	{
 		"name": "docblockr",
-		"version": "0.13.5"
+		"version": "0.13.7"
+	},
+	{
+		"name": "double-tag",
+		"version": "1.5.0"
 	},
 	{
 		"name": "emmet",
@@ -277,7 +302,7 @@
 	},
 	{
 		"name": "encoding-selector",
-		"version": "0.23.7"
+		"version": "0.23.9"
 	},
 	{
 		"name": "encrypt-decrypt",
@@ -285,7 +310,7 @@
 	},
 	{
 		"name": "exception-reporting",
-		"version": "0.42.0"
+		"version": "0.43.1"
 	},
 	{
 		"name": "figlet",
@@ -293,11 +318,11 @@
 	},
 	{
 		"name": "file-icons",
-		"version": "2.1.15"
+		"version": "2.1.24"
 	},
 	{
 		"name": "find-and-replace",
-		"version": "0.215.0"
+		"version": "0.215.12"
 	},
 	{
 		"name": "flask-snippets",
@@ -309,15 +334,15 @@
 	},
 	{
 		"name": "fuzzy-finder",
-		"version": "1.7.3"
+		"version": "1.8.2"
 	},
 	{
 		"name": "git-diff",
-		"version": "1.3.6"
+		"version": "1.3.9"
 	},
 	{
 		"name": "git-plus",
-		"version": "7.10.0"
+		"version": "8.0.1"
 	},
 	{
 		"name": "git-plus-toolbar",
@@ -329,47 +354,87 @@
 	},
 	{
 		"name": "git-time-machine",
-		"version": "1.5.9"
+		"version": "2.1.0"
 	},
 	{
 		"name": "github",
-		"version": "0.8.3"
-	},
-	{
-		"name": "go-outline",
-		"version": "0.6.7"
+		"version": "0.18.3"
 	},
 	{
 		"name": "go-to-line",
-		"version": "0.32.1"
+		"version": "0.33.0"
 	},
 	{
 		"name": "grammar-selector",
-		"version": "0.49.8"
+		"version": "0.50.1"
 	},
 	{
 		"name": "hard-wrap",
-		"version": "1.1.0"
+		"version": "1.7.1"
 	},
 	{
 		"name": "haxe",
 		"version": "0.8.14"
 	},
 	{
-		"name": "highlight-selected",
-		"version": "0.13.1"
+		"name": "hey-pane",
+		"version": "1.1.0"
 	},
 	{
-		"name": "html-entities",
-		"version": "0.4.0"
+		"name": "highlight-selected",
+		"version": "0.14.0"
+	},
+	{
+		"name": "html-entitize",
+		"version": "1.1.0"
+	},
+	{
+		"name": "ide-cpp",
+		"version": "0.0.3"
 	},
 	{
 		"name": "ide-crystal",
-		"version": "0.2.3"
+		"version": "0.3.3"
+	},
+	{
+		"name": "ide-css",
+		"version": "0.3.0"
+	},
+	{
+		"name": "ide-go",
+		"version": "0.12.2"
+	},
+	{
+		"name": "ide-html",
+		"version": "0.4.2"
+	},
+	{
+		"name": "ide-json",
+		"version": "0.2.1"
+	},
+	{
+		"name": "ide-powershell",
+		"version": "0.1.0"
+	},
+	{
+		"name": "ide-python",
+		"version": "1.0.0"
+	},
+	{
+		"name": "ide-rust",
+		"version": "0.18.0"
+	},
+	{
+		"name": "ide-vue",
+		"version": "0.1.9"
+	},
+	{
+		"name": "ide-yaml",
+		"version": "0.4.3"
 	},
 	{
 		"name": "image-view",
-		"version": "0.62.4"
+		"version": "0.63.0"
 	},
 	{
 		"name": "incompatible-packages",
@@ -414,7 +479,7 @@
 	},
 	{
 		"name": "keybinding-resolver",
-		"version": "0.38.1"
+		"version": "0.38.2"
 	},
 	{
 		"name": "language-actionscript3",
@@ -422,11 +487,11 @@
 	},
 	{
 		"name": "language-c",
-		"version": "0.58.1"
+		"version": "0.60.0"
 	},
 	{
 		"name": "language-clojure",
-		"version": "0.22.4"
+		"version": "0.22.7"
 	},
 	{
 		"name": "language-coffee-script",
@@ -438,15 +503,15 @@
 	},
 	{
 		"name": "language-csharp",
-		"version": "0.14.3"
+		"version": "1.0.4"
 	},
 	{
 		"name": "language-css",
-		"version": "0.42.7"
+		"version": "0.42.11"
 	},
 	{
 		"name": "language-gfm",
-		"version": "0.90.2"
+		"version": "0.90.5"
 	},
 	{
 		"name": "language-git",
@@ -458,15 +523,11 @@
 	},
 	{
 		"name": "language-go",
-		"version": "0.44.3"
-	},
-	{
-		"name": "language-haxe",
-		"version": "0.6.0"
+		"version": "0.46.0"
 	},
 	{
 		"name": "language-html",
-		"version": "0.48.5"
+		"version": "0.51.1"
 	},
 	{
 		"name": "language-hyperlink",
@@ -474,19 +535,19 @@
 	},
 	{
 		"name": "language-ini",
-		"version": "1.19.0"
+		"version": "1.20.0"
 	},
 	{
 		"name": "language-java",
-		"version": "0.27.6"
+		"version": "0.30.0"
 	},
 	{
 		"name": "language-javascript",
-		"version": "0.127.6"
+		"version": "0.129.1"
 	},
 	{
 		"name": "language-json",
-		"version": "0.19.1"
+		"version": "0.19.2"
 	},
 	{
 		"name": "language-latex",
@@ -494,7 +555,7 @@
 	},
 	{
 		"name": "language-less",
-		"version": "0.33.0"
+		"version": "0.34.2"
 	},
 	{
 		"name": "language-lua",
@@ -510,7 +571,7 @@
 	},
 	{
 		"name": "language-mustache",
-		"version": "0.14.4"
+		"version": "0.14.5"
 	},
 	{
 		"name": "language-nginx",
@@ -526,11 +587,11 @@
 	},
 	{
 		"name": "language-php",
-		"version": "0.42.2"
+		"version": "0.44.0"
 	},
 	{
 		"name": "language-powershell",
-		"version": "4.0.0"
+		"version": "4.0.1"
 	},
 	{
 		"name": "language-prolog",
@@ -542,15 +603,15 @@
 	},
 	{
 		"name": "language-python",
-		"version": "0.45.5"
+		"version": "0.51.2"
 	},
 	{
 		"name": "language-ruby",
-		"version": "0.71.4"
+		"version": "0.72.2"
 	},
 	{
 		"name": "language-ruby-on-rails",
-		"version": "0.25.2"
+		"version": "0.25.3"
 	},
 	{
 		"name": "language-rust",
@@ -558,11 +619,11 @@
 	},
 	{
 		"name": "language-sass",
-		"version": "0.61.1"
+		"version": "0.62.0"
 	},
 	{
 		"name": "language-shellscript",
-		"version": "0.25.4"
+		"version": "0.27.0"
 	},
 	{
 		"name": "language-source",
@@ -570,7 +631,7 @@
 	},
 	{
 		"name": "language-sql",
-		"version": "0.25.8"
+		"version": "0.25.10"
 	},
 	{
 		"name": "language-svg",
@@ -578,23 +639,27 @@
 	},
 	{
 		"name": "language-text",
-		"version": "0.7.3"
+		"version": "0.7.4"
 	},
 	{
 		"name": "language-todo",
-		"version": "0.29.3"
+		"version": "0.29.4"
 	},
 	{
 		"name": "language-toml",
-		"version": "0.18.1"
+		"version": "0.18.2"
 	},
 	{
 		"name": "language-typescript",
-		"version": "0.2.2"
+		"version": "0.4.0"
 	},
 	{
 		"name": "language-viml",
-		"version": "1.1.6"
+		"version": "1.1.8"
+	},
+	{
+		"name": "language-vue",
+		"version": "0.23.1"
 	},
 	{
 		"name": "language-xml",
@@ -602,15 +667,15 @@
 	},
 	{
 		"name": "language-yaml",
-		"version": "0.31.1"
+		"version": "0.32.0"
 	},
 	{
 		"name": "latex",
-		"version": "0.49.0"
+		"version": "0.50.0"
 	},
 	{
 		"name": "latex-completions",
-		"version": "0.3.3"
+		"version": "0.3.5"
 	},
 	{
 		"name": "lime",
@@ -621,12 +686,12 @@
 		"version": "0.5.0"
 	},
 	{
-		"name": "line-diff-details",
-		"version": "1.9.0"
+		"name": "line-diff-details-plus",
+		"version": "1.9.1"
 	},
 	{
 		"name": "line-ending-selector",
-		"version": "0.7.4"
+		"version": "0.7.7"
 	},
 	{
 		"name": "lines",
@@ -634,23 +699,15 @@
 	},
 	{
 		"name": "link",
-		"version": "0.31.3"
+		"version": "0.31.4"
 	},
 	{
 		"name": "linter",
 		"version": "2.2.0"
 	},
 	{
-		"name": "linter-csslint",
-		"version": "2.0.0"
-	},
-	{
 		"name": "linter-erb",
-		"version": "1.1.0"
-	},
-	{
-		"name": "linter-eslint",
-		"version": "8.4.0"
+		"version": "1.1.1"
 	},
 	{
 		"name": "linter-gcc",
@@ -665,16 +722,8 @@
 		"version": "1.9.4"
 	},
 	{
-		"name": "linter-js-standard",
-		"version": "4.2.0"
-	},
-	{
-		"name": "linter-less",
-		"version": "2.6.0"
-	},
-	{
-		"name": "linter-lesshint",
-		"version": "4.0.1"
+		"name": "linter-jshint",
+		"version": "3.1.8"
 	},
 	{
 		"name": "linter-lua",
@@ -697,20 +746,12 @@
 		"version": "0.2.0"
 	},
 	{
-		"name": "linter-pycodestyle",
-		"version": "2.1.3"
-	},
-	{
 		"name": "linter-ruby",
 		"version": "1.2.6"
 	},
 	{
 		"name": "linter-rust",
-		"version": "0.8.4"
-	},
-	{
-		"name": "linter-scss-lint",
-		"version": "3.1.1"
+		"version": "0.9.0"
 	},
 	{
 		"name": "linter-spell",
@@ -722,35 +763,39 @@
 	},
 	{
 		"name": "linter-spell-latex",
-		"version": "0.10.0"
+		"version": "0.11.0"
+	},
+	{
+		"name": "linter-stylelint",
+		"version": "4.3.2"
 	},
 	{
 		"name": "linter-ui-default",
-		"version": "1.6.10"
+		"version": "1.7.1"
 	},
 	{
 		"name": "linter-xmllint",
-		"version": "1.4.3"
+		"version": "1.4.4"
 	},
 	{
 		"name": "markdown-preview",
-		"version": "0.159.18"
+		"version": "0.159.20"
 	},
 	{
 		"name": "markdown-preview-plus",
-		"version": "2.4.16"
+		"version": "3.4.0"
 	},
 	{
 		"name": "markdown-writer",
-		"version": "2.7.3"
+		"version": "2.9.0"
 	},
 	{
 		"name": "metrics",
-		"version": "1.2.6"
+		"version": "1.6.1"
 	},
 	{
 		"name": "minimap",
-		"version": "4.29.7"
+		"version": "4.29.8"
 	},
 	{
 		"name": "minimap-codeglance",
@@ -787,26 +832,26 @@
 	},
 	{
 		"name": "notifications",
-		"version": "0.69.2"
+		"version": "0.70.5"
 	},
 	{
 		"name": "one-dark-syntax",
-		"version": "1.8.0",
+		"version": "1.8.4",
 		"theme": "syntax"
 	},
 	{
 		"name": "one-dark-ui",
-		"version": "1.10.8",
+		"version": "1.12.4",
 		"theme": "ui"
 	},
 	{
 		"name": "one-light-syntax",
-		"version": "1.8.0",
+		"version": "1.8.4",
 		"theme": "syntax"
 	},
 	{
 		"name": "one-light-ui",
-		"version": "1.10.8",
+		"version": "1.12.4",
 		"theme": "ui"
 	},
 	{
@@ -815,7 +860,7 @@
 	},
 	{
 		"name": "p5js-snippets",
-		"version": "0.3.1"
+		"version": "0.4.1"
 	},
 	{
 		"name": "p5xjs-autocomplete",
@@ -823,11 +868,11 @@
 	},
 	{
 		"name": "package-generator",
-		"version": "1.1.1"
+		"version": "1.3.0"
 	},
 	{
 		"name": "pdf-view",
-		"version": "0.62.0"
+		"version": "0.71.0"
 	},
 	{
 		"name": "pigments",
@@ -835,7 +880,7 @@
 	},
 	{
 		"name": "platformio-ide-terminal",
-		"version": "2.8.0"
+		"version": "2.8.4"
 	},
 	{
 		"name": "preview-inline",
@@ -859,11 +904,7 @@
 	},
 	{
 		"name": "project-manager",
-		"version": "3.3.5"
-	},
-	{
-		"name": "python-autopep8",
-		"version": "0.1.3"
+		"version": "3.3.6"
 	},
 	{
 		"name": "qolor",
@@ -879,7 +920,7 @@
 	},
 	{
 		"name": "script",
-		"version": "3.17.3"
+		"version": "3.18.1"
 	},
 	{
 		"name": "set-syntax",
@@ -897,12 +938,12 @@
 	},
 	{
 		"name": "seti-syntax",
-		"version": "1.1.3",
+		"version": "1.2.0",
 		"theme": "syntax"
 	},
 	{
 		"name": "seti-ui",
-		"version": "1.9.0",
+		"version": "1.11.0",
 		"theme": "ui"
 	},
 	{
@@ -912,33 +953,33 @@
 	},
 	{
 		"name": "settings-view",
-		"version": "0.253.1-0"
+		"version": "0.255.0"
 	},
 	{
 		"name": "snippets",
-		"version": "1.1.9"
+		"version": "1.3.3"
 	},
 	{
 		"name": "solarized-dark-syntax",
-		"version": "1.1.2",
+		"version": "1.1.5",
 		"theme": "syntax"
 	},
 	{
 		"name": "solarized-light-syntax",
-		"version": "1.1.2",
+		"version": "1.1.5",
 		"theme": "syntax"
 	},
 	{
 		"name": "spell-check",
-		"version": "0.72.5"
+		"version": "0.74.0"
 	},
 	{
 		"name": "status-bar",
-		"version": "1.8.14"
+		"version": "1.8.15"
 	},
 	{
 		"name": "styleguide",
-		"version": "0.49.8"
+		"version": "0.49.11"
 	},
 	{
 		"name": "svg-preview",
@@ -946,7 +987,7 @@
 	},
 	{
 		"name": "svgo",
-		"version": "3.0.0"
+		"version": "3.1.0"
 	},
 	{
 		"name": "symbols-tree-view",
@@ -954,11 +995,11 @@
 	},
 	{
 		"name": "symbols-view",
-		"version": "0.118.1"
+		"version": "0.118.2"
 	},
 	{
 		"name": "sync-settings",
-		"version": "0.8.3"
+		"version": "0.8.6"
 	},
 	{
 		"name": "tablr",
@@ -966,19 +1007,23 @@
 	},
 	{
 		"name": "tabs",
-		"version": "0.109.1"
+		"version": "0.109.2"
 	},
 	{
 		"name": "teletype",
-		"version": "0.5.0"
+		"version": "0.13.3"
+	},
+	{
+		"name": "terminal-tab-service",
+		"version": "0.1.4"
 	},
 	{
 		"name": "timecop",
-		"version": "0.36.0"
+		"version": "0.36.2"
 	},
 	{
 		"name": "todo-show",
-		"version": "2.1.0"
+		"version": "2.3.0"
 	},
 	{
 		"name": "toggler",
@@ -986,7 +1031,7 @@
 	},
 	{
 		"name": "tool-bar",
-		"version": "1.1.4"
+		"version": "1.1.7"
 	},
 	{
 		"name": "tool-bar-atom",
@@ -994,11 +1039,11 @@
 	},
 	{
 		"name": "tool-bar-markdown-writer",
-		"version": "0.3.1"
+		"version": "0.4.0"
 	},
 	{
 		"name": "tree-view",
-		"version": "0.221.3"
+		"version": "0.222.0"
 	},
 	{
 		"name": "unicode-normalizer",
@@ -1010,11 +1055,23 @@
 	},
 	{
 		"name": "update-package-dependencies",
-		"version": "0.12.0"
+		"version": "0.13.1"
 	},
 	{
 		"name": "visual-bell",
 		"version": "1.0.0"
+	},
+	{
+		"name": "vue-autocomplete",
+		"version": "0.1.1"
+	},
+	{
+		"name": "vue-format",
+		"version": "0.4.0"
+	},
+	{
+		"name": "vue-snippets",
+		"version": "0.6.0"
 	},
 	{
 		"name": "welcome",
@@ -1022,10 +1079,10 @@
 	},
 	{
 		"name": "whitespace",
-		"version": "0.37.5"
+		"version": "0.37.6"
 	},
 	{
 		"name": "wrap-guide",
-		"version": "0.40.2"
+		"version": "0.40.3"
 	}
 ]

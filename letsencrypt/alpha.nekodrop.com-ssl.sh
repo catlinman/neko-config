@@ -6,6 +6,7 @@ certbot certonly --standalone --renew-by-default --expand \
 	-d www.nekodrop.com \
 	-d alpha.nekodrop.com \
     -d files.alpha.nekodrop.com \
+	-d netdata.alpha.nekodrop.com \
     -d comrelay.alpha.nekodrop.com \
     -d goaccess.alpha.nekodrop.com
 
