@@ -5,7 +5,7 @@
 	"atom-beautify": {
 		"cpp": {
 			"beautify_on_save": true,
-			"configPath": "~/Nekocloud/Projects/nekoconfig/uncrustify/uncrustify.cfg"
+			"configPath": "~/Nekocloud/Projects/neko-config/uncrustify/uncrustify.cfg"
 		},
 		"cs": {
 			"beautify_on_save": true,
@@ -25,7 +25,7 @@
 		},
 		"java": {
 			"beautify_on_save": true,
-			"configPath": "~/Nekocloud/Shared/nekoconfig/config/uncrustify.cfg"
+			"configPath": "~/Nekocloud/Shared/neko-config/config/uncrustify.cfg"
 		},
 		"js": {
 			"end_with_newline": true
@@ -36,7 +36,7 @@
 		"php": {
 			"beautify_on_save": true,
 			"default_beautifier": "PHPCBF",
-			"standard": "~/Nekocloud/Shared/github/nekoconfig/config/phpcbf.xml"
+			"standard": "~/Nekocloud/Shared/github/neko-config/config/phpcbf.xml"
 		},
 		"python": {
 			"beautify_on_save": true,
@@ -161,7 +161,7 @@
 		"image": {
 			"opacity": 50,
 			"repeat": "repeat",
-			"url": "https://github.com/catlinman/nekoconfig/raw/master/hexchat/config/bg.png"
+			"url": "https://github.com/catlinman/neko-config/raw/master/hexchat/config/bg.png"
 		},
 		"other": {
 			"transparentTabBar": false

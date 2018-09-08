@@ -1,7 +1,7 @@
 
 # Base16-Shell Configuration #
 
-![](https://github.com/catlinman/nekoconfig/blob/master/zsh/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/zsh/preview.png)
 
 This is a fork of the Seti UI theme from Base16-Shell. It's modified to better
 suit all my different themes and styles under the neko definition. This means

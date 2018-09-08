@@ -1,7 +1,7 @@
 
 # Atom Configuration #
 
-![](https://github.com/catlinman/nekoconfig/blob/master/atom/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/atom/preview.png)
 
 This is my full Atom configuration. I use Atom as my main work application and
 IDE for every programming language I know and work with on a regular basis.

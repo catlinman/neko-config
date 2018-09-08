@@ -1,7 +1,7 @@
 
 # zsh Configuration #
 
-![](https://github.com/catlinman/nekoconfig/blob/master/zsh/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/zsh/preview.png)
 
 The main zsh configuration I use on all systems I run and manage.
 

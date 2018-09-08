@@ -1,7 +1,7 @@
 
-# Nekoconfig #
+# Neko Config #
 
-Nekoconfig is a repository containing most of my public configuration files
+Neko Config is a repository containing most of my public configuration files
 as well as application themes and syntax highlighting settings for different
 kinds of code editing environments.
 
@@ -33,31 +33,31 @@ get a headstart when setting up some applications.
 
 ### Atom ###
 
-![](https://github.com/catlinman/nekoconfig/blob/master/atom/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/atom/preview.png)
 
 ### Sublime Text 3 ###
 
-![](https://github.com/catlinman/nekoconfig/blob/master/sublime/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/sublime/preview.png)
 
 ### Vim ###
 
-![](https://github.com/catlinman/nekoconfig/blob/master/vim/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/vim/preview.png)
 
 ### Blender ###
 
-![](https://github.com/catlinman/nekoconfig/blob/master/blender/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/blender/preview.png)
 
 ### i3 ###
 
-![](https://github.com/catlinman/nekoconfig/blob/master/i3wm/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/i3wm/preview.png)
 
 ### zsh ###
 
-![](https://github.com/catlinman/nekoconfig/blob/master/zsh/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/zsh/preview.png)
 
 ### HexChat ###
 
-![](https://github.com/catlinman/nekoconfig/blob/master/hexchat/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/hexchat/preview.png)
 
 
 ## Origin ##
@@ -66,15 +66,17 @@ This repository used to house a lot of different things but it was rebuilt to
 only contain application configuration files. This means that for any previous
 commits made to the files in this repository before November 2017 you should
 have a look at the original repository over at
-[nekoconfig-origin](https://github.com/catlinman/nekoconfig-origin).
+[neko-config-origin](https://github.com/catlinman/neko-config-origin).
 
 If you are looking for the split off repositories, here's a quick list.
 
+- [Neko Atom UI](https://github.com/catlinman/neko-atom-ui)
+- [Neko Beat](https://github.com/catlinman/neko-beat)
+- [Neko Style](https://github.com/catlinman/neko-style)
 - [Foobar2000](https://github.com/catlinman/foobar2000)
-- [Nekobeat](https://github.com/catlinman/nekobeat)
 - [Python Scripts](https://github.com/catlinman/pyscripts)
 - [Windows Scripts](https://github.com/catlinman/winscripts)
-- [Shocky Commands](https://github.com/catlinman/shockycommands)
+- [Shocky Scripts](https://github.com/catlinman/shockyscripts)
 - [Garble Pot](https://github.com/catlinman/garblepot)
 - [Hivecom ZNC Skin](https://github.com/catlinman/hivecom-znc)
 - [Hivecom Teamspeak Skin](https://github.com/catlinman/hivecom-teamspeak)
@@ -82,4 +84,4 @@ If you are looking for the split off repositories, here's a quick list.
 ## License ##
 
 This repository is released under the MIT license. For more information please
-refer to [LICENSE](https://github.com/catlinman/nekoconfig/blob/master/LICENSE)
+refer to [LICENSE](https://github.com/catlinman/neko-config/blob/master/LICENSE)

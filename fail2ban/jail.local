@@ -1,5 +1,5 @@
 
-# Nekoconfig default Fail2Ban setup. Use it as you please but make sure to not
+# Neko Config default Fail2Ban setup. Use it as you please but make sure to not
 # just drag and drop it into your setup. It will not work and probably get
 # stuck on some missing logs. Make sure you enable jails that you really need.
 # Additionally make sure to install the extra filters by moving them your

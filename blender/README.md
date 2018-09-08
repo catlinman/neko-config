@@ -1,7 +1,7 @@
 
 # Blender Configuration #
 
-![](https://github.com/catlinman/nekoconfig/blob/master/blender/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/blender/preview.png)
 
 This is my complete Blender setup and configuration as well as the Nekoblend
 theme that I have created by hand. The theme has been tested with all possible

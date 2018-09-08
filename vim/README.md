@@ -1,7 +1,7 @@
 
 # Vim Configuration #
 
-![](https://github.com/catlinman/nekoconfig/blob/master/vim/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/vim/preview.png)
 
 This is my primary setup for Vim on both my local machines as well as my
 servers.

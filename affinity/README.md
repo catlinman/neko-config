@@ -1,7 +1,7 @@
 
 # Affinity Application Configurations #
 
-![](https://github.com/catlinman/nekoconfig/blob/master/affinity/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/affinity/preview.png)
 
 These are the workspace and settings files for my Affinity applications. Currently these include Affinity Designer and Affinity Photo. I use multiple layouts but as of this point in time Affinity applications do not have direct workspaces support. As such I have different settings for ranges of monitors and such.
 

@@ -8,4 +8,4 @@ Description=ZNC SSL certificate renewal
 Type=oneshot
 
 # Run the associated shell script. Make sure it has execution flags.
-ExecStart=/home/neko/nekoconfig/config/letsencrypt/znc-ssl.sh
+ExecStart=/home/neko/neko-config/config/letsencrypt/znc-ssl.sh

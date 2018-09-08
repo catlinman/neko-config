@@ -1,5 +1,5 @@
 
-# Nekoconfig ZSH setup. Requires oh-my-zsh to run. You can get it via this command:
+# Neko Config ZSH setup. Requires oh-my-zsh to run. You can get it via this command:
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Feeling like you don't have curl? You can use wget to download it as well!

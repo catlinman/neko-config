@@ -1,7 +1,7 @@
 
 # Sublime Configuration #
 
-![](https://github.com/catlinman/nekoconfig/blob/master/sublime/preview.png)
+![](https://github.com/catlinman/neko-config/blob/master/sublime/preview.png)
 
 My primary Sublime configuration. I use it to edit basic text and configuration
 files when I don't want to fire up Atom or an IDE for simple editing tasks.
