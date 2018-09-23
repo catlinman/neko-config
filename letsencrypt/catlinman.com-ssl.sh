@@ -7,6 +7,7 @@ certbot certonly --expand --renew-by-default --standalone \
 	-d dev.catlinman.com \
 	-d legacy.catlinman.com \
 	-d nekocloud.catlinman.com \
+    -d nekodocs.catlinman.com \
 	-d openly.catlinman.com \
 	-d ask.catlinman.com \
 	-d twitter.catlinman.com \

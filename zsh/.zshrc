@@ -1,5 +1,5 @@
 
-# Neko Config ZSH setup. Requires oh-my-zsh to run. You can get it via this command:
+# Nekoconfig ZSH setup. Requires oh-my-zsh to run. You can get it via this command:
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Feeling like you don't have curl? You can use wget to download it as well!
@@ -65,42 +65,23 @@ plugins=(git rust pyenv pip ruby rails arch osx zsh-autosuggestions zsh-syntax-h
 
 # To install the plugins from my custom setup simply "source plugins.sh".
 
+# Source the base oh-my-zsh script.
 source $ZSH/oh-my-zsh.sh
 
-# Load custom aliases from a designated file.
-if [[ ! -a $HOME/.zsh_aliases ]]; then
-    touch $HOME/.zsh_aliases
-else
-    source $HOME/.zsh_aliases
-fi
+# Colored completion - use LS_COLORS.
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-# Load custom paths from a desginated file.
-if [[ ! -a $HOME/.zsh_path ]]; then
-    touch $HOME/.zsh_path
-else
-    source $HOME/.zsh_path
-fi
-
-# You may need to manually set your language environment
+# You may need to manually set your language environment.
 # Don't forget to uncomment the locale in /etc/locale.gen and run locale-gen as root
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if exists vim; then
-    if [[ -n $SSH_CONNECTION ]]; then
-        export EDITOR='vim'
-    else
-        export EDITOR='mvim'
-    fi
-fi
+# Fix issues relating to GPG key signing.
+GPG_TTY=$(tty)
+export GPG_TTY
 
-# Compilation flags
+# Arch compilation flags
 export ARCHFLAGS="-arch x86_64"
-
-# Custom key bindings go in this section.
-bindkey "[C" forward-word
-bindkey "[D" backward-word
 
 # Base16 Shell support. Install via: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 # Don't forget to set your theme via base16 and tab completion. I personally use base16_neko which is a fork of base16_seti.
@@ -115,20 +96,37 @@ if whence dircolors > /dev/null; then
 else
     export CLICOLOR=1
     source ~/.osxcolors
+
 fi
 
-# Colored completion - use LS_COLORS.
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+# Load custom aliases from a designated file.
+if [[ ! -a $HOME/.zsh_aliases ]]; then
+    touch $HOME/.zsh_aliases
+
+else
+    source $HOME/.zsh_aliases
+
+fi
+
+# Load custom paths from a desginated file.
+if [[ ! -a $HOME/.zsh_path ]]; then
+    touch $HOME/.zsh_path
+
+else
+    source $HOME/.zsh_path
+
+fi
+
+# Preferred editor for local sessions.
+if exists vim; then
+    export EDITOR='vim'
+fi
 
 # Replace default ls commands with exa's.
 if exists exa; then
     alias ls="exa"
     alias la="exa -laagh --git"
 fi
-
-# Fix issues relating to GPG key signing.
-GPG_TTY=$(tty)
-export GPG_TTY
 
 # Create an extra alias just for pasting. Uses netcat if available.
 # Example: echo You can now paste like this! | tb
@@ -137,4 +135,20 @@ if exists nc; then
     
 else
     alias tb="(exec 3<>/dev/tcp/termbin.com/9999; cat >&3; cat <&3; exec 3<&-)"
+
 fi
+
+# Node Version Manager handling.
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# If we have a custom directory for npm modules add it to the path.
+if [[ -d "$HOME/.npm-global" ]]; then
+    export PATH=~/.npm-global/bin:$PATH
+fi
+
+# Custom key bindings go in this section.
+bindkey "[C" forward-word
+bindkey "[D" backward-word
+
