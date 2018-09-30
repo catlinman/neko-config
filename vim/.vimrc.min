@@ -1,0 +1,71 @@
+
+" Neko minimal Vim configuration https://github.com/catlinman/neko-config/vim/
+" Minimal version of my base configuration without all fancy features and plugins.
+
+" Set the correct background.
+set background=dark
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+inoremap jk <ESC>
+inoremap kj <ESC>
+
+" Use soft tabs with width of 4 spaces.
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set autoindent
+set softtabstop=4
+set ts=4 sw=4
+
+" Change backspace behavior.
+set backspace=indent,eol,start
+
+" Enable highlighted searching. Press space to disable highlighting.
+set hlsearch
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Set the timeout length of entering normal mode.
+set ttimeoutlen=50
+    
+" Set encoding options.
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+
+" Line numbers.
+set number
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+" Make line numbers relative to the current cursor position.
+" Notice: I would normally not have this on but on servers where I use Vim for editing it is useful.
+set relativenumber
+hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=yellow
+
+" Enable the cursor line by default.
+set cursorline
+
+" Set a key for toggling relative line numbers.
+nnoremap <silent> <F2> :set relativenumber!<CR>
+
+" Set a key for toggling easier navigation highlighting.
+nnoremap <silent> <F3> :set cursorline!<CR>
+nnoremap <silent> <F4> :set cursorcolumn!<CR>
+
+" Coloring for cursor lines.
+hi CursorLine   cterm=NONE ctermbg=234 ctermfg=NONE
+hi CursorColumn cterm=NONE ctermbg=234 ctermfg=NONE
+
+" Enable keeping the last status open.
+set laststatus=2
+
+" Color based on the current mode.
+if version >= 700
+    au InsertEnter * hi StatusLine term=reverse ctermbg=3 gui=undercurl
+    au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+endif
+
+" Set the color on first time opening.
+hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse

@@ -1,4 +1,6 @@
 
+" Neko Vim configuration https://github.com/catlinman/neko-config/vim/
+
 " Required settings.
 set nocompatible
 filetype off
@@ -123,7 +125,7 @@ set expandtab
 set shiftwidth=4
 set autoindent
 set softtabstop=4
-set ts=4 sw=4 
+set ts=4 sw=4
 
 " Change backspace behavior.
 set backspace=indent,eol,start
@@ -132,15 +134,35 @@ set backspace=indent,eol,start
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-set laststatus=2
+" Set the timeout length of entering normal mode.
 set ttimeoutlen=50
+    
+" Set encoding options.
 set encoding=utf-8
-
-filetype indent plugin on
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 
 " Line numbers.
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+" Set a key for toggling relative line numbers.
+nnoremap <silent> <F2> :set relativenumber!<CR>
+hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=yellow
+
+" Set a key for toggling easier navigation highlighting.
+nnoremap <silent> <F3> :set cursorline!<CR>
+nnoremap <silent> <F4> :set cursorcolumn!<CR>
+
+" Coloring for cursor lines.
+hi CursorLine   cterm=NONE ctermbg=234 ctermfg=NONE
+hi CursorColumn cterm=NONE ctermbg=234 ctermfg=NONE
+
+" Enable keeping the last status open.
+set laststatus=2
+
+filetype indent plugin on
 
 let g:mta_filetypes={
     \ 'html' : 1,
@@ -172,6 +194,7 @@ if has('gui_running')
         set guifont=Inconsolata\ for\ Powerline\ 9
 
     endif
+
 endif
 
 " Airline configuration.
