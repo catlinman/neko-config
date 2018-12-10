@@ -1,11 +1,15 @@
 [
 	{
+		"name": "Hydrogen",
+		"version": "2.7.0"
+	},
+	{
 		"name": "Sublime-Style-Column-Selection",
-		"version": "1.7.4"
+		"version": "1.7.5"
 	},
 	{
 		"name": "about",
-		"version": "1.10.0"
+		"version": "1.9.1"
 	},
 	{
 		"name": "activate-power-mode",
@@ -20,12 +24,16 @@
 		"version": "0.65.1"
 	},
 	{
+		"name": "ask-stack",
+		"version": "2.2.0"
+	},
+	{
 		"name": "atom-autocomplete-php",
 		"version": "0.25.6"
 	},
 	{
 		"name": "atom-beautify",
-		"version": "0.33.0"
+		"version": "0.33.4"
 	},
 	{
 		"name": "atom-clock",
@@ -33,12 +41,12 @@
 	},
 	{
 		"name": "atom-dark-syntax",
-		"version": "0.29.0",
+		"version": "0.29.1",
 		"theme": "syntax"
 	},
 	{
 		"name": "atom-dark-ui",
-		"version": "0.53.2",
+		"version": "0.53.3",
 		"theme": "ui"
 	},
 	{
@@ -71,12 +79,12 @@
 	},
 	{
 		"name": "atom-light-syntax",
-		"version": "0.29.0",
+		"version": "0.29.1",
 		"theme": "syntax"
 	},
 	{
 		"name": "atom-light-ui",
-		"version": "0.46.2",
+		"version": "0.46.3",
 		"theme": "ui"
 	},
 	{
@@ -84,13 +92,12 @@
 		"version": "0.8.0"
 	},
 	{
-		"name": "atom-monokai",
-		"version": "0.10.9",
-		"theme": "syntax"
-	},
-	{
 		"name": "atom-ternjs",
 		"version": "0.18.3"
+	},
+	{
+		"name": "atom-typescript",
+		"version": "12.6.3"
 	},
 	{
 		"name": "audio",
@@ -130,7 +137,7 @@
 	},
 	{
 		"name": "autocomplete-html",
-		"version": "0.8.4"
+		"version": "0.8.7"
 	},
 	{
 		"name": "autocomplete-html-entities",
@@ -150,7 +157,7 @@
 	},
 	{
 		"name": "autocomplete-modules",
-		"version": "2.1.6"
+		"version": "2.2.6"
 	},
 	{
 		"name": "autocomplete-paths",
@@ -158,11 +165,7 @@
 	},
 	{
 		"name": "autocomplete-plus",
-		"version": "2.40.7"
-	},
-	{
-		"name": "autocomplete-python",
-		"version": "1.10.10"
+		"version": "2.41.0"
 	},
 	{
 		"name": "autocomplete-ruby",
@@ -181,6 +184,10 @@
 		"version": "0.29.4"
 	},
 	{
+		"name": "autoprefixer",
+		"version": "3.7.1"
+	},
+	{
 		"name": "autosave",
 		"version": "0.24.6"
 	},
@@ -189,18 +196,23 @@
 		"version": "0.28.0"
 	},
 	{
+		"name": "base16-syntax",
+		"version": "1.8.1",
+		"theme": "syntax"
+	},
+	{
 		"name": "base16-tomorrow-dark-theme",
-		"version": "1.5.0",
+		"version": "1.6.0",
 		"theme": "syntax"
 	},
 	{
 		"name": "base16-tomorrow-light-theme",
-		"version": "1.5.0",
+		"version": "1.6.0",
 		"theme": "syntax"
 	},
 	{
 		"name": "battery-status",
-		"version": "0.11.10"
+		"version": "0.11.11"
 	},
 	{
 		"name": "better-window-title",
@@ -216,7 +228,7 @@
 	},
 	{
 		"name": "bracket-matcher",
-		"version": "0.89.2"
+		"version": "0.89.4"
 	},
 	{
 		"name": "build",
@@ -247,11 +259,6 @@
 		"version": "0.2.1"
 	},
 	{
-		"name": "city-lights-ui",
-		"version": "1.5.3",
-		"theme": "ui"
-	},
-	{
 		"name": "color-picker",
 		"version": "2.3.0"
 	},
@@ -272,11 +279,6 @@
 		"version": "0.2.2"
 	},
 	{
-		"name": "dark-flat-ui",
-		"version": "1.2.4",
-		"theme": "ui"
-	},
-	{
 		"name": "deprecation-cop",
 		"version": "0.56.9"
 	},
@@ -291,6 +293,10 @@
 	{
 		"name": "docblockr",
 		"version": "0.13.7"
+	},
+	{
+		"name": "document-outline",
+		"version": "2.1.2"
 	},
 	{
 		"name": "double-tag",
@@ -313,16 +319,24 @@
 		"version": "0.43.1"
 	},
 	{
+		"name": "expose",
+		"version": "0.15.0"
+	},
+	{
 		"name": "figlet",
 		"version": "0.5.4"
 	},
 	{
 		"name": "file-icons",
-		"version": "2.1.24"
+		"version": "2.1.26"
+	},
+	{
+		"name": "filesize",
+		"version": "4.0.2"
 	},
 	{
 		"name": "find-and-replace",
-		"version": "0.215.12"
+		"version": "0.215.14"
 	},
 	{
 		"name": "flask-snippets",
@@ -342,7 +356,7 @@
 	},
 	{
 		"name": "git-plus",
-		"version": "8.0.1"
+		"version": "8.2.1"
 	},
 	{
 		"name": "git-plus-toolbar",
@@ -358,7 +372,7 @@
 	},
 	{
 		"name": "github",
-		"version": "0.18.3"
+		"version": "0.20.2"
 	},
 	{
 		"name": "go-to-line",
@@ -378,7 +392,7 @@
 	},
 	{
 		"name": "hey-pane",
-		"version": "1.1.0"
+		"version": "1.1.2"
 	},
 	{
 		"name": "highlight-selected",
@@ -387,6 +401,10 @@
 	{
 		"name": "html-entitize",
 		"version": "1.1.0"
+	},
+	{
+		"name": "ide-clangd",
+		"version": "0.4.0"
 	},
 	{
 		"name": "ide-cpp",
@@ -398,15 +416,19 @@
 	},
 	{
 		"name": "ide-css",
-		"version": "0.3.0"
+		"version": "0.3.2"
 	},
 	{
 		"name": "ide-go",
-		"version": "0.12.2"
+		"version": "0.12.3"
 	},
 	{
 		"name": "ide-html",
-		"version": "0.4.2"
+		"version": "0.4.3"
+	},
+	{
+		"name": "ide-java",
+		"version": "0.8.3"
 	},
 	{
 		"name": "ide-json",
@@ -418,11 +440,15 @@
 	},
 	{
 		"name": "ide-python",
-		"version": "1.0.0"
+		"version": "1.1.0"
 	},
 	{
 		"name": "ide-rust",
-		"version": "0.18.0"
+		"version": "0.18.5"
+	},
+	{
+		"name": "ide-typescript",
+		"version": "0.8.0"
 	},
 	{
 		"name": "ide-vue",
@@ -430,11 +456,11 @@
 	},
 	{
 		"name": "ide-yaml",
-		"version": "0.4.3"
+		"version": "0.4.4"
 	},
 	{
 		"name": "image-view",
-		"version": "0.63.0"
+		"version": "0.63.1"
 	},
 	{
 		"name": "incompatible-packages",
@@ -447,10 +473,6 @@
 	{
 		"name": "intentions",
 		"version": "1.1.5"
-	},
-	{
-		"name": "java-classpath-registry",
-		"version": "0.4.0"
 	},
 	{
 		"name": "java-generator",
@@ -473,13 +495,16 @@
 		"version": "1.2.1"
 	},
 	{
-		"name": "katana-syntax",
-		"version": "0.1.0",
-		"theme": "syntax"
+		"name": "jekyll",
+		"version": "2.1.0"
+	},
+	{
+		"name": "jekyll-syntax-highlighting",
+		"version": "0.1.0"
 	},
 	{
 		"name": "keybinding-resolver",
-		"version": "0.38.2"
+		"version": "0.38.4"
 	},
 	{
 		"name": "language-actionscript3",
@@ -487,7 +512,7 @@
 	},
 	{
 		"name": "language-c",
-		"version": "0.60.0"
+		"version": "0.60.13"
 	},
 	{
 		"name": "language-clojure",
@@ -503,11 +528,11 @@
 	},
 	{
 		"name": "language-csharp",
-		"version": "1.0.4"
+		"version": "1.1.0"
 	},
 	{
 		"name": "language-css",
-		"version": "0.42.11"
+		"version": "0.43.0"
 	},
 	{
 		"name": "language-gfm",
@@ -523,11 +548,11 @@
 	},
 	{
 		"name": "language-go",
-		"version": "0.46.0"
+		"version": "0.46.6"
 	},
 	{
 		"name": "language-html",
-		"version": "0.51.1"
+		"version": "0.51.5"
 	},
 	{
 		"name": "language-hyperlink",
@@ -543,7 +568,7 @@
 	},
 	{
 		"name": "language-javascript",
-		"version": "0.129.1"
+		"version": "0.129.17"
 	},
 	{
 		"name": "language-json",
@@ -551,11 +576,15 @@
 	},
 	{
 		"name": "language-latex",
-		"version": "1.1.1"
+		"version": "1.2.0"
 	},
 	{
 		"name": "language-less",
 		"version": "0.34.2"
+	},
+	{
+		"name": "language-liquid",
+		"version": "0.7.0"
 	},
 	{
 		"name": "language-lua",
@@ -591,7 +620,7 @@
 	},
 	{
 		"name": "language-powershell",
-		"version": "4.0.1"
+		"version": "5.0.0"
 	},
 	{
 		"name": "language-prolog",
@@ -603,11 +632,11 @@
 	},
 	{
 		"name": "language-python",
-		"version": "0.51.2"
+		"version": "0.51.8"
 	},
 	{
 		"name": "language-ruby",
-		"version": "0.72.2"
+		"version": "0.72.14"
 	},
 	{
 		"name": "language-ruby-on-rails",
@@ -623,7 +652,7 @@
 	},
 	{
 		"name": "language-shellscript",
-		"version": "0.27.0"
+		"version": "0.27.9"
 	},
 	{
 		"name": "language-source",
@@ -651,7 +680,7 @@
 	},
 	{
 		"name": "language-typescript",
-		"version": "0.4.0"
+		"version": "0.4.11"
 	},
 	{
 		"name": "language-viml",
@@ -671,19 +700,15 @@
 	},
 	{
 		"name": "latex",
-		"version": "0.50.0"
+		"version": "0.50.2"
 	},
 	{
 		"name": "latex-completions",
-		"version": "0.3.5"
+		"version": "0.3.6"
 	},
 	{
 		"name": "lime",
 		"version": "0.3.5"
-	},
-	{
-		"name": "line-count",
-		"version": "0.5.0"
 	},
 	{
 		"name": "line-diff-details-plus",
@@ -699,7 +724,7 @@
 	},
 	{
 		"name": "link",
-		"version": "0.31.4"
+		"version": "0.31.6"
 	},
 	{
 		"name": "linter",
@@ -710,12 +735,16 @@
 		"version": "1.1.1"
 	},
 	{
+		"name": "linter-eslint",
+		"version": "8.4.1"
+	},
+	{
 		"name": "linter-gcc",
 		"version": "0.7.1"
 	},
 	{
 		"name": "linter-htmlhint",
-		"version": "1.4.0"
+		"version": "1.5.1"
 	},
 	{
 		"name": "linter-javac",
@@ -723,7 +752,7 @@
 	},
 	{
 		"name": "linter-jshint",
-		"version": "3.1.8"
+		"version": "3.1.9"
 	},
 	{
 		"name": "linter-lua",
@@ -779,23 +808,23 @@
 	},
 	{
 		"name": "markdown-preview",
-		"version": "0.159.20"
+		"version": "0.159.25"
 	},
 	{
 		"name": "markdown-preview-plus",
-		"version": "3.4.0"
+		"version": "3.7.1"
 	},
 	{
 		"name": "markdown-writer",
-		"version": "2.9.0"
+		"version": "2.11.3"
 	},
 	{
 		"name": "metrics",
-		"version": "1.6.1"
+		"version": "1.6.2"
 	},
 	{
 		"name": "minimap",
-		"version": "4.29.8"
+		"version": "4.29.9"
 	},
 	{
 		"name": "minimap-codeglance",
@@ -819,16 +848,21 @@
 	},
 	{
 		"name": "minimap-linter",
-		"version": "2.1.3"
+		"version": "2.2.1"
 	},
 	{
 		"name": "minimap-pigments",
 		"version": "0.2.2"
 	},
 	{
-		"name": "monokai-seti",
-		"version": "0.9.0",
+		"name": "neko-atom-syntax",
+		"version": "0.1.0",
 		"theme": "syntax"
+	},
+	{
+		"name": "neko-atom-ui",
+		"version": "1.3.1",
+		"theme": "ui"
 	},
 	{
 		"name": "notifications",
@@ -841,7 +875,7 @@
 	},
 	{
 		"name": "one-dark-ui",
-		"version": "1.12.4",
+		"version": "1.12.5",
 		"theme": "ui"
 	},
 	{
@@ -851,7 +885,7 @@
 	},
 	{
 		"name": "one-light-ui",
-		"version": "1.12.4",
+		"version": "1.12.5",
 		"theme": "ui"
 	},
 	{
@@ -860,7 +894,7 @@
 	},
 	{
 		"name": "p5js-snippets",
-		"version": "0.4.1"
+		"version": "0.4.2"
 	},
 	{
 		"name": "p5xjs-autocomplete",
@@ -911,6 +945,10 @@
 		"version": "0.4.2"
 	},
 	{
+		"name": "regex-railroad-diagram",
+		"version": "0.19.4"
+	},
+	{
 		"name": "ruby-block",
 		"version": "0.3.6"
 	},
@@ -927,51 +965,26 @@
 		"version": "0.4.0"
 	},
 	{
-		"name": "seti-classic",
-		"version": "0.10.3",
-		"theme": "ui"
+		"name": "settings-view",
+		"version": "0.256.1"
 	},
 	{
-		"name": "seti-classic-syntax",
-		"version": "0.5.0",
-		"theme": "syntax"
+		"name": "snippets",
+		"version": "1.3.5"
 	},
 	{
-		"name": "seti-syntax",
+		"name": "solarized-dark-syntax",
 		"version": "1.2.0",
 		"theme": "syntax"
 	},
 	{
-		"name": "seti-ui",
-		"version": "1.11.0",
-		"theme": "ui"
-	},
-	{
-		"name": "seti-ui-beta",
-		"version": "0.1.1",
-		"theme": "ui"
-	},
-	{
-		"name": "settings-view",
-		"version": "0.255.0"
-	},
-	{
-		"name": "snippets",
-		"version": "1.3.3"
-	},
-	{
-		"name": "solarized-dark-syntax",
-		"version": "1.1.5",
-		"theme": "syntax"
-	},
-	{
 		"name": "solarized-light-syntax",
-		"version": "1.1.5",
+		"version": "1.2.0",
 		"theme": "syntax"
 	},
 	{
 		"name": "spell-check",
-		"version": "0.74.0"
+		"version": "0.74.1"
 	},
 	{
 		"name": "status-bar",
@@ -979,19 +992,15 @@
 	},
 	{
 		"name": "styleguide",
-		"version": "0.49.11"
+		"version": "0.49.12"
 	},
 	{
 		"name": "svg-preview",
-		"version": "0.12.1"
+		"version": "0.14.0"
 	},
 	{
 		"name": "svgo",
-		"version": "3.1.0"
-	},
-	{
-		"name": "symbols-tree-view",
-		"version": "0.14.0"
+		"version": "3.2.0"
 	},
 	{
 		"name": "symbols-view",
@@ -1023,7 +1032,7 @@
 	},
 	{
 		"name": "todo-show",
-		"version": "2.3.0"
+		"version": "2.3.2"
 	},
 	{
 		"name": "toggler",
@@ -1031,7 +1040,7 @@
 	},
 	{
 		"name": "tool-bar",
-		"version": "1.1.7"
+		"version": "1.1.11"
 	},
 	{
 		"name": "tool-bar-atom",
@@ -1039,11 +1048,11 @@
 	},
 	{
 		"name": "tool-bar-markdown-writer",
-		"version": "0.4.0"
+		"version": "0.5.0"
 	},
 	{
 		"name": "tree-view",
-		"version": "0.222.0"
+		"version": "0.224.2"
 	},
 	{
 		"name": "unicode-normalizer",
@@ -1075,11 +1084,15 @@
 	},
 	{
 		"name": "welcome",
-		"version": "0.36.6"
+		"version": "0.36.7"
 	},
 	{
 		"name": "whitespace",
-		"version": "0.37.6"
+		"version": "0.37.7"
+	},
+	{
+		"name": "wordcount",
+		"version": "3.0.0"
 	},
 	{
 		"name": "wrap-guide",

@@ -1,11 +1,15 @@
 {
+	"accents-ui": {
+		"accentColor": "#ffcb6a",
+		"hexColor": "#ffcb6a"
+	},
 	"activate-power-mode": {
 		"autoToggle": false
 	},
 	"atom-beautify": {
 		"cpp": {
 			"beautify_on_save": true,
-			"configPath": "~/Nekocloud/Projects/neko-config/uncrustify/uncrustify.cfg"
+			"configPath": "~/Nekocloud/Projects/nekoconfig/uncrustify/uncrustify.cfg"
 		},
 		"cs": {
 			"beautify_on_save": true,
@@ -25,7 +29,7 @@
 		},
 		"java": {
 			"beautify_on_save": true,
-			"configPath": "~/Nekocloud/Shared/neko-config/config/uncrustify.cfg"
+			"configPath": "~/Nekocloud/Shared/nekoconfig/config/uncrustify.cfg"
 		},
 		"js": {
 			"end_with_newline": true
@@ -33,10 +37,11 @@
 		"json": {
 			"beautify_on_save": true
 		},
+		"markdown": {},
 		"php": {
 			"beautify_on_save": true,
 			"default_beautifier": "PHPCBF",
-			"standard": "~/Nekocloud/Shared/github/neko-config/config/phpcbf.xml"
+			"standard": "~/Nekocloud/Shared/github/nekoconfig/config/phpcbf.xml"
 		},
 		"python": {
 			"beautify_on_save": true,
@@ -89,9 +94,14 @@
 			"java-plus"
 		]
 	},
+	"atom-typescript": {},
 	"autocomplete-python": {
 		"useKite": false
 	},
+	"base16-syntax": {
+		"scheme": "Yesterday Bright"
+	},
+	"battery-status": {},
 	"city-lights-ui": {
 		"fontSize": 10,
 		"tabSize": "small"
@@ -105,7 +115,8 @@
 			"haxe",
 			"autocomplete-ruby",
 			"battery-status",
-			"atom-autocomplete-php"
+			"atom-autocomplete-php",
+			"atom-typescript"
 		],
 		"ignoredNames": [
 			".git",
@@ -120,10 +131,11 @@
 			".clang_complete",
 			".gcc-flags.json"
 		],
+		"projectHome": "H:\\Nekocloud\\Shared\\Git",
 		"telemetryConsent": "limited",
 		"themes": [
-			"seti-ui",
-			"seti-classic-syntax"
+			"neko-atom-ui",
+			"neko-atom-syntax"
 		],
 		"titleBar": "custom",
 		"uriHandlerRegistration": "always",
@@ -161,7 +173,7 @@
 		"image": {
 			"opacity": 50,
 			"repeat": "repeat",
-			"url": "https://github.com/catlinman/neko-config/raw/master/hexchat/config/bg.png"
+			"url": "https://github.com/catlinman/nekoconfig/raw/master/skin/HexCat/config/bg.png"
 		},
 		"other": {
 			"transparentTabBar": false
@@ -177,9 +189,7 @@
 	"figlet": {
 		"defaultFont": "Univers"
 	},
-	"file-icons": {
-		"strategies": {}
-	},
+	"file-icons": {},
 	"fonts": {
 		"fontFamily": "Inconsolata"
 	},
@@ -190,32 +200,62 @@
 	},
 	"ide-python": {
 		"pylsPlugins": {
+			"pycodestyle": {
+				"ignore": [
+					"E121",
+					"E123",
+					"E126",
+					"E226",
+					"E24",
+					"E704",
+					"W503",
+					"E501"
+				]
+			},
 			"pydocstyle": {
 				"convention": "pep257",
 				"enabled": true
 			}
-		}
+		},
+		"python": "python3"
 	},
+	"ide-vue": {},
 	"line-ending-selector": {
 		"defaultLineEnding": "LF"
 	},
+	"linter": {},
 	"linter-eslint": {
-		"disableWhenNoEslintConfig": false,
-		"fixOnSave": true
+		"fixOnSave": true,
+		"lintHtmlFiles": true,
+		"scopes": [
+			"javascript",
+			"source.js",
+			"source.jsx",
+			"source.js.jsx",
+			"source.babel",
+			"source.js-semantic",
+			"source.js.embedded.html",
+			"text.html.vue"
+		],
+		"useGlobalEslint": true
 	},
 	"linter-gcc": {
-		"gccDefaultCppFlags": "-c -Wall -std=c++11 -fsyntax-only"
+		"gccDefaultCppFlags": "-c -Wall -std=c++11 -fsyntax-only",
+		"gccLintOnTheFly": true,
+		"gccSuppressWarnings": true
 	},
 	"linter-js-standard": {
 		"honorStyleSettings": false,
 		"lintHtmlFiles": true
 	},
 	"linter-jshint": {
+		"disableWhenNoJshintrcFileInPath": true,
 		"lintInlineJavaScript": true,
 		"scopes": [
 			"source.js",
 			"source.js-semantic",
-			"javascript"
+			"javascript",
+			"source.js.embedded.html"
 		]
 	},
 	"linter-pep8": {
@@ -223,10 +263,14 @@
 			"E501"
 		]
 	},
+	"linter-processing": {},
 	"linter-pycodestyle": {
 		"ignoreErrorCodes": [
 			"E501"
 		]
+	},
+	"linter-pylama": {
+		"useIsort": true
 	},
 	"linter-scss-lint": {
 		"additionalArguments": "-x Indentation"
@@ -235,21 +279,58 @@
 		"markdownWords": [
 			"mysql",
 			"irc",
-			"hexchat"
+			"hexchat",
+			"ui"
 		],
 		"spellPath": "aspell"
 	},
-	"linter-stylelint": {
-		"disableWhenNoConfig": false,
-		"useStandard": true
+	"linter-spell-html": {
+		"words": [
+			"doctype",
+			"viewport",
+			"utf",
+			"http",
+			"charset",
+			"stylesheet",
+			"href",
+			"!UA",
+			"url",
+			"css",
+			"baseurl",
+			"endif",
+			"endfor",
+			"viewbox",
+			"nav",
+			"svg",
+			"mailto",
+			"li",
+			"ul",
+			"btn",
+			"md",
+			"br",
+			"navbar",
+			"markdownify",
+			"downcase",
+			"endcapture",
+			"src",
+			"grayscale"
+		]
+	},
+	"linter-stylelint": {},
+	"linter-tslint": {
+		"fixOnSave": true,
+		"useGlobalTslint": true
 	},
 	"linter-ui-default": {
-		"panelHeight": 146,
-		"showPanel": true,
+		"alwaysTakeMinimumSpace": true,
+		"panelHeight": 131,
 		"useBusySignal": false
 	},
 	"linter-xo": {
 		"fixOnSave": true
+	},
+	"markdown-preview-plus": {
+		"useGitHubStyle": true
 	},
 	"minimap": {
 		"plugins": {
@@ -269,6 +350,10 @@
 			"pigmentsDecorationsZIndex": 0
 		}
 	},
+	"minimap-linter": {},
+	"neko-atom-ui": {
+		"hexColor": "#ffba2b"
+	},
 	"nekoatom": {
 		"compactView": true
 	},
@@ -277,6 +362,7 @@
 		"extendAutocompleteToVariables": true
 	},
 	"platformio-ide-terminal": {
+		"core": {},
 		"style": {
 			"fontSize": "10"
 		}
@@ -332,11 +418,15 @@
 		"iconSize": "12px",
 		"position": "Right"
 	},
+	"tool-bar-markdown-writer": {},
 	"tree-view": {
 		"hideIgnoredNames": true,
 		"hideVcsIgnoredFiles": true
 	},
 	"welcome": {
 		"showOnStartup": false
+	},
+	"wordcount": {
+		"showtime": true
 	}
 }
