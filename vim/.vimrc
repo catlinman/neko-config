@@ -147,13 +147,16 @@ set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
+" Set a key for toggling line numbers on and off.
+nnoremap <silent> <F2> :set number!<CR>
+
 " Set a key for toggling relative line numbers.
-nnoremap <silent> <F2> :set relativenumber!<CR>
+nnoremap <silent> <F3> :set relativenumber!<CR>
 hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=yellow
 
 " Set a key for toggling easier navigation highlighting.
-nnoremap <silent> <F3> :set cursorline!<CR>
-nnoremap <silent> <F4> :set cursorcolumn!<CR>
+nnoremap <silent> <F4> :set cursorline!<CR>
+nnoremap <silent> <F5> :set cursorcolumn!<CR>
 
 " Coloring for cursor lines.
 hi CursorLine   cterm=NONE ctermbg=234 ctermfg=NONE
@@ -176,7 +179,7 @@ highlight Pmenu ctermfg=blue ctermbg=black
 
 " Colorizer configuration.
 let g:colorizer_auto_filetype='css,html,less,scss,sass,txt,md,vue,j2'
-let g:colorizer_skip_comments = 1
+let g:colorizer_skip_comments=1
 
 " gVim configuration.
 if has('gui_running')
@@ -217,7 +220,7 @@ else
 endif
 
 " Indent guide configuration.
-let g:indent_guides_auto_colors = 0
+let g:indent_guides_auto_colors=0
 let g:indent_guides_guide_size=1
 let g:indent_guides_color_change_percent=0
 let g:indent_guides_enable_on_vim_startup=1

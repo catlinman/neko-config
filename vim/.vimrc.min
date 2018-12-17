@@ -47,12 +47,16 @@ hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=yellow
 " Enable the cursor line by default.
 set cursorline
 
+" Set a key for toggling line numbers on and off.
+nnoremap <silent> <F2> :set number!<CR>
+
 " Set a key for toggling relative line numbers.
-nnoremap <silent> <F2> :set relativenumber!<CR>
+nnoremap <silent> <F3> :set relativenumber!<CR>
+hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=yellow
 
 " Set a key for toggling easier navigation highlighting.
-nnoremap <silent> <F3> :set cursorline!<CR>
-nnoremap <silent> <F4> :set cursorcolumn!<CR>
+nnoremap <silent> <F4> :set cursorline!<CR>
+nnoremap <silent> <F5> :set cursorcolumn!<CR>
 
 " Coloring for cursor lines.
 hi CursorLine   cterm=NONE ctermbg=234 ctermfg=NONE
