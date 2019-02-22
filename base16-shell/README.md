@@ -10,10 +10,14 @@ color coding that Seti brings to the table.
 
 ## Installation ##
 
-To install the configuration simply source the *setup.sh* file.
+To install the configuration with the base repository simply source the
+*setup.sh* file.
 
     $ source setup.sh
 
 Alternatively you can copy the *base16-neko.sh* file to your base16
 installation directory. You will additionally have to alias the file as
 specified in the setup.
+
+Once either of these steps have been done you can simply run the
+`base16_neko` command which will load the theme.
