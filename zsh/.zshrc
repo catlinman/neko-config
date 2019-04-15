@@ -61,7 +61,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Note: I have some plugins like OSX and Arch. You probably don't need these.
-plugins=(git rust pyenv pip ruby rails arch osx zsh-autosuggestions zsh-syntax-highlighting zsh-256color command-time zsh-syntax-highlighting-filetypes)
+plugins=(git rust pyenv pip ruby rails archlinux osx zsh-autosuggestions zsh-syntax-highlighting zsh-256color command-time zsh-syntax-highlighting-filetypes)
 
 # To install the plugins from my custom setup simply "source plugins.sh".
 
