@@ -6,4 +6,4 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plu
 git clone git://github.com/chrissicool/zsh-256color.git $ZSH_CUSTOM/plugins/zsh-256color
 git clone git://github.com/popstas/zsh-command-time.git $ZSH_CUSTOM/plugins/zsh-command-time
 git clone git://github.com/trapd00r/zsh-syntax-highlighting-filetypes.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting-filetypes
-
+mv $ZSH_CUSTOM/plugins/zsh-syntax-highlighting-filetypes/zsh-syntax-highlighting-filetypes{,.plugin}.zsh
