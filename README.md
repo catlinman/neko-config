@@ -16,7 +16,6 @@ get a headstart when setting up some applications.
 - Both Unix Vim (.vimrc) and Windows gVim (_vimrc) configuration files
 - Blender startup and configuration file
 - cmder setup with mintty and wsltty running zsh
-- i3 window manager configuration files
 - Terminator terminal profile configuration
 - SSH configuration with 2FA and public keys
 - Postfix, Dovecot, SpamAssassin, DKIM & DMARC
@@ -46,10 +45,6 @@ get a headstart when setting up some applications.
 ### Blender ###
 
 ![](https://github.com/catlinman/neko-config/blob/master/blender/preview.png)
-
-### i3 ###
-
-![](https://github.com/catlinman/neko-config/blob/master/i3wm/preview.png)
 
 ### zsh ###
 
