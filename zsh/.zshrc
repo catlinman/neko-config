@@ -65,6 +65,11 @@ plugins=(git rust pyenv pip ruby rails archlinux osx zsh-autosuggestions zsh-syn
 
 # To install the plugins from my custom setup simply "source plugins.sh".
 
+# In case you receive errors concerning compdef - make sure the required
+# plugin applications are installed. If all else fails run the following command.
+
+# $ rm -f ~/.zcompdump*; compinit
+
 # Source the base oh-my-zsh script.
 source $ZSH/oh-my-zsh.sh
 

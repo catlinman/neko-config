@@ -18,3 +18,17 @@ will have to run the *plugin.sh* script to download and install plugins required
 by my setup. In the configuration file itself are additional steps you should
 pay attention to before running as some plugins and settings require extra
 dependencies.
+
+## Troubleshooting ##
+
+In some rare cases you might receive the following message after starting zsh.
+
+    compdef: unknown command or service: [application name]
+
+If this error applies to you, make sure that the application/command/service
+is installed on your system. With that said, if the error still occurs run
+the following command to possibly fix it.
+
+    $ rm -f ~/.zcompdump*; compinit
+
+This will reset zsh's command completion configuration and re-initilize it.
