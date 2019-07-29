@@ -8,4 +8,5 @@
 		<exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
 		<exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
 	</rule>
+	<rule ref="Squiz.Strings.DoubleQuoteUsage"></rule>
 </ruleset>
