@@ -68,6 +68,7 @@ If you are looking for the split off repositories, here's a quick list.
 - [Neko Atom UI](https://github.com/catlinman/neko-atom-ui)
 - [Neko Beat](https://github.com/catlinman/neko-beat)
 - [Neko Style](https://github.com/catlinman/neko-style)
+- [Neko Fox](https://github.com/catlinman/neko-fox)
 - [Foobar2000](https://github.com/catlinman/foobar2000)
 - [Python Scripts](https://github.com/catlinman/pyscripts)
 - [Windows Scripts](https://github.com/catlinman/winscripts)
