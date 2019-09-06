@@ -1,8 +1,9 @@
 {
-	"color_scheme": "Packages/DA UI/DA Dark.tmTheme",
-	"font_size": 10,
+	"color_scheme": "Packages/User/Subneko.tmTheme",
+	"font_size": 11,
 	"ignored_packages":
 	[
+		"DA UI",
 		"Markdown",
 		"Vintage"
 	],
@@ -10,8 +11,7 @@
 	[
 		80
 	],
-	"skin": "DA UI/Origin",
 	"spell_check": true,
-	"theme": "DA.sublime-theme",
+	"theme": "Cyanide - Golden.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

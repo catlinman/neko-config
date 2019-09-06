@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    //   Subneko Markdown Theme for Sublime Text part of the neko-config repository.
+    //   https://github.com/catlinman/neko-config/sublime
+    //
+    //   by Catlinman
+    //   https://catlinman.com
+-->
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>name</key>
-    <string>MarkdownEditing</string>
+    <string>SubnekoMarkdown</string>
     <key>settings</key>
     <array>
         <dict>
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#0c0c0c</string>
+                <string>#060606</string>
                 <key>caret</key>
-                <string>#ffd298</string>
+                <string>#ffc800</string>
                 <key>foreground</key>
                 <string>#dddddd</string>
                 <key>invisibles</key>
                 <string>#1f1f1f</string>
                 <key>lineHighlight</key>
-                <string>#242d33</string>
+                <string>#141414</string>
                 <key>selection</key>
-                <string>#242d33</string>
+                <string>#141414</string>
                 <key>selectionBorder</key>
-                <string>#242d33</string>
+                <string>#141414</string>
                 <key>inactiveSelection</key>
-                <string>#242d33</string>
+                <string>#141414</string>
                 <key>findHighlight</key>
                 <string>#00186d</string>
                 <key>findHighlightForeground</key>
@@ -171,7 +178,7 @@
                 <key>fontStyle</key>
                 <string>bold</string>
                 <key>foreground</key>
-                <string>#fd971f</string>
+                <string>#ffc800</string>
             </dict>
         </dict>
         <dict>
@@ -392,7 +399,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#ffd77c</string>
+                <string>#ff0cbf</string>
                 <!--<key>background</key>
                 <string>#171717</string>-->
             </dict>
@@ -405,7 +412,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#00baff</string>
+                <string>#3bbfff</string>
                 <key>background</key>
                 <string>#22222200</string>
             </dict>
@@ -784,7 +791,7 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#242d33</string>
+                <string>#141414</string>
                 <key>foreground</key>
                 <string>#dc322f</string>
             </dict>
