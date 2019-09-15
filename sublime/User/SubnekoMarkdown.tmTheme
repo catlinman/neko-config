@@ -19,7 +19,7 @@
                 <key>background</key>
                 <string>#060606</string>
                 <key>caret</key>
-                <string>#ffc800</string>
+                <string>#fece7e</string>
                 <key>foreground</key>
                 <string>#dddddd</string>
                 <key>invisibles</key>
@@ -178,7 +178,7 @@
                 <key>fontStyle</key>
                 <string>bold</string>
                 <key>foreground</key>
-                <string>#ffc800</string>
+                <string>#fece7e</string>
             </dict>
         </dict>
         <dict>

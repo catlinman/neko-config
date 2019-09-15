@@ -9,8 +9,12 @@ It's also my go-to for Markdown editing and writing.
 
 ## Installation ##
 
-Open your package directory by going to *Tools > Browse packages*. From there,
-replace your the contents of the *User* directory with those from this
-repository. These settings were exported using the SyncSettings package. You
-can import them using it as well. If all else fails just download the packages
-manually via package control and then replace their configurations with these.
+Before doing anything else, make sure you have installed *Package Control* by
+opening your command palette (`Cmd/Ctrl+Shift+P`) and selecting *Install Pacakge
+Control*. After that, to avoid too many error messages, close all open files and
+then close Sublime.
+
+Open your package directory by going to *Preferences > Browse packages*. From
+there, replace your the contents of the *User* directory with those from this
+repository. The next time you open up Sublime, package control should
+automatically install the packages and replace their configurations with these.
