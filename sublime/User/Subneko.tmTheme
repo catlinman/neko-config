@@ -74,7 +74,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#787878</string>
+                <string>#ffbf3b</string>
             </dict>
         </dict>
         <dict>
@@ -129,15 +129,42 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Function, Special Method, Block Level</string>
+            <string>Function</string>
             <key>scope</key>
-            <string>entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level</string>
+            <string>entity.name.function</string>
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
                 <string />
                 <key>foreground</key>
                 <string>#ff0cbf</string>
+            </dict>
+        </dict>
+        
+        <dict>
+            <key>name</key>
+            <string>Special Method, Block Level</string>
+            <key>scope</key>
+            <string>keyword.other.special-method, meta.block-level, meta.function-call</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string />
+                <key>foreground</key>
+                <string>#A0A0A0</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Support Function</string>
+            <key>scope</key>
+            <string>support.function</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string />
+                <key>foreground</key>
+                <string>#bfff0c</string>
             </dict>
         </dict>
         <dict>
