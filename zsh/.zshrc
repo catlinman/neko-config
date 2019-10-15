@@ -61,14 +61,9 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Note: I have some plugins like OSX and Arch. You probably don't need these.
-plugins=(git rust pyenv pip ruby rails archlinux osx zsh-autosuggestions zsh-syntax-highlighting zsh-256color command-time zsh-syntax-highlighting-filetypes)
+plugins=(git rust pyenv pip ruby rails archlinux osx zsh-autosuggestions zsh-syntax-highlighting zsh-256color command-time)
 
 # To install the plugins from my custom setup simply "source plugins.sh".
-
-# In case you receive errors concerning compdef - make sure the required
-# plugin applications are installed. If all else fails run the following command.
-
-# $ rm -f ~/.zcompdump*; compinit
 
 # Source the base oh-my-zsh script.
 source $ZSH/oh-my-zsh.sh
@@ -106,16 +101,16 @@ fi
 
 # Load custom aliases from a designated file.
 if [[ ! -a $HOME/.zsh_aliases ]]; then
-    touch $HOME/.zsh_aliases
+    printf "# ZSH custom alias declarations file\n# Example: alias pip=\"pip3\"" > $HOME/.zsh_aliases
 
 else
     source $HOME/.zsh_aliases
 
 fi
 
-# Load custom paths from a desginated file.
+# Load custom paths from a designated file.
 if [[ ! -a $HOME/.zsh_path ]]; then
-    touch $HOME/.zsh_path
+     printf "# ZSH path variable declarations file\n# Example: PATH=~/.npm-global/bin:\$PATH" > $HOME/.zsh_path
 
 else
     source $HOME/.zsh_path
@@ -143,6 +138,11 @@ else
 
 fi
 
+# Setup thefuck and it's alias if it is installed.
+if exists thefuck; then
+    eval $(thefuck --alias)
+fi
+
 # Node Version Manager handling.
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -157,3 +157,5 @@ fi
 bindkey "[C" forward-word
 bindkey "[D" backward-word
 
+
+export PATH=/Users/catlinman/.local/bin:$PATH
