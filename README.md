@@ -14,6 +14,7 @@ get a headstart when setting up some applications.
 - SublimeText 3 SyncSettings configuration
 - zshrc configuration file
 - Both Unix Vim (.vimrc) and Windows gVim (_vimrc) configuration files
+- tmux configuration files
 - Blender startup and configuration file
 - cmder setup with mintty and wsltty running zsh
 - Terminator terminal profile configuration
@@ -22,6 +23,7 @@ get a headstart when setting up some applications.
 - LetsEncrypt quick setups and systemd service
 - Fail2Ban configuration with additional suggestions
 - Adobe application workspaces
+- Krita theme and workspaces
 - nginx configuration
 - Syncplay systemd service
 - Uncrustify setup for C-Languages
