@@ -1,0 +1,1943 @@
+/*
+ * NekoSpeak
+ * By Catlinman
+ * Version 1.0
+ *
+ * Extensible dark contrasted theme corresponding to neko styling conventions.
+ *
+ * This theme takes major inspiration and conventions from other themes such as
+ * "DarkenTS" by Brady_The, as well as the fork of that theme titled "Demus" by
+ * GrumpyDemus. Furthermore, it uses some code from the original Hivecom
+ * Teamspeak skin which was based on "Steam Skin" by Adante.
+ *
+ * The icon pack is based on a selection of icons ranging from material design
+ * derived ones with now contrasted edges, remakes of the original Steam icon
+ * pack and completely new icons custom made to fit the theme.
+ * 
+ * There is no license since this theme builds on derivatives from many others
+ * over the years. Feel free to edit and redistribute the theme as you see fit.
+ * Credit where you feel it's due.
+ *
+ * catlinman.com
+ */
+
+/******************************************************************************
+
+Core style guide of the theme. Run search and replace to swap out colors.
+Keep in mind you will have to alter image assets as well for consistency.
+
+    BACKGROUND  = #0f0f0f
+    BACKGROUND2 = #0c0c0c
+
+    ACCENT      = #ffbf3b rgba(255, 191, 59, 1.0)
+    ACCENT2     = #ffdc6b rgba(255, 220, 107, 1.0)
+
+    HIGHLIGHT   = #1f1f1f
+    HIGHLIGHT2  = #3f3f3f
+
+    TEXT FG 	= #AAAAAA
+    TEXT BG 	= #222222
+    TEXT INFO 	= #333333
+
+To make your life easier; here's a link to the neweset Qt Widget documentation
+when this skin was released in case you want to edit or extend the theme.
+
+> https://doc.qt.io/qt-5/stylesheet-reference.html
+
+Otherwise, simply search online for "qt stylesheet" and you'll find the newest.
+
+Furthermore, add two hotkeys for "Reload Skin" and "Stylesheet Helper". They'll
+save you time and pain.
+    
+******************************************************************************/
+
+QWidget {
+    font-family: "Segoe UI";
+    font-size: 9pt;
+}
+
+QFrame {
+    color: #AAAAAA;
+}
+
+/******************************************************************************
+                    
+
+  I8,        8        ,8I 88                      88
+  `8b       d8b       d8' ""                      88
+   "8,     ,8"8,     ,8"                          88
+    Y8     8P Y8     8P   88 8b,dPPYba,   ,adPPYb,88  ,adPPYba,  8b      db      d8
+    `8b   d8' `8b   d8'   88 88P'   `"8a a8"    `Y88 a8"     "8a `8b    d88b    d8'
+     `8a a8'   `8a a8'    88 88       88 8b       88 8b       d8  `8b  d8'`8b  d8'
+      `8a8'     `8a8'     88 88       88 "8a,   ,d88 "8a,   ,a8"   `8bd8'  `8bd8'
+       `8'       `8'      88 88       88  `"8bbdP"Y8  `"YbbdP"'      YP      YP
+  
+  
+******************************************************************************/
+
+QMainWindow {
+    background-color: #0c0c0c;
+    image: url("styles:NekoSpeak/gfx/background/stripe.png");
+    image-position: right top;
+}
+
+QWidget::pane {
+	border: none;
+}
+
+QMainWindow QWidget::pane {
+    background-color: #0f0f0f;
+    background-image: url("styles:/NekoSpeak/gfx/background/tile.png");
+    background-repeat: repeat-xy;
+    background-attachment: fixed;
+    border-image: url("styles:NekoSpeak/gfx/background/glow.png");
+    border-image-position: right top;
+}
+
+QMainWindow QTabWidget::tab-bar {
+    left: 10px;
+}
+
+VirtualServerEditDialog QWidget::pane, CreateChannelDialog QWidget::pane {
+    margin: 0px;
+}
+
+VirtualServerEditDialog QTabWidget::tab-bar, CreateChannelDialog QTabWidget::tab-bar {
+    left: 0px;
+}
+
+QSizeGrip {
+    background: #0c0c0c;
+    background-image: none;
+}
+
+QSplitter::handle {
+    background-color: transparent;
+}
+
+QSplitter::handle:vertical {
+    margin-right: 4px;
+}
+
+QSplitter::handle:vertical#bookmarksLocalRemoteSplitter,
+QSplitter::handle:vertical#identitiesLocalRemoteSplitter,
+QSplitter::handle:vertical#profilesLocalRemoteSplitter,
+QSplitter::handle#whisperListsLocalRemoteSplitter {
+	image: url('styles:NekoSpeak/gfx/separator/separator-vertical.png');
+	height: 1.2em;
+}
+
+ServerView {
+    border-top: 2px solid #ffbf3b;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+TreeView, InfoFrame {
+    margin: 0px;
+}
+
+TreeView {
+    margin-left: 0px;
+}
+
+QTableView#clientsTableView, QTableView#banTableView {
+    qproperty-alternatingRowColors: false;
+}
+
+QLabel#appNameLabel {
+    color: #455573;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+QToolTip, EmoticonsDisplay {
+    background: #1f1f1f;
+    border: 1px solid #3f3f3f;
+    color: #DDDDDD;
+}
+
+QLabel#identitiesBanner, QLabel#bookmarksBanner {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+
+QWidget#FileBrowser, QWidget#ConnectDialog, QWidget#BookmarksManager, QWidget#WebServerList, QWidget#ClientDatabaseListViewer, QWidget#TokenView,
+QWidget#FriendFoeManager, QWidget#UrlCatcherViewer, QWidget#InvitationDialog, QWidget#OfflineMessageDialog, QWidget#WhisperDialog, QWidget#WhisperHistoryWidget, QWidget#ClientLogView, QWidget#BanList,
+QWidget#ComplainView, QWidget#ServerQueryLoginDialog, QWidget#ServerLogView, QWidget#SetupWizard, QWidget#IdentityManager, QWidget#PluginDialog, QWidget#OptionsDialog, FileTransferView, ChannelGroupsOfClientDialog,
+UserVolumeWidget, OfflineMessagesDialog, ServerConnectionInfoDialog, QWidget#TempPasswordWidget, QWidget#ChannelDescriptionEditTearOffWidget, CustomizeToolbar, QWidget#OfflineMessagesNew
+{
+    background: #0f0f0f;
+}
+
+QWidget#PermissionsWidget, QWidget#ConnectionInfoDialog, QWidget#CreateChannelDialog, QWidget#AboutDialog, QWidget#VirtualServerEditDialog
+{
+    background: #0c0c0c;
+}
+
+QWidget#standardTab, QWidget#audioTab, QWidget#permissionsTab, QWidget#advancedTab, QWidget#aboutTab, QWidget#copyrightTab, QWidget#licenseTab,
+QWidget#tabHost, QWidget#tabTransfers, QWidget#tabAntiFlood, QWidget#tabSecurity, QWidget#tabMisc, QWidget#tabLogging
+{
+    background: #0f0f0f;
+    border-top: 2px solid #ffbf3b;
+}
+
+QDialog {
+    background-color: #0f0f0f;
+}
+
+QDialog#connectDialog {
+    background: #0c0c0c;
+}
+
+QFrame#downloadLimitFrame, QFrame#uploadLimitFrame {
+    border: none;
+}
+
+QGroupBox {
+    color: #FFFFFF;
+    font-size: 18px;
+    border: none;
+    padding: 0px;
+    padding-top: 20px;
+    padding-left: -6px;
+    margin-bottom: 10px;
+}
+
+QGroupBox::title {
+    background: transparent;
+    subcontrol-position: top left;
+ }
+
+QListWidget {
+    background: #1f1f1f;
+    border: 1px solid #3f3f3f;
+    outline: none;
+}
+
+QListWidget::item {
+    background: transparent;
+    border: none;
+    height: 25px;
+    padding-left: 5px;
+}
+
+QListWidget::item:hover {
+    background: #3f3f3f;
+    color: #DDDDDD;
+    padding-left: 5px;
+}
+
+QListWidget::item:selected {
+    background: #ffbf3b;
+    color: #1f1f1f;
+    padding-left: 5px;
+}
+
+QListWidget::item:selected:hover {
+    background: #ffdc6b;
+    padding-left: 5px;
+}
+
+QWidget#HeadlineLabel {
+    background: transparent;
+    color: #FFFFFF;
+}
+
+QWidget#HeadlineLabel QLabel{
+    color: #FFFFFF;
+}
+
+QListWidget#ContentsWidget {
+    min-width: 200px;
+}
+
+QFrame#line, QFrame#line_2, QFrame#line_3, QFrame#line_4, QFrame#line_5, QFrame#line_6 {
+    background: transparent;
+}
+
+QWidget#page1 QComboBox {
+    max-width: 180px;
+}
+
+QWidget#page1 QGroupBox::title, QWidget#page2 QGroupBox::title {
+    background: transparent;
+}
+
+QTableView {
+    background: #0f0f0f;
+    border: 1px solid #3f3f3f;
+    selection-color: #222222;
+    qproperty-alternatingRowColors: false;
+    show-decoration-selected: 0;
+    gridline-color: #1f1f1f;
+}
+
+QTableView::item {
+    background: transparent;
+}
+
+QTableView::item:selected {
+    color: #222222;
+    background: #ffbf3b;
+}
+
+QHeaderView::section {
+    background: #3f3f3f;
+    border: none;
+    min-height: 25px;
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+QFrame#bookmarksTopFrame {
+    background: #1f1f1f;
+    color: #DDDDDD;
+    border: none;
+}
+
+QLabel#avatarLabel {
+    border: none;
+}
+
+QWidget#scrollAreaWidgetContents {
+    background: transparent;
+}
+
+QScrollArea {
+    background: #1f1f1f;
+    border: 1px solid #3f3f3f;
+    padding-left: 5px;
+}
+
+/******************************************************************************
+
+888888888888                       88b           d88                                       88888888ba
+     88                            888b         d888                                       88      "8b
+     88                            88`8b       d8'88                                       88      ,8P
+     88  ,adPPYba,  8b,dPPYba,     88 `8b     d8' 88  ,adPPYba, 8b,dPPYba,  88       88    88aaaaaa8P' ,adPPYYba, 8b,dPPYba,
+     88 a8"     "8a 88P'    "8a    88  `8b   d8'  88 a8P_____88 88P'   `"8a 88       88    88""""""8b, ""     `Y8 88P'   "Y8
+     88 8b       d8 88       d8    88   `8b d8'   88 8PP""""""" 88       88 88       88    88      `8b ,adPPPPP88 88
+     88 "8a,   ,a8" 88b,   ,a8"    88    `888'    88 "8b,   ,aa 88       88 "8a,   ,a88    88      a8P 88,    ,88 88
+     88  `"YbbdP"'  88`YbbdP"'     88     `8'     88  `"Ybbd8"' 88       88  `"YbbdP'Y8    88888888P"  `"8bbdP"Y8 88
+                    88
+                    88
+******************************************************************************/
+
+QMenuBar {
+    background-color: transparent;
+    border: none;
+    color: #DDDDDD;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+QMenuBar::item:selected {
+    background-color: #1f1f1f;
+    border: 0px;
+    color: #DDDDDD;
+}
+
+QMenu {
+    padding: 2px;
+    border: 1px solid #1f1f1f;
+    background-color: #0f0f0f;
+    color: #F1F1F1;
+}
+
+QMenu::item {
+    background: transparent;
+}
+
+QMenu::item:hover {
+    background: #ffbf3b;
+}
+
+QMenu::item:selected {
+	color: #222222;
+    background-color: #ffbf3b;
+}
+
+QMenu::item:disabled {
+    color: #333333;
+}
+
+QMenu::separator {
+    height: 1px;
+    margin: 1px;
+    margin-left: 25px;
+    background: #333333;
+}
+
+/******************************************************************************
+
+
+88                                                                       88                            88888888ba
+88              ,d                                                 ,d    ""                            88      "8b
+88              88                                                 88                                  88      ,8P
+88 8b,dPPYba, MM88MMM ,adPPYba, 8b,dPPYba, ,adPPYYba,  ,adPPYba, MM88MMM 88  ,adPPYba,  8b,dPPYba,     88aaaaaa8P' ,adPPYYba, 8b,dPPYba,
+88 88P'   `"8a  88   a8P_____88 88P'   "Y8 ""     `Y8 a8"     ""   88    88 a8"     "8a 88P'   `"8a    88""""""8b, ""     `Y8 88P'   "Y8
+88 88       88  88   8PP""""""" 88         ,adPPPPP88 8b           88    88 8b       d8 88       88    88      `8b ,adPPPPP88 88
+88 88       88  88,  "8b,   ,aa 88         88,    ,88 "8a,   ,aa   88,   88 "8a,   ,a8" 88       88    88      a8P 88,    ,88 88
+88 88       88  "Y888 `"Ybbd8"' 88         `"8bbdP"Y8  `"Ybbd8"'   "Y888 88  `"YbbdP"'  88       88    88888888P"  `"8bbdP"Y8 88
+
+
+******************************************************************************/
+
+QToolBar {
+    background-color: transparent;
+    spacing: 4px;
+    border: none;
+}
+
+QToolBar::handle {
+    background-image: none;
+    background-color: transparent;
+}
+
+QToolBar QToolButton, QToolBar QToolButton:focus {
+    background: transparent;
+    padding: 8px;    
+    border-radius: 24px; 
+    border: 2px solid transparent;
+}
+
+QToolBar QToolButton:pressed {
+    background: #ffdc6b;
+    border: 2px solid #ffdc6b;
+}
+
+QToolBar QToolButton:hover {
+    padding: 8px;
+    border: 2px solid #ffbf3b; 
+}
+
+QToolBar QToolButton:checked {
+    background: #ffbf3b;
+    border: 2px solid #ffbf3b;
+}
+
+QToolBar QToolButton[popupMode="1"] {
+    padding-right: 25px;
+}
+
+QToolBar QToolButton[popupMode="1"]:hover {
+
+}
+
+QToolBar QToolButton::menu-button {
+    padding-right: 10px;
+    border: none;
+    width: 10px;
+}
+
+QToolBar QToolButton::menu-button:hover {}
+
+QToolBar QToolButton::menu-arrow {
+    image:url("styles:NekoSpeak/gfx/arrow/arrow-down.png");
+    left: 5px;
+    height: 12px;
+    width: 12px;
+    padding-right: 10px;
+}
+
+QToolBar QToolButton::menu-arrow:hover {
+    image:url("styles:NekoSpeak/gfx/arrow/arrow-down-hover.png");
+}
+
+QToolBar QToolButton::menu-arrow:selected {
+    image:url("styles:NekoSpeak/gfx/arrow/arrow-down-hover.png");
+}
+
+QToolBar QToolButton::menu-arrow:disabled {
+    image:url("styles:NekoSpeak/gfx/arrow/arrow-down-disabled.png");
+}
+
+QToolBarSeparator {
+    background: #1f1f1f;
+}
+
+/*******************************************************************************
+
+
+888888888888       88             88888888ba
+     88            88             88      "8b
+     88            88             88      ,8P
+     88 ,adPPYYba, 88,dPPYba,     88aaaaaa8P' ,adPPYYba, 8b,dPPYba, ,adPPYba,
+     88 ""     `Y8 88P'    "8a    88""""""8b, ""     `Y8 88P'   "Y8 I8[    ""
+     88 ,adPPPPP88 88       d8    88      `8b ,adPPPPP88 88          `"Y8ba,
+     88 88,    ,88 88b,   ,a8"    88      a8P 88,    ,88 88         aa    ]8I
+     88 `"8bbdP"Y8 8Y"Ybbd8"'     88888888P"  `"8bbdP"Y8 88         `"YbbdP"'
+
+
+*******************************************************************************/
+
+QTabBar {
+    background: transparent;
+}
+
+QTabBar::tab {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #0f0f0f;
+    border: 1px solid #1f1f1f;
+    color: #DDDDDD;
+    min-height: 32px;
+}
+
+QTabBar::tab:hover {
+    color: #222222;
+    border: 1px solid #ffdc6b;
+    background: #ffdc6b;
+}
+
+QTabBar::tab:selected, QTabBar::tab:selected:hover  {
+    color: #222222;
+    border: 1px solid #ffbf3b;
+    background: #ffbf3b;
+}
+
+QTabBar::tab:disabled {
+    color: #1f1f1f;
+}
+
+QTabBar::tear {
+    image: none;
+}
+
+QTabBar::scroller {
+    width: 27px;
+}
+
+QTabBar QToolButton {
+    background-color: #0c0c0c;
+    margin: 0px;
+    padding: 6px;
+    padding-left: 0px;
+}
+
+QTabBar QToolButton:hover {
+    border: none;
+    padding: 6px;
+    padding-left: 0px;
+}
+
+QTabBar QToolButton::right-arrow, QTabBar QToolButton::right-arrow:active {
+    background: #0c0c0c;
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-right.png");
+}
+
+QTabBar QToolButton::right-arrow:hover {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-right-hover.png");
+}
+
+QTabBar QToolButton::right-arrow:disabled {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-right-disabled.png");
+}
+
+QTabBar QToolButton::left-arrow, QTabBar QToolButton::left-arrow:active {
+    background: #0c0c0c;
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-left.png");
+}
+
+QTabBar QToolButton::left-arrow:hover {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-left-hover.png");
+}
+
+QTabBar QToolButton::left-arrow:disabled {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-left-disabled.png");
+}
+
+QTabBar::close-button {
+    background: blue;
+}
+
+QToolButton#ChatTabCloseButton, QToolButton#ServerTabCloseButton {
+    height: 8px;
+    background: transparent;
+    padding-right: -10px;
+}
+
+QToolButton#ChatTabCloseButton:hover, QToolButton#ServerTabCloseButton:hover {
+    border: none;
+}
+
+/*******************************************************************************
+
+
+888888888888                                8b           d8 88
+     88                                     `8b         d8' ""
+     88                                      `8b       d8'
+     88 8b,dPPYba,  ,adPPYba,  ,adPPYba,      `8b     d8'   88  ,adPPYba, 8b      db      d8
+     88 88P'   "Y8 a8P_____88 a8P_____88       `8b   d8'    88 a8P_____88 `8b    d88b    d8'
+     88 88         8PP""""""" 8PP"""""""        `8b d8'     88 8PP"""""""  `8b  d8'`8b  d8'
+     88 88         "8b,   ,aa "8b,   ,aa         `888'      88 "8b,   ,aa   `8bd8'  `8bd8'
+     88 88          `"Ybbd8"'  `"Ybbd8"'          `8'       88  `"Ybbd8"'     YP      YP
+
+
+****** This view is also used in list dialogs like the bookmark menu list. ******/
+
+QTreeView, TreeView, TreeWidget  {
+	background-color: #0c0c0c;
+	color:;
+    border: 1px solid #3f3f3f;
+    show-decoration-selected: 1;
+    padding: 0px;
+    outline: none;
+}
+
+QTreeView#ServerTreeView {
+    alternate-background-color: #0f0f0f;
+    border: none;
+    border-right: 1px solid #1f1f1f;
+    padding-top: 4px;
+    padding-right: 8px;
+    background: transparent;
+    qproperty-rootIsDecorated: false;
+}
+
+QTreeView#permissionsTreeView, QTreeView#channelsTreeWidget, QTreeView#treeView {
+    background: #1f1f1f;
+}
+
+QTreeView#ServerTreeView::item {
+    border: none;
+    padding-top: 4px;
+    padding-left: 4px;
+    width: 100%;
+}
+
+QTreeView::branch {
+    font-size: 12pt;
+}
+
+QTreeView::branch:hover, QTreeView::branch:selected:hover {
+    background: #ffdc6b;
+    color: #222222;
+}
+
+QTreeView::branch:selected {
+    background: #ffbf3b;
+}
+
+QTreeView::item:selected:active, QTreeView::item:selected:!active {
+    background: #ffbf3b;
+    color: #222222;
+    outline: none;
+}
+
+QTreeView::item:hover, QTreeView::item:selected:hover {
+    background: #ffdc6b;
+    color: #222222;
+}
+
+QTreeView#ServerTreeView::item:selected:active, QTreeView#ServerTreeView::item:selected:!active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #ffbf3b, stop: 0.5 #ffbf3b, stop: 1 transparent);
+    color: #222222;
+    outline: none;
+}
+
+QTreeView#ServerTreeView::item:hover, QTreeView#ServerTreeView::item:selected:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #ffdc6b, stop: 0.5 #ffbf3b, stop: 2 transparent);
+    color: #222222;
+}
+
+QTreeView::branch:has-siblings:!adjoins-item, QTreeView::branch:has-siblings:adjoins-item, QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: none;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed, QTreeView::branch:closed:has-children:has-siblings {
+    border-image: none;
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-right.png");
+    padding: 2px;
+    padding-left: 4px;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed:hover, QTreeView::branch:closed:has-children:has-siblings:hover {
+    border-image: none;
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-right-hover.png");
+}
+
+QTreeView::branch:open:has-children:!has-siblings, QTreeView::branch:open:has-children:has-siblings {
+    border-image: none;
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-down.png");
+    padding: 2px;
+    padding-left: 4px;
+}
+
+QTreeView::branch:open:has-children:!has-siblings:hover, QTreeView::branch:open:has-children:has-siblings:hover,
+QTreeView::branch:open:has-children:!has-siblings:selected, QTreeView::branch:open:has-children:has-siblings:selected
+{
+    border-image: none;
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-down-hover.png");
+}
+
+/*******************************************************************************
+
+
+88          88
+88          ""             ,d
+88                         88
+88          88 ,adPPYba, MM88MMM ,adPPYba,
+88          88 I8[    ""   88    I8[    ""
+88          88  `"Y8ba,    88     `"Y8ba,
+88          88 aa    ]8I   88,   aa    ]8I
+88888888888 88 `"YbbdP"'   "Y888 `"YbbdP"'
+
+
+*******************************************************************************/
+
+
+QListView {
+    background: #1f1f1f;
+    border: 1px solid #222222;
+    outline: none;
+}
+
+QListView:item {
+    padding: 4px;
+    color: #DDDDDD;
+}
+
+QListView:item:hover {
+    background: #3f3f3f;
+}
+
+QListView:item:selected, QListView:item:focus {
+    color: #222222;
+    background: #ffbf3b;
+}
+
+QListView:item:selected:hover {
+    color: #222222;
+    background: #ffdc6b;
+}
+
+/*******************************************************************************
+
+  ,ad8888ba,  88                               88888888ba
+ d8"'    `"8b 88                       ,d      88      "8b
+d8'           88                       88      88      ,8P
+88            88,dPPYba,  ,adPPYYba, MM88MMM   88aaaaaa8P'  ,adPPYba, 8b,     ,d8
+88            88P'    "8a ""     `Y8   88      88""""""8b, a8"     "8a `Y8, ,8P'
+Y8,           88       88 ,adPPPPP88   88      88      `8b 8b       d8   )888(
+ Y8a.    .a8P 88       88 88,    ,88   88,     88      a8P "8a,   ,a8" ,d8" "8b,
+  `"Y8888Y"'  88       88 `"8bbdP"Y8   "Y888   88888888P"   `"YbbdP"' 8P'     `Y8
+
+*******************************************************************************/
+
+QTextEdit#ChatTab {
+	font-size: 8pt;
+    background: #0c0c0c;
+    border: none;
+    border-bottom: 2px solid #ffbf3b;
+    padding-bottom: 10px;
+	margin-right: 0px;
+}
+
+QTextEdit#ChatLineEdit {
+    border: 1px solid #1f1f1f;
+    background: #0f0f0f;
+    margin-left: 10px;
+    padding-left: 4px;
+
+    background-image: url("styles:NekoSpeak/gfx/logo/logo.png");
+	background-position: right middle;
+	background-repeat:no-repeat;
+}
+
+QTextEdit#ChatLineEdit:hover {
+    border: 1px solid #ffdc6b;
+    background-image: url("styles:NekoSpeak/gfx/logo/logo-hover.png");
+}
+
+QTextEdit#ChatLineEdit[helpTextVisible="true"] {
+    color: #1f1f1f;
+}
+
+QTextEdit#ChatLineEdit[helpTextVisible="false"] {
+    color: #AAAAAA;
+    border: 1px solid #ffbf3b;
+    background: #1f1f1f;
+}
+
+/*******************************************************************************
+
+
+88               ad88               88888888888
+88              d8"                 88
+88              88                  88
+88 8b,dPPYba, MM88MMM ,adPPYba,     88aaaaa 8b,dPPYba, ,adPPYYba, 88,dPYba,,adPYba,   ,adPPYba, ,adPPYba,
+88 88P'   `"8a  88   a8"     "8a    88""""" 88P'   "Y8 ""     `Y8 88P'   "88"    "8a a8P_____88 I8[    ""
+88 88       88  88   8b       d8    88      88         ,adPPPPP88 88      88      88 8PP"""""""  `"Y8ba,
+88 88       88  88   "8a,   ,a8"    88      88         88,    ,88 88      88      88 "8b,   ,aa aa    ]8I
+88 88       88  88    `"YbbdP"'     88      88         `"8bbdP"Y8 88      88      88  `"Ybbd8"' `"YbbdP"'
+
+
+*******************************************************************************/
+
+/*Banner {
+    background: rgba(0.0, 0.0, 0.0, 0.2);
+}*/
+
+InfoFrame:!hover, InfoFrame:hover {
+    margin-top: 8px;
+    background: transparent;
+    border: none;
+}
+
+/*******************************************************************************
+                    
+   ad88888ba                                                    88888888ba
+  d8"     "8b ,d                 ,d                             88      "8b
+  Y8,         88                 88                             88      ,8P
+  `Y8aaaaa, MM88MMM ,adPPYYba, MM88MMM 88       88 ,adPPYba,    88aaaaaa8P' ,adPPYYba, 8b,dPPYba,
+    `"""""8b, 88    ""     `Y8   88    88       88 I8[    ""    88""""""8b, ""     `Y8 88P'   "Y8
+          `8b 88    ,adPPPPP88   88    88       88  `"Y8ba,     88      `8b ,adPPPPP88 88
+  Y8a     a8P 88,   88,    ,88   88,   "8a,   ,a88 aa    ]8I    88      a8P 88,    ,88 88
+   "Y88888P"  "Y888 `"8bbdP"Y8   "Y888  `"YbbdP'Y8 `"YbbdP"'    88888888P"  `"8bbdP"Y8 88
+  
+
+*******************************************************************************/
+
+QStatusBar {
+    background: transparent;
+    color: #DDDDDD;
+}
+
+QStatusBar::item {
+    background: transparent;
+}
+
+QLabel#NewsLeftLabel {
+    padding-right: 6px;
+}
+
+QWidget#NewsBanner {
+    color: #BDBDBD;
+}
+
+QToolButton#NewsCloseButton, QToolButton#NewsCloseButton:hover {
+    background: transparent;
+    border: none;
+}
+
+QToolButton#NewsCloseButton:hover {
+    background: #333333;
+}
+
+/*******************************************************************************
+
+
+  ,ad8888ba,                      88                                      88b           d88
+ d8"'    `"8b               ,d    ""                                      888b         d888
+d8'        `8b              88                                            88`8b       d8'88
+88          88 8b,dPPYba, MM88MMM 88  ,adPPYba,  8b,dPPYba,  ,adPPYba,    88 `8b     d8' 88  ,adPPYba, 8b,dPPYba,  88       88
+88          88 88P'    "8a  88    88 a8"     "8a 88P'   `"8a I8[    ""    88  `8b   d8'  88 a8P_____88 88P'   `"8a 88       88
+Y8,        ,8P 88       d8  88    88 8b       d8 88       88  `"Y8ba,     88   `8b d8'   88 8PP""""""" 88       88 88       88
+ Y8a.    .a8P  88b,   ,a8"  88,   88 "8a,   ,a8" 88       88 aa    ]8I    88    `888'    88 "8b,   ,aa 88       88 "8a,   ,a88
+  `"Y8888Y"'   88`YbbdP"'   "Y888 88  `"YbbdP"'  88       88 `"YbbdP"'    88     `8'     88  `"Ybbd8"' 88       88  `"YbbdP'Y8
+               88
+               88
+*******************************************************************************/
+
+QListView#ContentsWidget::item:hover, QListView#ContentsWidget::item:selected:!active:hover, QListView#ContentsWidget::item:selected:active:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0.05 rgba(255, 220, 107, 0), stop: 0.45 rgba(255, 220, 107, 0.05), 
+        stop: 0.55 rgba(255, 220, 107, 0.05), stop: 0.95 rgba(255, 220, 107, 0)
+    );
+
+    border-bottom: 1px solid qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0.0 rgba(255,191,59,0.02), stop: 0.4 rgba(255, 220, 107, 0.2), 
+        stop: 0.6 rgba(255, 220, 107, 0.2), stop: 1.0 rgba(255, 220, 107, 0.02)
+    );
+    
+    border-top: 1px solid qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0.0 rgba(255,191,59,0.02), stop: 0.4 rgba(255, 220, 107, 0.2), 
+        stop: 0.6 rgba(255, 220, 107, 0.2), stop: 1.0 rgba(255, 220, 107, 0.02)
+    );
+
+    padding-bottom: 4px;
+}
+
+QLabel#OptionsHeadlineTitleLabel {
+    font-size: 24px;
+}
+
+QWidget#OptionsDialog {
+    background: #0c0c0c;
+    border-image: url("styles:NekoSpeak/gfx/background/glow.png");
+    border-image-position: right top;
+}
+
+QListView#ContentsWidget {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    width: 210px;
+    margin-left: 0px;
+}
+
+QListView#ContentsWidget::item {
+    padding-left: 0px;
+    height: 40px;
+    color: #ffbf3b;
+}
+
+QListView#ContentsWidget::item:selected {
+    outline: none;
+}
+
+QListView#ContentsWidget::item:selected:!active, QListView#ContentsWidget::item:selected:active {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0.05 rgba(255, 191, 59, 0), stop: 0.45 rgba(255, 191, 59, 0.05), 
+        stop: 0.55 rgba(255, 191, 59, 0.05), stop: 0.95 rgba(255, 191, 59, 0)
+    );
+
+    border-bottom: 1px solid qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0.0 rgba(255,191,59,0.02), stop: 0.4 rgba(255, 191, 59, 0.2), 
+        stop: 0.6 rgba(255, 191, 59, 0.2), stop: 1.0 rgba(255, 191, 59, 0.02)
+    );
+    
+    border-top: 1px solid qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0.0 rgba(255, 191, 59, 0.02), stop: 0.4 rgba(255, 191, 59, 0.2), 
+        stop: 0.6 rgba(255, 191, 59, 0.2), stop: 1.0 rgba(255, 191, 59, 0.02)
+    );
+}
+
+QListView#ContentsWidget::item:selected:!active:hover,QListView#ContentsWidget::item:selected:active:hover {
+    background: transparent;
+}
+
+QListView#ContentsWidget::item:hover {
+    color: #ffdc6b;
+    background: transparent;
+}
+
+QWidget#OptionsDialog QFrame#line, QWidget#OptionsDialog QFrame#accountActionsLine, QWidget#OptionsDialog QFrame#line_2, QFrame#horizontal_line {
+    background: transparent;
+}
+
+QLabel#accountActionsLabel {
+    color: #FFFFFF;
+}
+
+QLabel#LocalLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+ProfileListView {
+    background: #0f0f0f;
+    border: 1px solid #3f3f3f;
+    outline: none;
+}
+
+ProfileListView:item {
+    padding: 5px;
+}
+
+ProfileListView:item:hover, ProfileListView:item:focus {
+    background: #3f3f3f;
+    padding: 5px;
+}
+
+ProfileListView:item:selected {
+    color: #222222;
+    background-color: #ffbf3b;
+    padding: 5px;
+    font-weight: normal;
+}
+
+ProfileListView::item:selected:active, ProfileListView::item:selected:!active {
+    outline: none;
+    color: #222222;
+}
+
+VADDisplay {
+    background: #1f1f1f;
+    border: 1px solid #3f3f3f;
+}
+
+OptionsDialog QFrame {
+    outline: none;
+}
+
+AbstractOptionsPage#Addons_Setup QFrame {
+    background: transparent;
+    border: none;
+}
+
+AbstractOptionsPage#Addons_Setup QListView::item {
+    background: #222222;
+    margin-bottom: 1px;
+}
+
+/*******************************************************************************
+
+
+88          88                           88888888888         88 88
+88          ""                           88                  88 ""   ,d
+88                                       88                  88      88
+88          88 8b,dPPYba,   ,adPPYba,    88aaaaa     ,adPPYb,88 88 MM88MMM
+88          88 88P'   `"8a a8P_____88    88"""""    a8"    `Y88 88   88
+88          88 88       88 8PP"""""""    88         8b       88 88   88
+88          88 88       88 "8b,   ,aa    88         "8a,   ,d88 88   88,
+88888888888 88 88       88  `"Ybbd8"'    88888888888 `"8bbdP"Y8 88   "Y888
+
+
+*******************************************************************************/
+
+QLineEdit {
+    background: #0f0f0f;
+    border: 1px solid #3f3f3f;
+    padding-left: 10px;
+    min-height: 28px;
+    color: #FFFFFF;
+    padding-right: 10px;
+    selection-background-color: #ffdc6b;
+    selection-color: #222222;
+}
+
+QLineEdit:hover, QLineEdit:focus:hover {
+    background: #0f0f0f;
+    border: 1px solid #ffdc6b;
+}
+
+QLineEdit:focus {
+    background: #0f0f0f;
+    border: 1px solid #ffbf3b;
+}
+
+QLineEdit:disabled {
+    background: #222222;
+    color: #333333;
+    border: 1px solid #3f3f3f;
+}
+
+QLineEdit[readOnly="true"]:hover, QLineEdit[readOnly="true"]:focus {
+    background: #0f0f0f;
+    border: 2px solid #ffdc6b;
+    height: 25px;
+    color: #DDDDDD;
+    padding: 0px 10px;
+}
+
+/*******************************************************************************
+
+
+888888888888                              88888888888 88            88          88
+     88                          ,d       88          ""            88          88
+     88                          88       88                        88          88
+     88  ,adPPYba, 8b,     ,d8 MM88MMM    88aaaaa     88  ,adPPYba, 88  ,adPPYb,88 ,adPPYba,
+     88 a8P_____88  `Y8, ,8P'    88       88"""""     88 a8P_____88 88 a8"    `Y88 I8[    ""
+     88 8PP"""""""    )888(      88       88          88 8PP""""""" 88 8b       88  `"Y8ba,
+     88 "8b,   ,aa  ,d8" "8b,    88,      88          88 "8b,   ,aa 88 "8a,   ,d88 aa    ]8I
+     88  `"Ybbd8"' 8P'     `Y8   "Y888    88          88  `"Ybbd8"' 88  `"8bbdP"Y8 `"YbbdP"'
+
+
+*******************************************************************************/
+
+QTextEdit {
+    background: #0f0f0f;
+    border: 1px solid #1f1f1f;
+    selection-background-color: #ffdc6b;
+    selection-color: #222222;
+}
+
+QTextEdit#invitationTextEdit,
+QTextEdit#offlineTextEdit,
+QTextEdit#banReasonTextEdit,
+QTextEdit#descriptionTextEdit,
+QTextEdit#vserverWelcomeTextEdit,
+QTextEdit#vserverNicknamesTextEdit
+{
+    background: #0f0f0f;
+    border: 2px solid #666666;
+    qproperty-rootIsDecorated: false;
+    color: #DDDDDD;
+}
+
+QTextEdit#descriptionTextEdit:hover,
+QTextEdit#invitationTextEdit:hover, 
+QTextEdit#offlineTextEdit:hover,
+QTextEdit#banReasonTextEdit:hover,
+QTextEdit#vserverWelcomeTextEdit:hover,
+QTextEdit#vsServerNicknamesTextEdit:hover
+{
+    border: 2px solid #ffdc6b;
+}
+
+QTextEdit#descriptionTextEdit:focus,
+QTextEdit#invitationTextEdit:focus,
+QTextEdit#offlineTextEdit:focus,
+QTextEdit#banReasonTextEdit:focus,
+QTextEdit#vserverWelcomeTextEdit:focus,
+QTextEdit#vsServerNicknamesTextEdit:focus
+{
+    border: 2px solid #ffbf3b;
+}
+
+QTextEdit#descriptionTextEdit:focus:hover,
+QTextEdit#invitationTextEdit:focus:hover,
+QTextEdit#offlineTextEdit:focus:hover,
+QTextEdit#banReasonTextEdit:focus:hover,
+QTextEdit#vserverWelcomeTextEdit:focus:hover,
+QTextEdit#vsServerNicknamesTextEdit:focus:hover
+{
+    border: 2px solid #ffdc6b;
+}
+
+QTextEdit#descriptionTextEdit:disabled,
+QTextEdit#invitationTextEdit:disabled,
+QTextEdit#offlineTextEdit:disabled,
+QTextEdit#banReasonTextEdit:disabled,
+QTextEdit#vserverWelcomeTextEdit:disabled,
+QTextEdit#vsServerNicknamesTextEdit:disabled
+{
+    background: #333333;
+    border: none;
+    color: #333333;
+}
+
+/*******************************************************************************
+
+
+88888888ba                        88             88888888ba
+88      "8b                       88             88      "8b               ,d      ,d
+88      ,8P                       88             88      ,8P               88      88
+88aaaaaa8P' 88       88 ,adPPYba, 88,dPPYba,     88aaaaaa8P' 88       88 MM88MMM MM88MMM ,adPPYba,  8b,dPPYba,
+88""""""'   88       88 I8[    "" 88P'    "8a    88""""""8b, 88       88   88      88   a8"     "8a 88P'   `"8a
+88          88       88  `"Y8ba,  88       88    88      `8b 88       88   88      88   8b       d8 88       88
+88          "8a,   ,a88 aa    ]8I 88       88    88      a8P "8a,   ,a88   88,     88,  "8a,   ,a8" 88       88
+88           `"YbbdP'Y8 `"YbbdP"' 88       88    88888888P"   `"YbbdP'Y8   "Y888   "Y888 `"YbbdP"'  88       88
+
+
+************* Stylings for basic buttons and very specific ones ************** */
+
+QPushButton {
+    background: #333333;
+    border: none;
+    padding: 0px 10px;
+    min-height: 25px;
+    min-width: 80px;
+    color: #DDDDDD;
+}
+
+QPushButton:hover {
+    border: 2px solid #ffbf3b;
+    padding: -2px 6px;
+}
+
+QPushButton:disabled {
+    color: #333333;
+}
+
+QPushButton:pressed:focus {
+    background: #ffdc6b;
+    border: none;
+}
+
+QPushButton:focus {
+    color: #222222;
+    background: #ffbf3b;
+    outline: none;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton:!checked:focus {
+    background: #333333;
+    outline: none;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton:focus:hover {
+    border: 2px solid #858585;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton:pressed:hover {
+    border: 2px solid #858585;
+}
+
+QPushButton:checked {
+    color: #222222;
+    background: #ffbf3b;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton#Plugins,
+AbstractOptionsPage#Addons_Setup QPushButton#Themes,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Icon Packs"],
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Sound Packs"], 
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="My Addons"],
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Browse online"],  
+AbstractOptionsPage#Addons_Setup QPushButton#Translations,
+AbstractOptionsPage#Addons_Setup QPushButton#Plugins:focus,
+AbstractOptionsPage#Addons_Setup QPushButton#Themes:focus,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Icon Packs"]:focus, 
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Sound Packs"]:focus, 
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="My Addons"]:focus,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Browse online"]:focus,  
+AbstractOptionsPage#Addons_Setup QPushButton#Translations:focus
+{
+    background: transparent;
+    border-bottom: 1px solid #444444;
+    color: #ffdc6b;
+    font-size: 16px;
+    padding: 0px;
+    padding-bottom: 6px;
+    font-weight: normal;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton#Plugins:hover,
+AbstractOptionsPage#Addons_Setup QPushButton#Themes:hover,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Icon Packs"]:hover,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Sound Packs"]:hover, 
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="My Addons"]:hover,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Browse online"]:hover,
+AbstractOptionsPage#Addons_Setup QPushButton#Translations:hover 
+{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #444444;
+    color: #FFFFFF;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton#Plugins:checked,
+AbstractOptionsPage#Addons_Setup QPushButton#Themes:checked,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Icon Packs"]:checked,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Sound Packs"]:checked, 
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="My Addons"]:checked,
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Browse online"]:checked,
+AbstractOptionsPage#Addons_Setup QPushButton#Translations:checked
+{
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #ffbf3b;
+    padding-bottom: 4px;
+    color: #FFFFFF;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="My Addons"],
+AbstractOptionsPage#Addons_Setup QPushButton[objectName="Browse online"]
+{
+    width: 130px;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sync"], 
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sync"]:pressed,
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sync"]:focus,
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sinc"],
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sinc"]:pressed,
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sinc"]:focus,
+AbstractOptionsPage#Addons_Setup QPushButton[text="同期"],
+AbstractOptionsPage#Addons_Setup QPushButton[text="同期"]:pressed,
+AbstractOptionsPage#Addons_Setup QPushButton[text="同期"]:focus,
+AbstractOptionsPage#Addons_Setup QPushButton[text="Синхронизация"],
+AbstractOptionsPage#Addons_Setup QPushButton[text="Синхронизация"]:pressed,
+AbstractOptionsPage#Addons_Setup QPushButton[text="Синхронизация"]:focus
+{
+    background: transparent;
+    text-align: right;
+    padding-right: 2px;
+    color: #AAAAAA;
+}
+
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sync"]:hover,
+AbstractOptionsPage#Addons_Setup QPushButton[text|="Sinc"]:hover,
+AbstractOptionsPage#Addons_Setup QPushButton[text="同期"]:hover,
+AbstractOptionsPage#Addons_Setup QPushButton[text="Синхронизация"]:hover
+{
+    color: #FFFFFF;
+    border: none;
+}
+
+/*******************************************************************************
+
+
+88888888ba
+88      "8b               ,d      ,d
+88      ,8P               88      88
+88aaaaaa8P' 88       88 MM88MMM MM88MMM ,adPPYba,  8b,dPPYba,  ,adPPYba,
+88""""""8b, 88       88   88      88   a8"     "8a 88P'   `"8a I8[    ""
+88      `8b 88       88   88      88   8b       d8 88       88  `"Y8ba,
+88      a8P "8a,   ,a88   88,     88,  "8a,   ,a8" 88       88 aa    ]8I
+88888888P"   `"YbbdP'Y8   "Y888   "Y888 `"YbbdP"'  88       88 `"YbbdP"'
+
+
+*******************************************************************************/
+
+QToolButton, OptionsDialog QToolButton {
+    background: #333333;
+    border: none;
+    padding: 2px;
+    height: 25px;
+    min-width: 25px;
+    color: #DDDDDD;
+}
+
+QToolButton:hover, OptionsDialog QToolButton:hover {
+    border: 2px solid #858585;
+    padding: 2px 0px;
+}
+
+QToolButton:focus, OptionsDialog QToolButton:focus {
+    color: #222222;
+    background: #ffbf3b;
+}
+
+QToolButton:disabled, OptionsDialog QToolButton:disabled {
+    color: #333333;
+}
+
+QToolButton#idAddButton, QToolButton#idRemoveButton, QToolButton#idSelectDefaultButton, QToolButton#idImportButton, QToolButton#idExportButton {
+    min-width: 80px;
+}
+
+QToolButton#EmoticonButton {
+    background: transparent;
+}
+
+QToolButton#toolButtonIcon {
+    background: #0f0f0f;
+    border: 2px solid #666666;
+    width: 30px;
+    height: 22px;
+    padding: 0px;
+    padding-left: 1px;
+    margin-top: 0px;
+}
+
+QToolButton#toolButtonIcon:disabled {
+    border: none;
+    background: #353535;
+}
+
+QToolButton#toolButtonIcon:hover {
+    border: 2px solid #858585;
+}
+
+QToolButton#toolButtonIcon[popupMode="1"] {
+    padding-right: 10px;
+}
+
+QToolButton#toolButtonIcon[popupMode="1"]:hover {
+    padding-right: 10px;
+    padding-left: 0px;
+    
+}
+
+QToolButton#toolButtonIcon::menu-button{
+    margin: 6px;
+    padding: 8px;
+    padding-right: 10px;
+    border: none;
+    
+}
+
+QToolButton#toolButtonIcon::menu-button:hover {
+    background: #353535;
+    border-left: none;
+    padding-right: 10px;
+}
+
+QToolButton#toolButtonIcon::menu-arrow {
+    image:url("styles:NekoSpeak/gfx/arrow/arrow-down.png");
+    right: 4px;
+    width: 10px;
+    height: 10px;
+}
+
+QToolButton#toolButtonIcon::menu-arrow:hover {
+    image:url("styles:NekoSpeak/gfx/arrow/arrow-down-hover.png");
+}
+
+QToolButton#toolButtonIcon::menu-arrow:disabled {
+    image:url("styles:NekoSpeak/gfx/arrow/arrow-down-disabled.png");
+}
+
+/*******************************************************************************
+
+
+  ,ad8888ba,                                 88                         88888888ba
+ d8"'    `"8b                                88                         88      "8b
+d8'                                          88                         88      ,8P
+88             ,adPPYba,  88,dPYba,,adPYba,  88,dPPYba,   ,adPPYba,     88aaaaaa8P'  ,adPPYba, 8b,     ,d8
+88            a8"     "8a 88P'   "88"    "8a 88P'    "8a a8"     "8a    88""""""8b, a8"     "8a `Y8, ,8P'
+Y8,           8b       d8 88      88      88 88       d8 8b       d8    88      `8b 8b       d8   )888(
+ Y8a.    .a8P "8a,   ,a8" 88      88      88 88b,   ,a8" "8a,   ,a8"    88      a8P "8a,   ,a8" ,d8" "8b,
+  `"Y8888Y"'   `"YbbdP"'  88      88      88 8Y"Ybbd8"'   `"YbbdP"'     88888888P"   `"YbbdP"' 8P'     `Y8
+
+
+*********************** Drop down multiple choice menus ***********************/
+
+QComboBox {
+    background: #0f0f0f;
+    border: 1px solid #222222;
+    padding-left: 10px;
+    min-height: 28px;
+    color: #FFFFFF;
+    padding-right: 10px;
+}
+
+QComboBox:hover, QComboBox:focus:hover {
+    background: #0f0f0f;
+    border: 1px solid #ffdc6b;
+}
+
+QComboBox:disabled {
+    background: #333333;
+    color: #333333;
+    border: none; 
+}
+
+QComboBox::drop-down {
+    padding-right: 5px;
+    border: 0px;
+}
+
+QComboBox:focus {
+    background: #0f0f0f;
+    border: 1px solid #ffbf3b;
+}
+
+QComboBox:disabled {
+    background: #333333;
+    color: #333333;
+    border: 1px solid #222222;
+}
+
+QComboBox::down-arrow {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-down.png");
+    height: 12px;
+    width: 12px;
+    right: 2px;
+}
+
+QComboBox::down-arrow:disabled {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-down-disabled.png");
+    right: 4px;
+}
+
+QComboBox QAbstractItemView {
+    background: #1f1f1f;
+    border: 1px solid #3f3f3f;
+    color: #FFFFFF;
+    selection-background-color: #3f3f3f;
+    outline: 0px;
+}
+
+/*******************************************************************************
+
+
+ ad88888ba              88                88888888ba
+d8"     "8b             ""                88      "8b
+Y8,                                       88      ,8P
+`Y8aaaaa,   8b,dPPYba,  88 8b,dPPYba,     88aaaaaa8P'  ,adPPYba, 8b,     ,d8
+  `"""""8b, 88P'    "8a 88 88P'   `"8a    88""""""8b, a8"     "8a `Y8, ,8P'
+        `8b 88       d8 88 88       88    88      `8b 8b       d8   )888(
+Y8a     a8P 88b,   ,a8" 88 88       88    88      a8P "8a,   ,a8" ,d8" "8b,
+ "Y88888P"  88`YbbdP"'  88 88       88    88888888P"   `"YbbdP"' 8P'     `Y8
+            88
+            88
+****** Multiple choice menu with up and down arrows cycling through items ******/
+
+QSpinBox, QDoubleSpinBox {
+    background: #0f0f0f;
+    border: 1px solid #222222;
+    padding-left: 10px;
+    min-height: 28px;
+    color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 25px;
+    min-width: 45px;
+}
+
+QSpinBox:hover, QDoubleSpinBox:hover, QSpinBox:focus:hover, QDoubleSpinBox:focus:hover {
+    background: #0f0f0f;
+    border: 1px solid #ffdc6b;
+}
+
+QSpinBox:focus, QDoubleSpinBox:focus {
+    background: #0f0f0f;
+    border: 1px solid #ffbf3b;
+}
+
+QSpinBox:disabled, QDoubleSpinBox:disabled {
+    background: #333333;
+    color: #333333;
+    border: 1px solid #3f3f3f;
+}
+
+QSpinBox::up-button, QSpinBox::down-button, QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background-color: transparent;
+    height: 25px;
+    width: 25px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button, QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background: transparent;
+    height: 28px;
+    width: 24px;
+}
+
+QSpinBox::up-button, QDoubleSpinBox::up-button {
+    right: 24px;
+}
+
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-up.png");
+    width: 12px;
+    height: 12px;
+    margin-left: -4px;
+}
+
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-down.png");
+    width: 12px;
+    height: 12px;
+    margin-left: -4px;
+}
+
+QSpinBox::up-arrow:disabled, QDoubleSpinBox::up-arrow:disabled {
+    top: 3px;
+    right: 2px;
+}
+
+QSpinBox::down-arrow:disabled, QDoubleSpinBox::down-arrow:disabled {
+    top: 0px;
+    right: 2px;
+}
+
+QSpinBox::up-arrow:hover, QDoubleSpinBox::up-arrow:hover {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-up-hover.png");
+}
+
+QSpinBox::down-arrow:hover, QDoubleSpinBox::down-arrow:hover {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-down-hover.png");
+}
+
+QSpinBox::up-arrow:disabled, QDoubleSpinBox::up-arrow:disabled {
+   image: url("styles:NekoSpeak/gfx/arrow/arrow-up-disabled.png");
+}
+
+QSpinBox::down-arrow:disabled, QDoubleSpinBox::down-arrow:disabled {
+    image: url("styles:NekoSpeak/gfx/arrow/arrow-down-disabled.png");
+}
+
+QSpinBox::up-arrow:off, QDoubleSpinBox::up-arrow:off {
+    image: none;
+}
+
+QSpinBox::down-arrow:off, QDoubleSpinBox::down-arrow:off {
+    image: none;
+}
+
+QSpinBox::up-arrow:disabled, QDoubleSpinBox::up-arrow:disabled {
+    top: 3px;
+    right: 2px;
+}
+
+QSpinBox::down-arrow:disabled, QDoubleSpinBox::down-arrow:disabled {
+    top: 0px;
+    right: 2px;
+}
+
+/*******************************************************************************
+
+
+  ,ad8888ba,  88                                88           88888888ba
+ d8"'    `"8b 88                                88           88      "8b
+d8'           88                                88           88      ,8P
+88            88,dPPYba,   ,adPPYba,  ,adPPYba, 88   ,d8     88aaaaaa8P'  ,adPPYba, 8b,     ,d8 ,adPPYba, ,adPPYba,
+88            88P'    "8a a8P_____88 a8"     "" 88 ,a8"      88""""""8b, a8"     "8a `Y8, ,8P' a8P_____88 I8[    ""
+Y8,           88       88 8PP""""""" 8b         8888[        88      `8b 8b       d8   )888(   8PP"""""""  `"Y8ba,
+ Y8a.    .a8P 88       88 "8b,   ,aa "8a,   ,aa 88`"Yba,     88      a8P "8a,   ,a8" ,d8" "8b, "8b,   ,aa aa    ]8I
+  `"Y8888Y"'  88       88  `"Ybbd8"'  `"Ybbd8"' 88   `Y8a    88888888P"   `"YbbdP"' 8P'     `Y8 `"Ybbd8"' `"YbbdP"'
+
+
+*******************************************************************************/
+QCheckBox {
+    color: #CCCCCC;
+    height: 25px;
+    padding: 0px 5px;
+}
+
+QCheckBox:hover {
+    color: #FFFFFF;
+}
+
+QCheckBox:disabled {
+    color: #666666;
+}
+
+QCheckBox::indicator, QListView::indicator, QGroupBox::indicator, QTreeView::indicator {
+    height: 16px;
+    width: 16px;
+}
+
+QCheckBox::indicator:checked, QListView::indicator:checked, QGroupBox::indicator:checked, QTreeView::indicator:checked {
+    image: url("styles:NekoSpeak/gfx/checkbox/checked.png");
+}
+
+QCheckBox::indicator:checked:hover, QListView::indicator:checked:hover, QGroupBox::indicator:checked:hover, QTreeView::indicator:checked:hover {
+    image: url("styles:NekoSpeak/gfx/checkbox/checked-hover.png");
+}
+
+QCheckBox::indicator:checked:disabled, QListView::indicator:checked:disabled, QGroupBox::indicator:checked:disabled, QTreeView::indicator:checked:disabled {
+    image: url("styles:NekoSpeak/gfx/checkbox/checked-disabled.png");
+}
+
+QCheckBox::indicator:unchecked, QListView::indicator:unchecked, QGroupBox::indicator:unchecked, QTreeView::indicator:unchecked {
+    image: url("styles:NekoSpeak/gfx/checkbox/unchecked.png");
+}
+
+QCheckBox::indicator:unchecked:hover, QListView::indicator:unchecked:hover, QGroupBox::indicator:unchecked:hover, QTreeView::indicator:unchecked:hover {
+    image: url("styles:NekoSpeak/gfx/checkbox/unchecked-hover.png");
+}
+
+QCheckBox::indicator:unchecked:disabled, QListView::indicator:unchecked:disabled, QGroupBox::indicator:unchecked:disabled, QTreeView::indicator:unchecked:disabled {
+    image: url("styles:NekoSpeak/gfx/checkbox/unchecked-disabled.png");
+}
+
+/*******************************************************************************
+
+
+88888888ba                      88 88                88888888ba
+88      "8b                     88 ""                88      "8b               ,d      ,d
+88      ,8P                     88                   88      ,8P               88      88
+88aaaaaa8P' ,adPPYYba,  ,adPPYb,88 88  ,adPPYba,     88aaaaaa8P' 88       88 MM88MMM MM88MMM ,adPPYba,  8b,dPPYba,  ,adPPYba,
+88""""88'   ""     `Y8 a8"    `Y88 88 a8"     "8a    88""""""8b, 88       88   88      88   a8"     "8a 88P'   `"8a I8[    ""
+88    `8b   ,adPPPPP88 8b       88 88 8b       d8    88      `8b 88       88   88      88   8b       d8 88       88  `"Y8ba,
+88     `8b  88,    ,88 "8a,   ,d88 88 "8a,   ,a8"    88      a8P "8a,   ,a88   88,     88,  "8a,   ,a8" 88       88 aa    ]8I
+88      `8b `"8bbdP"Y8  `"8bbdP"Y8 88  `"YbbdP"'     88888888P"   `"YbbdP'Y8   "Y888   "Y888 `"YbbdP"'  88       88 `"YbbdP"'
+
+
+*******************************************************************************/
+
+QRadioButton {
+    color: #CCCCCC;
+    height: 25px;
+    padding: 0px 5px;
+}
+
+QRadioButton:hover {
+    color: #FFFFFF;
+}
+QRadioButton:disabled {
+    color: #666666;
+}
+
+QRadioButton::indicator {
+    height: 16px;
+    width: 16px;
+}
+
+QRadioButton::indicator:checked {
+    image: url("styles:NekoSpeak/gfx/radiobutton/checked.png");
+}
+
+QRadioButton::indicator:checked:hover {
+    image: url("styles:NekoSpeak/gfx/radiobutton/checked-hover.png");
+}
+
+QRadioButton::indicator:checked:disabled {
+    image: url("styles:NekoSpeak/gfx/radiobutton/checked-disabled.png");
+}
+
+QRadioButton::indicator:unchecked {
+    image: url("styles:NekoSpeak/gfx/radiobutton/unchecked.png");
+}
+
+QRadioButton::indicator:unchecked:hover {
+    image: url("styles:NekoSpeak/gfx/radiobutton/unchecked-hover.png");
+}
+
+QRadioButton::indicator:unchecked:disabled {
+    image: url("styles:NekoSpeak/gfx/radiobutton/unchecked-disabled.png");
+}
+
+/*******************************************************************************
+
+
+888888888888                    88    88888888ba
+     88                         88    88      "8b
+     88                         88    88      ,8P
+     88  ,adPPYba,   ,adPPYba,  88    88aaaaaa8P'  ,adPPYba, 8b,     ,d8
+     88 a8"     "8a a8"     "8a 88    88""""""8b, a8"     "8a `Y8, ,8P'
+     88 8b       d8 8b       d8 88    88      `8b 8b       d8   )888(
+     88 "8a,   ,a8" "8a,   ,a8" 88    88      a8P "8a,   ,a8" ,d8" "8b,
+     88  `"YbbdP"'   `"YbbdP"'  88    88888888P"   `"YbbdP"' 8P'     `Y8
+
+
+*******************************************************************************/
+
+QToolBox {
+    background: transparent;
+}
+
+QToolBox::tab {
+    background: #333333;
+    border: 0px;
+    color: #DDDDDD;
+    padding-left: 5px;
+}
+
+QToolBox::tab:hover {
+    border: 2px solid #858585;
+    padding-left: 3px;
+}
+
+QWidget#page1, QWidget#page2, QWidget#pageGeneral, QWidget#pageDisplay, QWidget#pageIgnore, QWidget#pageWhisper  {
+    background: transparent;
+}
+
+/*******************************************************************************
+
+
+ ad88888ba                                    88 88    88888888ba
+d8"     "8b                                   88 88    88      "8b
+Y8,                                           88 88    88      ,8P
+`Y8aaaaa,    ,adPPYba, 8b,dPPYba,  ,adPPYba,  88 88    88aaaaaa8P' ,adPPYYba, 8b,dPPYba, ,adPPYba,
+  `"""""8b, a8"     "" 88P'   "Y8 a8"     "8a 88 88    88""""""8b, ""     `Y8 88P'   "Y8 I8[    ""
+        `8b 8b         88         8b       d8 88 88    88      `8b ,adPPPPP88 88          `"Y8ba,
+Y8a     a8P "8a,   ,aa 88         "8a,   ,a8" 88 88    88      a8P 88,    ,88 88         aa    ]8I
+ "Y88888P"   `"Ybbd8"' 88          `"YbbdP"'  88 88    88888888P"  `"8bbdP"Y8 88         `"YbbdP"'
+
+
+*******************************************************************************/
+
+ChatTab QScrollBar:vertical,
+TreeView QScrollBar:vertical,
+InfoFrame QScrollBar:vertical
+{
+    background: transparent;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+ChatTab QScrollBar:vertical,
+InfoFrame QScrollBar:vertical
+{
+    width: 12px;
+}
+
+TreeView QScrollBar:vertical {
+    width: 0px;  /* Remove the scrollbar to make the view cleaner */
+}
+
+ChatTab QScrollBar:vertical:hover,
+TreeView QScrollBar:vertical:hover,
+InfoFrame QScrollBar:vertical:hover
+{
+    padding: 0px;
+    background: #222222;
+}
+
+ChatTab QScrollBar::handle:vertical,
+TreeView QScrollBar::handle:vertical,
+InfoFrame QScrollBar::handle:vertical
+{
+    background: #666666;
+    min-height: 20px;
+    border-radius: 0px;
+}
+
+ChatTab QScrollBar::handle:vertical:hover,
+TreeView QScrollBar::handle:vertical:hover,
+InfoFrame QScrollBar::handle:vertical:hover
+{
+    background: #777777;
+}
+
+ChatTab QScrollBar::add-line:vertical, ChatTab QScrollBar::sub-line:vertical,
+TreeView QScrollBar::add-line:vertical, TreeView QScrollBar::sub-line:vertical,
+InfoFrame QScrollBar::add-line:vertical, InfoFrame QScrollBar::sub-line:vertical
+{
+    height: 0px;
+}
+
+ChatTab QScrollBar::add-page:vertical, ChatTab QScrollBar::sub-page:vertical,
+TreeView QScrollBar::add-page:vertical, TreeView QScrollBar::sub-page:vertical,
+InfoFrame QScrollBar::add-page:vertical, InfoFrame QScrollBar::sub-page:vertical
+{
+    background: transparent;
+}
+
+ChatTab QScrollBar:horizontal, 
+TreeView QScrollBar:horizontal,
+InfoFrame QScrollBar:horizontal
+{
+    background: transparent;
+    height: 12px;
+    padding: 0px;
+    padding-top: 10px;
+
+}
+
+ChatTab QScrollBar:horizontal:hover,
+TreeView QScrollBar:horizontal:hover,
+InfoFrame QScrollBar:horizontal:hover
+{
+    padding: 0px;
+    background: #222222;
+}
+
+ChatTab QScrollBar::handle:horizontal,
+TreeView QScrollBar::handle:horizontal,
+InfoFrame QScrollBar::handle:horizontal
+{
+    background: #666666;
+    min-width: 20px;
+    border-radius: 0px;
+}
+
+ChatTab QScrollBar::handle:horizontal:hover,
+TreeView QScrollBar::handle:horizontal:hover,
+InfoFrame QScrollBar::handle:horizontal:hover
+{
+    background: #777777;
+}
+
+ChatTab QScrollBar::add-line:horizontal, ChatTab QScrollBar::sub-line:horizontal,
+TreeView QScrollBar::add-line:horizontal, TreeView QScrollBar::sub-line:horizontal,
+InfoFrame QScrollBar::add-line:horizontal, InfoFrame QScrollBar::sub-line:horizontal
+{
+    width: 0px;
+}
+
+ChatTab QScrollBar::add-page:horizontal, ChatTab QScrollBar::sub-page:horizontal,
+TreeView QScrollBar::add-page:horizontal, TreeView QScrollBar::sub-page:horizontal,
+InfoFrame QScrollBar::add-page:horizontal, InfoFrame QScrollBar::sub-page:horizontal
+{
+    background: transparent;
+}
+
+QScrollBar:vertical {
+    background: rgba(255,255,255,0.04);
+    width: 10px;
+    padding: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(255,255,255,0.3);
+    min-height: 20px;
+    border-radius: 0px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: rgba(255,255,255,0.04);
+    height: 10px;
+    padding: 0px ;
+}
+
+QScrollBar::handle:horizontal {
+    background: rgba(255,255,255,0.3);
+    min-width: 20px;
+    border-radius: 0px; 
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    height: 0px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+/******************************************************************************
+
+
+ ad88888ba  88 88          88
+d8"     "8b 88 ""          88
+Y8,         88             88
+`Y8aaaaa,   88 88  ,adPPYb,88  ,adPPYba, 8b,dPPYba, ,adPPYba,
+  `"""""8b, 88 88 a8"    `Y88 a8P_____88 88P'   "Y8 I8[    ""
+        `8b 88 88 8b       88 8PP""""""" 88          `"Y8ba,
+Y8a     a8P 88 88 "8a,   ,d88 "8b,   ,aa 88         aa    ]8I
+ "Y88888P"  88 88  `"8bbdP"Y8  `"Ybbd8"' 88         `"YbbdP"'
+
+
+******************************************************************************/
+
+QSlider {
+    height: 24px;
+    margin: 5px;
+}
+
+QSlider::groove:horizontal {
+    height: 2px;
+    background: #666666;
+}
+
+QSlider::handle:horizontal {
+    background: #ffbf3b;
+    width: 8px;
+    margin: -11px 0;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #ffdc6b;
+}
+
+QSlider::groove:horizontal:hover {
+    background: #ffdc6b;
+}
+
+QSlider::sub-page:horizontal {
+    background: #ffbf3b;
+}
+
+QSlider::handle:horizontal:disabled, QSlider::groove:horizontal:disabled, QSlider::sub-page:horizontal:disabled {
+    background: #444444;
+}
+
+/******************************************************************************
+
+88888888ba                                                                                  88888888ba
+88      "8b                                                                                 88      "8b
+88      ,8P                                                                                 88      ,8P
+88aaaaaa8P' 8b,dPPYba,  ,adPPYba,   ,adPPYb,d8 8b,dPPYba,  ,adPPYba, ,adPPYba, ,adPPYba,    88aaaaaa8P' ,adPPYYba, 8b,dPPYba,
+88""""""'   88P'   "Y8 a8"     "8a a8"    `Y88 88P'   "Y8 a8P_____88 I8[    "" I8[    ""    88""""""8b, ""     `Y8 88P'   "Y8
+88          88         8b       d8 8b       88 88         8PP"""""""  `"Y8ba,   `"Y8ba,     88      `8b ,adPPPPP88 88
+88          88         "8a,   ,a8" "8a,   ,d88 88         "8b,   ,aa aa    ]8I aa    ]8I    88      a8P 88,    ,88 88
+88          88          `"YbbdP"'   `"YbbdP"Y8 88          `"Ybbd8"' `"YbbdP"' `"YbbdP"'    88888888P"  `"8bbdP"Y8 88
+                                    aa,    ,88
+                                     "Y8bbdP"
+******************************************************************************/
+
+QProgressBar {
+    border: none;
+    background-color: #0f0f0f;
+}
+
+QProgressBar::chunk {
+    background-color: #ffbf3b;
+    width: 20px;
+}

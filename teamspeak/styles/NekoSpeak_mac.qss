@@ -1,0 +1,26 @@
+
+QWidget {
+    padding-top: 2px;
+    font-size: 12pt;
+}
+
+QMainWindow {
+    background-color: #0c0c0c;
+    image: none;
+}
+
+QTreeView#ServerTreeView {
+    alternate-background-color: #0f0f0f;
+    border: none;
+    border-right: 1px solid #1f1f1f;
+    padding-top: 4px;
+    padding-right: 8px;
+}
+
+QTreeView::item {
+    padding-top: 0px;
+}
+
+QTextEdit#ChatTab {
+    font-size: 12pt;
+}

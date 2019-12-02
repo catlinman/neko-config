@@ -1,0 +1,249 @@
+/*
+ * TeamSpeak 3 Default Qt StyleSheet
+ * Special file for ChatLog, loaded in addition to global default.qss stylesheet
+ *
+ * Copyright (c) TeamSpeak Systems GmbH
+ *
+ * Supported HTML Subset:
+ *
+ *  TeamSpeak 3's text chat is able to display rich text, specified using a very limited subset of HTML 4 markup.
+ *  Please refer to this page for more information:
+ *
+ *  http://qt-project.org/doc/qt-4.8/richtext-html-subset.html#css-properties
+ *
+ * ===
+ * === Chat Message Syntax Example:
+ * ===
+ *
+ *  <p class="{PRIMARY_CLASS}">
+ *    <span class="Body">
+ *      <img src="...">
+ *      <span class="{SECONDARY_CLASS}">...</span>
+ *      <a class="{SECONDARY_CLASS}" href="...">...</a>:
+ *      <spanclass="{SECONDARY_CLASS}">
+ *        ...
+ *      </span>
+ *  </p>
+ *
+ * ===
+ * === Primary Classes:
+ * ===
+ *
+ *  - TextMessage_Normal                   :: informational message
+ *  - TextMessage_Welcome                  :: server welcome message
+ *  - TextMessage_HostMsg                  :: server host message
+ *  - TextMessage_Message                  :: text messages (details below)
+ *  - TextMessage_Poke                     :: poke messages
+ *  - TextMessage_Connected                :: own client connected to server
+ *  - TextMessage_Disconnected             :: own client disconnected from server
+ *  - TextMessage_ClientConnected          :: other client connected to server
+ *  - TextMessage_ClientDisconnected       :: other client connected from server
+ *  - TextMessage_ClientJoined             :: other client joined channel
+ *  - TextMessage_ClientLeft               :: other client left channel
+ *  - TextMessage_ClientSwitched           :: own/other client switched channel
+ *  - TextMessage_ClientDropped            :: own/other client timed out
+ *  - TextMessage_ClientKicked             :: own/other client kicked
+ *  - TextMessage_ClientBanned             :: own/other client banned
+ *  - TextMessage_ChannelCreated           :: channel created
+ *  - TextMessage_ChannelDeleted           :: channel deleted
+ *  - TextMessage_ChannelMoved             :: channel parent changed
+ *  - TextMessage_ChannelEdited            :: channel edited
+ *  - TextMessage_ServerEdited             :: server edited
+ *  - TextMessage_ServerError              :: server error
+ *  - TextMessage_GroupAssigned            :: channel/server group assigned
+ *  - TextMessage_GroupRevoked             :: channel/server group revoked
+ *  - TextMessage_TalkPowerAssigned        :: talk power granted
+ *  - TextMessage_TalkPowerRevoked         :: talk power revoked
+ *  - TextMessage_TalkPowerRequested       :: talk power requested
+ *  - TextMessage_BeginHistory             :: talk power revoked
+ *  - TextMessage_EndHistory               :: talk power revoked
+ *
+ *  The TextMessage_Message class can be used in combination with additional classes to identify specific messages.
+ *  Currently, we provide the following:
+ *
+ *  - Incoming                             :: incoming text messages
+ *  - Outgoing                             :: outgoing text messages
+ *  - Friend                               :: text messages sent by friends
+ *  - Blocked                              :: text messages sent by blocked users
+ *  - Private                              :: text messages in a private chat tab
+ *  - Public                               :: text messages in a channel/server chat tab
+ *
+ *  The CSS definition for a private text message sent by a friend would look like this:
+ *
+ *  .TextMessage_Message.Friend.Private { ... }
+ *
+ * ===
+ * === Secondary Classes (used within messages):
+ * ===
+ *
+ *  - TextMessage_UserLink                 :: user nickname
+ *  - TextMessage_ChannelLink              :: channel name
+ *  - TextMessage_ServerLink               :: server name
+ *  - TextMessage_OfflineLink              :: offline unread message(s) count
+ *  - TextMessage_Time                     :: message time
+ *  - TextMessage_Text                     :: message text
+ */
+
+p {
+	margin: 5px;
+	margin-left: 2px;
+	padding: 0px;
+}
+
+.TextMessage_UserLink {
+	color: #ffbf3b;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.TextMessage_OfflineLink,
+.TextMessage_ChannelLink,
+.TextMessage_ServerLink {
+	color: #ffbf3b;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+a {
+	color: #2acfff;
+}
+
+.TextMessage_HostName {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.TextMessage_Welcome,
+.TextMessage_HostMessage,
+.TextMessage_Poke  {
+	color: #ffdc6b;
+}
+
+.TextMessage_Normal,
+.TextMessage_Connected,
+.TextMessage_ClientConnected,
+.TextMessage_ClientJoined {
+	color: #A5A5A5;
+}
+
+.TextMessage_Disconnected,
+.TextMessage_ClientDisconnected,
+.TextMessage_ClientSwitched,
+.TextMessage_ClientLeft {
+	color: #A5A5A5;
+}
+
+.TextMessage_ClientDropped,
+.TextMessage_ClientKicked,
+.TextMessage_ClientBanned {
+	color: #C9070A;
+}
+
+.TextMessage_ChannelCreated,
+.TextMessage_ChannelDeleted,
+.TextMessage_ChannelEdited,
+.TextMessage_ChannelMoved,
+.TextMessage_ServerEdited {
+	color: #A5A5A5;
+}
+
+.TextMessage_GroupAssigned,
+.TextMessage_GroupRevoked,
+.TextMessage_TalkPowerAssigned,
+.TextMessage_TalkPowerRevoked,
+.TextMessage_TalkPowerRequested {
+	color: #A5A5A5;
+}
+
+.TextMessage_Time {
+    color: #DDDDDD;
+	font-weight: normal;
+}
+
+.TextMessage_BeginHistory,
+.TextMessage_EndHistory {
+	color: #707475;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.TextMessage_ServerError {
+	color: #C9070A;
+	font-weight: bold;
+}
+
+/**********************************************
+				InfoFrame CSS
+**********************************************/
+
+table {
+	border-collapse: collapse;
+	margin-left: 5px;
+}
+
+.title {
+	color: #FFFFFF;
+	text-align: left;
+	padding-bottom: 5px;
+	font-size: 20px;
+	white-space: nowrap;
+}
+
+.title a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.active {
+	color: #ffbf3b;
+	font-size: 16px;
+	padding-top: 5px;
+}
+
+a.inactive {
+	color: #555555;
+	font-size: 16px;
+	padding-top: 5px;
+	text-decoration: none;
+}
+
+.addr {
+	color: #999999;
+	font-size: 16px;
+}
+
+.hl {
+	color: #ffbf3b;
+	text-align: left;
+    font-size: 16px;
+	white-space: nowrap;
+	font-weight: normal;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.key {
+	color: #FFFFFF;
+	padding: 2px;
+	padding-right: 5px;
+	margin-bottom: 5px;
+}
+
+.val {
+	color: #AAAAAA;
+	padding: 2px;
+}
+
+.nick {
+	color: red;
+}
+
+.afk {
+	color: #999999;
+	font-size: 16px;
+	padding-top: -5px;
+	padding-bottom: 10px;
+	
+}

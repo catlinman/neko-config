@@ -56,6 +56,9 @@ get a headstart when setting up some applications.
 
 ![](https://github.com/catlinman/neko-config/blob/master/hexchat/preview.png)
 
+### TeamSpeak ###
+
+![](https://github.com/catlinman/neko-config/blob/master/teamspeak/preview.png)
 
 ## Origin ##
 
