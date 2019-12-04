@@ -16,6 +16,7 @@ get a headstart when setting up some applications.
 - Both Unix Vim (.vimrc) and Windows gVim (_vimrc) configuration files
 - tmux configuration files
 - Blender startup and configuration file
+- TeamSpeak NekoSpeak skin and icon pack
 - cmder setup with mintty and wsltty running zsh
 - Terminator terminal profile configuration
 - SSH configuration with 2FA and public keys
@@ -29,6 +30,7 @@ get a headstart when setting up some applications.
 - Uncrustify setup for C-Languages
 - PHP Code Beautifier and Fixer configuration (phpcbf)
 - GoAccess Service & nginx Proxy Setup
+- CS:GO autoexec configuration
 
 ## Screenshots ##
 

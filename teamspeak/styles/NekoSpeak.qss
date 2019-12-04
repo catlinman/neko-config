@@ -1,7 +1,7 @@
 /*
  * NekoSpeak
  * By Catlinman
- * Version 1.0
+ * Version 1.1
  *
  * Extensible dark contrasted theme corresponding to neko styling conventions.
  *
@@ -35,9 +35,9 @@ Keep in mind you will have to alter image assets as well for consistency.
     HIGHLIGHT   = #1f1f1f
     HIGHLIGHT2  = #3f3f3f
 
-    TEXT FG 	= #AAAAAA
-    TEXT BG 	= #222222
-    TEXT INFO 	= #333333
+    TEXT FG     = #AAAAAA
+    TEXT BG     = #222222
+    TEXT INFO   = #333333
 
 To make your life easier; here's a link to the neweset Qt Widget documentation
 when this skin was released in case you want to edit or extend the theme.
@@ -58,6 +58,15 @@ QWidget {
 
 QFrame {
     color: #AAAAAA;
+}
+
+QTextEdit:disabled,
+QLineEdit:disabled,
+QPlainTextEdit:disabled,
+QListView:disabled,
+QCheckBox:disabled,
+QRadioButton:disabled {
+    color: #333333;
 }
 
 /******************************************************************************
@@ -82,7 +91,7 @@ QMainWindow {
 }
 
 QWidget::pane {
-	border: none;
+    border: none;
 }
 
 QMainWindow QWidget::pane {
@@ -123,8 +132,8 @@ QSplitter::handle:vertical#bookmarksLocalRemoteSplitter,
 QSplitter::handle:vertical#identitiesLocalRemoteSplitter,
 QSplitter::handle:vertical#profilesLocalRemoteSplitter,
 QSplitter::handle#whisperListsLocalRemoteSplitter {
-	image: url('styles:NekoSpeak/gfx/separator/separator-vertical.png');
-	height: 1.2em;
+    image: url('styles:NekoSpeak/gfx/separator/separator-vertical.png');
+    height: 1.2em;
 }
 
 ServerView {
@@ -359,12 +368,12 @@ QMenu::item:hover {
 }
 
 QMenu::item:selected {
-	color: #222222;
+    color: #222222;
     background-color: #ffbf3b;
 }
 
 QMenu::item:disabled {
-    color: #333333;
+    color: #1f1f1f;
 }
 
 QMenu::separator {
@@ -583,8 +592,8 @@ QToolButton#ChatTabCloseButton:hover, QToolButton#ServerTabCloseButton:hover {
 ****** This view is also used in list dialogs like the bookmark menu list. ******/
 
 QTreeView, TreeView, TreeWidget  {
-	background-color: #0c0c0c;
-	color:;
+    background-color: #0c0c0c;
+    color:;
     border: 1px solid #3f3f3f;
     show-decoration-selected: 1;
     padding: 0px;
@@ -692,7 +701,6 @@ QTreeView::branch:open:has-children:!has-siblings:selected, QTreeView::branch:op
 
 *******************************************************************************/
 
-
 QListView {
     background: #1f1f1f;
     border: 1px solid #222222;
@@ -732,12 +740,12 @@ Y8,           88       88 ,adPPPPP88   88      88      `8b 8b       d8   )888(
 *******************************************************************************/
 
 QTextEdit#ChatTab {
-	font-size: 8pt;
+    font-size: 8pt;
     background: #0c0c0c;
     border: none;
     border-bottom: 2px solid #ffbf3b;
     padding-bottom: 10px;
-	margin-right: 0px;
+    margin-right: 0px;
 }
 
 QTextEdit#ChatLineEdit {
@@ -747,8 +755,8 @@ QTextEdit#ChatLineEdit {
     padding-left: 4px;
 
     background-image: url("styles:NekoSpeak/gfx/logo/logo.png");
-	background-position: right middle;
-	background-repeat:no-repeat;
+    background-position: right middle;
+    background-repeat:no-repeat;
 }
 
 QTextEdit#ChatLineEdit:hover {
@@ -1065,7 +1073,7 @@ QTextEdit#vserverWelcomeTextEdit,
 QTextEdit#vserverNicknamesTextEdit
 {
     background: #0f0f0f;
-    border: 2px solid #666666;
+    border: 1px solid #3f3f3f;
     qproperty-rootIsDecorated: false;
     color: #DDDDDD;
 }
@@ -1077,7 +1085,7 @@ QTextEdit#banReasonTextEdit:hover,
 QTextEdit#vserverWelcomeTextEdit:hover,
 QTextEdit#vsServerNicknamesTextEdit:hover
 {
-    border: 2px solid #ffdc6b;
+    border: 1px solid #ffdc6b;
 }
 
 QTextEdit#descriptionTextEdit:focus,
@@ -1109,7 +1117,7 @@ QTextEdit#vsServerNicknamesTextEdit:disabled
 {
     background: #333333;
     border: none;
-    color: #333333;
+    color: #222222;
 }
 
 /*******************************************************************************
@@ -1142,6 +1150,7 @@ QPushButton:hover {
 }
 
 QPushButton:disabled {
+    background: #1f1f1f;
     color: #333333;
 }
 
@@ -1292,7 +1301,7 @@ QToolButton:hover, OptionsDialog QToolButton:hover {
 
 QToolButton:focus, OptionsDialog QToolButton:focus {
     color: #222222;
-    background: #ffbf3b;
+    background: #ffdc6b;
 }
 
 QToolButton:disabled, OptionsDialog QToolButton:disabled {
@@ -1309,10 +1318,10 @@ QToolButton#EmoticonButton {
 
 QToolButton#toolButtonIcon {
     background: #0f0f0f;
-    border: 2px solid #666666;
+    border: 1px solid #666666;
     width: 30px;
     height: 22px;
-    padding: 0px;
+    padding: 1px;
     padding-left: 1px;
     margin-top: 0px;
 }
@@ -1323,7 +1332,7 @@ QToolButton#toolButtonIcon:disabled {
 }
 
 QToolButton#toolButtonIcon:hover {
-    border: 2px solid #858585;
+    border: 1px solid #ffdc6b;
 }
 
 QToolButton#toolButtonIcon[popupMode="1"] {
@@ -1394,12 +1403,6 @@ QComboBox:hover, QComboBox:focus:hover {
     border: 1px solid #ffdc6b;
 }
 
-QComboBox:disabled {
-    background: #333333;
-    color: #333333;
-    border: none; 
-}
-
 QComboBox::drop-down {
     padding-right: 5px;
     border: 0px;
@@ -1411,7 +1414,7 @@ QComboBox:focus {
 }
 
 QComboBox:disabled {
-    background: #333333;
+    background: #1f1f1f;
     color: #333333;
     border: 1px solid #222222;
 }
@@ -1429,10 +1432,10 @@ QComboBox::down-arrow:disabled {
 }
 
 QComboBox QAbstractItemView {
-    background: #1f1f1f;
-    border: 1px solid #3f3f3f;
-    color: #FFFFFF;
-    selection-background-color: #3f3f3f;
+    background: #0f0f0f;
+    border: 1px solid #ffbf3b;
+    selection-background-color: #ffdc6b;
+    selection-color: #1f1f1f;
     outline: 0px;
 }
 
@@ -1473,7 +1476,7 @@ QSpinBox:focus, QDoubleSpinBox:focus {
 }
 
 QSpinBox:disabled, QDoubleSpinBox:disabled {
-    background: #333333;
+    background: #1f1f1f;
     color: #333333;
     border: 1px solid #3f3f3f;
 }
@@ -1930,6 +1933,7 @@ QSlider::handle:horizontal:disabled, QSlider::groove:horizontal:disabled, QSlide
 88          88          `"YbbdP"'   `"YbbdP"Y8 88          `"Ybbd8"' `"YbbdP"' `"YbbdP"'    88888888P"  `"8bbdP"Y8 88
                                     aa,    ,88
                                      "Y8bbdP"
+
 ******************************************************************************/
 
 QProgressBar {
