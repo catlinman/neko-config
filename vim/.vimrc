@@ -5,7 +5,7 @@
 set nocompatible
 filetype off
 
-" ###    GENERAL VUNDLE INFORMATION     ###
+" ######  GENERAL VUNDLE INFORMATION  ######
 "
 " Install Vundle before doing anything else.
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -16,7 +16,7 @@ filetype off
 " Alternatively you can run the following command inside of vim.
 " :PluginInstall
 "
-" ###                                   ###
+" ##########################################
 
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -30,8 +30,10 @@ call vundle#begin()
 " Let Vundle manage Vundle, required.
 Plugin 'gmarik/Vundle.vim'
 
-" The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
+
+" Autoswap sessions on detection of leftover swp file.
+Plugin 'gioele/vim-autoswap'
 
 " Airline
 Plugin 'vim-airline/vim-airline'
@@ -153,6 +155,9 @@ nnoremap <silent> <F2> :set number!<CR>
 " Set a key for toggling relative line numbers.
 nnoremap <silent> <F3> :set relativenumber!<CR>
 hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=yellow
+
+" Enable cursor line highlighting by default.
+set cursorline
 
 " Set a key for toggling easier navigation highlighting.
 nnoremap <silent> <F4> :set cursorline!<CR>
