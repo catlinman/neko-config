@@ -61,7 +61,22 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Note: I have some plugins like OSX and Arch. You probably don't need these.
-plugins=(git rust pyenv pip ruby rails archlinux osx zsh-autosuggestions zsh-syntax-highlighting zsh-256color command-time)
+plugins=(
+    thefuck encode64 extract
+    history dirhistory dircycle
+    tmux
+    httpie
+    git git-extras
+    ansible docker kubectl
+    python pyenv pip pipenv virtualenv
+    ruby rails rake gem
+    rust cargo 
+    go golang
+    node npm yarn nvm
+    archlinux systemd
+    osx
+    zsh-autosuggestions zsh-syntax-highlighting zsh-256color zsh-syntax-highlighting-filetypes command-time
+)
 
 # To install the plugins from my custom setup simply "source plugins.sh".
 
@@ -157,5 +172,4 @@ fi
 bindkey "[C" forward-word
 bindkey "[D" backward-word
 
-
-export PATH=/Users/catlinman/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH

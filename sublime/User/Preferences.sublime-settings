@@ -1,6 +1,8 @@
 {
 	"color_scheme": "Packages/User/Subneko.tmTheme",
-	"font_size": 10,
+	"figlet_font": "univers",
+	"font_face": "Fira Code Retina",
+	"font_size": 8,
 	"ignored_packages":
 	[
 		"DA UI",
