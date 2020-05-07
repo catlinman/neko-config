@@ -62,7 +62,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Note: I have some plugins like OSX and Arch. You probably don't need these.
 plugins=(
-    thefuck encode64 extract
+    encode64 extract
     history dirhistory dircycle
     tmux
     httpie
