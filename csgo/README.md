@@ -7,4 +7,4 @@ Throwing this in here because someone else might find it useful and I'd like to 
 
 ## Installation ##
 
-Copy the `autoexec.cfg` file to `csgo/cfg/` within your CS:GO installation directory.
+Copy all `cfg` files to `csgo/cfg/` within your CS:GO installation directory.
