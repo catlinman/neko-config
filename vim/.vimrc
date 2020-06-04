@@ -5,85 +5,94 @@
 set nocompatible
 filetype off
 
-" ######  GENERAL VUNDLE INFORMATION  ######
+" ###    GENERAL NEOBUNDLE INFORMATION     ###
 "
-" Install Vundle before doing anything else.
-" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" Install NeoBundle before doing anything else.
+" git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 "
-" Once you have installed Vundle you can run the following command.
-" vim +PluginInstall +qall
+" Once you have installed NeoBundle you can run the following command.
+" vim +NeoBundleInstall +qall
 "
 " Alternatively you can run the following command inside of vim.
-" :PluginInstall
+" :NeoBundleInstall
 "
-" ##########################################
+" ###                                      ###
 
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+" Skip initialization for vim-tiny or vim-small.
+if 0 | endif
+if &compatible
+    set nocompatible
+endif
 
-" Begin the Vundle plugin preparation.
-call vundle#begin()
+" Set the runtime path to include NeoBundle and initialize
+set runtimepath+=~/.vim/bundle/neobundle.vim/
 
-" Alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
+" Begin the NeoBundle plugin preparation.
+call neobundle#begin(expand('~/.vim/bundle/'))
 
-" Let Vundle manage Vundle, required.
-Plugin 'gmarik/Vundle.vim'
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Keep Plugin commands between vundle#begin/end.
+" Alternatively, pass a path where NeoBundle should install plugins
+" call neobundle#begin('~/some/path/here')
+
+" The following are examples of different formats supported.
+" Keep NeoBundle commands between neobundle#begin/end.
 
 " Autoswap sessions on detection of leftover swp file.
-Plugin 'gioele/vim-autoswap'
+NeoBundle 'gioele/vim-autoswap'
 
 " Airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 
 " Airline requires the powerline fonts to be installed and activated.
 " Ignore this if we are running on just the linux kernal terminal.
 if $TERM != "linux"
-    Plugin 'Lokaltog/powerline-fonts'
+    NeoBundle 'Lokaltog/powerline-fonts'
 endif
 
 " Color scheme
-Plugin 'chriskempson/base16-vim'
+NeoBundle 'chriskempson/base16-vim'
 
 " Navigation and highlighting (Implements 'TagbarToggle')
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'kien/ctrlp.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'ap/vim-css-color'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'majutsushi/tagbar'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'ap/vim-css-color'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'majutsushi/tagbar'
 
 " Colorizer color highlighting (Implements 'ColorHighlight')
-Plugin 'chrisbra/Colorizer'
+NeoBundle 'chrisbra/Colorizer'
 
 " Git
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'airblade/vim-gitgutter'
 
 " Formatting & Linting (Implements 'ALEToggle')
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'w0rp/ale'
+NeoBundle 'dhruvasagar/vim-table-mode'
+NeoBundle 'Chiel92/vim-autoformat'
+NeoBundle 'w0rp/ale'
 
 " Snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'honza/vim-snippets'
 
 " Languages
-Plugin 'rust-lang/rust.vim'
-Plugin 'tmux-plugins/vim-tmux'
+NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'tmux-plugins/vim-tmux'
 
 " Python dependent plugins (Implements 'MinimapToggle')
 if has("python") || has("python3")
-    Plugin 'severin-lemaignan/vim-minimap'
-    Plugin 'Valloric/MatchTagAlways'
+    NeoBundle 'severin-lemaignan/vim-minimap'
+    NeoBundle 'Valloric/MatchTagAlways'
 endif
 
-" All of your Plugins must be added before the following line.
-call vundle#end()
+" All of your NeoBundles must be added before the following line.
+call neobundle#end()
+
+NeoBundleCheck
 
 " Required setting.
 filetype plugin indent on
@@ -91,13 +100,13 @@ filetype plugin indent on
 " To ignore plugin indent changes, instead use: filetype plugin on
 "
 " Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+" :NeoBundleList       - lists configured plugins
+" :NeoBundleInstall    - installs plugins; append `!` to update or just :NeoBundleUpdate
+" :NeoBundleSearch foo - searches for foo; append `!` to refresh local cache
+" :NeoBundleClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" see :h neobundle for more details or wiki for FAQ
+" Put your non-NeoBundle stuff after this line
 
 " Set the Base16 color scheme. Make sure that Base16 Shell is installed.
 syntax on
@@ -121,6 +130,9 @@ cmap w!! w !sudo tee > /dev/null %
 inoremap jk <ESC>
 inoremap kj <ESC>
 
+" Add mouse support.
+set mouse=a
+
 " Use soft tabs with width of 4 spaces.
 set tabstop=4
 set expandtab
@@ -128,6 +140,7 @@ set shiftwidth=4
 set autoindent
 set softtabstop=4
 set ts=4 sw=4
+set cursorline
 
 " Change backspace behavior.
 set backspace=indent,eol,start
@@ -156,9 +169,6 @@ nnoremap <silent> <F2> :set number!<CR>
 nnoremap <silent> <F3> :set relativenumber!<CR>
 hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=yellow
 
-" Enable cursor line highlighting by default.
-set cursorline
-
 " Set a key for toggling easier navigation highlighting.
 nnoremap <silent> <F4> :set cursorline!<CR>
 nnoremap <silent> <F5> :set cursorcolumn!<CR>
@@ -171,6 +181,8 @@ hi CursorColumn cterm=NONE ctermbg=234 ctermfg=NONE
 set laststatus=2
 
 filetype indent plugin on
+
+let g:pymode_python='python3'
 
 let g:mta_filetypes={
     \ 'html' : 1,
@@ -239,4 +251,3 @@ hi IndentGuidesEven ctermbg=black
 let g:UltiSnipsExpandTrigger='<tab>'
 let g:UltiSnipsJumpForwardTrigger='<c-b>'
 let g:UltiSnipsJumpBackwardTrigger='<c-z>'
-

@@ -1,0 +1,46 @@
+
+# Ignore any other files further up in the file system.
+root = true
+
+# Configuration for all files.
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = lf
+
+# Docstrings and comments use max_line_length = 79.
+[*.py]
+max_line_length = 119
+
+# Minified JavaScript files shouldn't be changed.
+[**.min.js]
+indent_style = ignore
+insert_final_newline = ignore
+
+# Use 2 spaces for web based languages and frameworks. Mitigate callback-hell nesting.
+[*.{js,ts,tsx,vue}]
+indent_size = 2
+
+# Use 2 spaces for file types that have deep nested structures.
+[*.{html,htm,json,yml,toml,css,scss,sass,less}]
+indent_size = 2
+
+# Additionally, ignore final newlines.
+[*.{json,yml,toml}]
+insert_final_newline = ignore
+
+# Makefiles always use tabs for indentation.
+[Makefile]
+indent_style = tab
+
+# Batch files use tabs for indentation.
+[*.bat]
+indent_style = tab
+
+# Make lines automatically wrap once they get to long.
+[*.{md,markdown,txt}]
+max_line_length = 79
+trim_trailing_whitespace = false
