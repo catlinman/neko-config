@@ -19,6 +19,9 @@ by my setup. In the configuration file itself are additional steps you should
 pay attention to before running as some plugins and settings require extra
 dependencies.
 
+Additionally for my powerlevel10k settings; copy the .pl10k.zsh file to your
+home directory.
+
 ## Troubleshooting ##
 
 In some rare cases you might receive the following message after starting zsh.

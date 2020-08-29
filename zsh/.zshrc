@@ -1,4 +1,3 @@
-
 # Nekoconfig ZSH setup. Requires oh-my-zsh to run. You can get it via this command:
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -14,10 +13,27 @@ exists() { [ -x "$(command -v $1)" ]; }
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
+# Base16 Shell support. Install via: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+# Don't forget to set your theme via base16 and tab completion. I personally use base16_neko which is a fork of base16_seti.
+BASE16_SHELL=$HOME/.config/base16-shell/
+[[ -n $PS1 ]] && [[ -s $BASE16_SHELL/profile_helper.sh ]] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
 #Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="nekoshell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -64,14 +80,13 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(
     encode64 extract
     history dirhistory dircycle
-    tmux
     httpie
     git git-extras
     ansible docker kubectl
     python pyenv pip pipenv virtualenv
     ruby rails rake gem
     rust cargo 
-    go golang
+    golang
     node npm yarn nvm
     archlinux systemd
     osx
@@ -97,11 +112,6 @@ export GPG_TTY
 
 # Arch compilation flags
 export ARCHFLAGS="-arch x86_64"
-
-# Base16 Shell support. Install via: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
-# Don't forget to set your theme via base16 and tab completion. I personally use base16_neko which is a fork of base16_seti.
-BASE16_SHELL=$HOME/.config/base16-shell/
-[[ -n $PS1 ]] && [[ -s $BASE16_SHELL/profile_helper.sh ]] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 # Custom dircolors setup.
 if whence dircolors > /dev/null; then
@@ -133,43 +143,3 @@ else
 fi
 
 # Preferred editor for local sessions.
-if exists vim; then
-    export EDITOR='vim'
-fi
-
-# Replace default ls commands with exa's.
-if exists exa; then
-    alias ls="exa"
-    alias la="exa -laagh --git"
-fi
-
-# Create an extra alias just for pasting. Uses netcat if available.
-# Example: echo You can now paste like this! | tb
-if exists nc; then
-    alias tb="nc termbin.com 9999"
-    
-else
-    alias tb="(exec 3<>/dev/tcp/termbin.com/9999; cat >&3; cat <&3; exec 3<&-)"
-
-fi
-
-# Setup thefuck and it's alias if it is installed.
-if exists thefuck; then
-    eval $(thefuck --alias)
-fi
-
-# Node Version Manager handling.
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# If we have a custom directory for npm modules add it to the path.
-if [[ -d "$HOME/.npm-global" ]]; then
-    export PATH=~/.npm-global/bin:$PATH
-fi
-
-# Custom key bindings go in this section.
-bindkey "[C" forward-word
-bindkey "[D" backward-word
-
-export PATH=$HOME/.local/bin:$PATH
