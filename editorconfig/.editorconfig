@@ -40,6 +40,10 @@ indent_style = tab
 [*.bat]
 indent_style = tab
 
+# Go files use tabs for indentation.
+[*.go]
+indent_style = tab
+
 # Make lines automatically wrap once they get to long.
 [*.{md,markdown,txt}]
 max_line_length = 79
