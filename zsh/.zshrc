@@ -90,7 +90,7 @@ plugins=(
     node npm yarn nvm
     archlinux systemd
     osx
-    zsh-autosuggestions zsh-syntax-highlighting zsh-256color zsh-syntax-highlighting-filetypes command-time
+    zsh-autosuggestions zsh-syntax-highlighting zsh-256color zsh-syntax-highlighting-filetypes
 )
 
 # To install the plugins from my custom setup simply "source plugins.sh".
