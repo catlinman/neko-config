@@ -143,3 +143,43 @@ else
 fi
 
 # Preferred editor for local sessions.
+if exists vim; then
+    export EDITOR='vim'
+fi
+
+# Replace default ls commands with exa's.
+if exists exa; then
+    alias ls="exa"
+    alias la="exa -laagh --git"
+fi
+
+# Create an extra alias just for pasting. Uses netcat if available.
+# Example: echo You can now paste like this! | tb
+if exists nc; then
+    alias tb="nc termbin.com 9999"
+    
+else
+    alias tb="(exec 3<>/dev/tcp/termbin.com/9999; cat >&3; cat <&3; exec 3<&-)"
+
+fi
+
+# Setup thefuck and it's alias if it is installed.
+if exists thefuck; then
+    eval $(thefuck --alias)
+fi
+
+# Node Version Manager handling.
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# If we have a custom directory for npm modules add it to the path.
+if [[ -d "$HOME/.npm-global" ]]; then
+    export PATH=~/.npm-global/bin:$PATH
+fi
+
+# Custom key bindings go in this section.
+bindkey "[C" forward-word
+bindkey "[D" backward-word
+
+export PATH=$HOME/.local/bin:$PATH
