@@ -5,6 +5,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 git clone git://github.com/chrissicool/zsh-256color.git $ZSH_CUSTOM/plugins/zsh-256color
-git clone git://github.com/popstas/zsh-command-time.git $ZSH_CUSTOM/plugins/command-time
 git clone git://github.com/trapd00r/zsh-syntax-highlighting-filetypes.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting-filetypes
 mv $ZSH_CUSTOM/plugins/zsh-syntax-highlighting-filetypes/zsh-syntax-highlighting-filetypes{,.plugin}.zsh
