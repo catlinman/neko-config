@@ -142,6 +142,22 @@ else
 
 fi
 
+# Install via $ git clone https://github.com/bash-my-aws/bash-my-aws.git ~/.bash-my-aws
+# If bash-my-aws is available - load it in the path and source the configuration.
+if [[ -d $HOME/.bash-my-aws ]]; then
+    export PATH="$HOME/.bash-my-aws/bin:$PATH"
+    source $HOME/.bash-my-aws/aliases
+fi
+
+# Install via $ git clone https://github.com/anyenv/anyenv ~/.anyenv
+if [[ -d $HOME/.anyenv ]]; then
+    export PATH="$HOME/.anyenv/bin:$PATH"
+fi
+
+if exists anyenv; then
+    eval "$(anyenv init -)"
+fi
+
 # Preferred editor for local sessions.
 if exists vim; then
     export EDITOR='vim'
@@ -167,11 +183,6 @@ fi
 if exists thefuck; then
     eval $(thefuck --alias)
 fi
-
-# Node Version Manager handling.
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # If we have a custom directory for npm modules add it to the path.
 if [[ -d "$HOME/.npm-global" ]]; then
