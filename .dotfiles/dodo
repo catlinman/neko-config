@@ -1,0 +1,105 @@
+#!/bin/bash
+
+DODOFILE=$HOME/.dodofile
+
+add () {
+    touch $DODOFILE
+    __data=$(<$DODOFILE)
+   
+    if [[ -z "$*" ]]; then
+        echo "Enter a new do:"
+
+        read __do
+
+        echo "$__do" >> $DODOFILE
+
+    else
+        echo "$*" >> $DODOFILE
+    fi
+}
+
+remove () {
+    touch $DODOFILE
+    __data=$(<$DODOFILE)
+    __selection=${__data//$'\n'/\" \"}
+    
+    if [ -s $DODOFILE ]; then
+        eval set "\"$__selection\""
+        select __entry in "$@"; do
+            __chain=""$REPLY"d w q"
+            printf '%s\n' $__chain | ed -s $DODOFILE
+        
+            echo "Removed '$__entry'."
+
+            break;
+        done
+    else
+        echo 'No entries! Go add some!'
+    fi
+}
+
+clear () {
+    truncate -s 0 $DODOFILE
+}
+
+count () {
+    touch $DODOFILE
+    wc -l $DODOFILE | awk '{ print $1 }'
+}
+
+show () {
+    touch $DODOFILE
+    __data=$(<$DODOFILE)
+   
+    if [ -s $DODOFILE ]; then
+        echo "$__data" | nl -n ln -s ") " -w 1
+    else
+        echo 'No entries! Go add some!'
+    fi
+}
+
+pick () {
+    touch $DODOFILE
+    __data=$(<$DODOFILE)
+
+    if [ -s $DODOFILE ]; then
+        rnd=$(( 1 + $RANDOM % $(wc -l < $DODOFILE) )); sed -n "${rnd}p" $DODOFILE
+    fi
+}
+
+help () {
+    read -d '' __help << \
+EOF
+Usage: do [command]
+
+Available commands:
+    help    - Show this information
+    add     - Add an entry
+    remove  - Remove an entry
+    clear   - Clear all entries
+    count   - Count all entries
+    show    - Show all entries
+    pick    - Show a random entry
+EOF
+
+    echo "$__help"
+}
+
+main () {
+    __command=$1
+    __value=${*//$__command/}
+    
+    case "$__command" in
+        "help"      ) help ;;
+        "add"       ) add $__value ;;
+        "remove"    ) remove ;;
+        "clear"     ) clear ;;
+        "count"     ) count ;;
+        "show"      ) show ;;
+        "pick"      ) pick ;;
+        ""          ) help ;;
+        *           ) help ;;
+    esac
+}
+
+main $1 $*

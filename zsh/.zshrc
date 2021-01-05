@@ -165,8 +165,8 @@ fi
 
 # Replace default ls commands with exa's.
 if exists exa; then
-    alias ls="exa"
-    alias la="exa -laagh --git"
+    alias ls="exa --icons"
+    alias la="exa -laagh --git --icons"
 fi
 
 # Create an extra alias just for pasting. Uses netcat if available.
@@ -194,3 +194,13 @@ bindkey "[C" forward-word
 bindkey "[D" backward-word
 
 export PATH=$HOME/.local/bin:$PATH
+
+# Check if the dodo .dotfile exists. If so, get todos.
+if exists dodo; then
+    __todo_pick="$(dodo pick)"
+    __todo_count="$(dodo count)"
+    
+    if [[ ! -s $__todo_pick ]]; then
+        echo "TO ($__todo_count) DO: $__todo_pick"
+    fi
+fi
