@@ -21,3 +21,11 @@ use. Make sure to read through them thoroughly.
 Please note that these files were created and used on an Arch system. If you
 are running any other distribution, please make sure to check that the
 configuration applies to your system.
+
+If you're encountering an error trying to access `smtps`; make sure you have
+the following two lines in your `/etc/services` definitions.
+
+```
+smtps 465/tcp
+smtps 465/udp
+```
