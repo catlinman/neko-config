@@ -8,19 +8,6 @@ certbot certonly --expand --renew-by-default --standalone \
 	-d legacy.catlinman.com \
 	-d nekocloud.catlinman.com \
     -d nekocast.catlinman.com \
-    -d nekodocs.catlinman.com \
-	-d openly.catlinman.com \
-	-d ask.catlinman.com \
-	-d twitter.catlinman.com \
-	-d facebook.catlinman.com \
-	-d youtube.catlinman.com \
-	-d steam.catlinman.com \
-	-d photo.catlinman.com \
-	-d instagram.catlinman.com \
-	-d snapchat.catlinman.com \
-	-d osu.catlinman.com \
-	-d deviantart.catlinman.com \
-	-d github.catlinman.com \
-	-d googleplus.catlinman.com
+    -d ferdi.catlinman.com
 
 systemctl start nginx.service # Restart the nginx server.
