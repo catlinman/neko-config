@@ -5,6 +5,12 @@
 " Set the correct background.
 set background=dark
 
+" Optional: Since I use a base16 theme for my terminal, these settings work out
+" of the box most of the time on minimal servers.
+
+" syntax enable
+" colorscheme pablo
+
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
