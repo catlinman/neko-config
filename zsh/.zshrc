@@ -85,7 +85,7 @@ plugins=(
     ansible docker kubectl
     python pyenv pip pipenv virtualenv
     ruby rails rake gem
-    rust cargo 
+    rust 
     golang
     node npm yarn nvm
     archlinux systemd
