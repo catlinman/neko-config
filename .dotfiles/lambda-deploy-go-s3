@@ -1,0 +1,15 @@
+#!/bin/bash
+
+bucket=""
+
+if [[ ! -z "$BUCKET" ]] ; then
+    bucket="$BUCKET"
+fi
+
+if [[ ! -z "$1" ]] ; then
+    bucket="$1"
+fi
+
+echo "$bucket"
+
+GOOS=linux go build -o main && zip `printf '%s\n' "${PWD##*/}"`.zip main && aws s3 cp `printf '%s\n' "${PWD##*/}"`.zip "s3://$bucket" && rm main `printf '%s\n' "${PWD##*/}"`.zip
