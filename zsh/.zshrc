@@ -17,6 +17,16 @@ export ZSH=~/.oh-my-zsh
 # Don't forget to set your theme via base16 and tab completion. I personally use base16_neko which is a fork of base16_seti.
 BASE16_SHELL=$HOME/.config/base16-shell/
 [[ -n $PS1 ]] && [[ -s $BASE16_SHELL/profile_helper.sh ]] && eval "$($BASE16_SHELL/profile_helper.sh)"
+# Check if the dodo .dotfile exists. If so, get todos.
+
+if exists dodo; then
+    __todo_pick="$(dodo pick)"
+    __todo_count="$(dodo count)"
+    
+    if [[ ! -s $__todo_pick ]]; then
+        echo "TO ($__todo_count) DO: $__todo_pick"
+    fi
+fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -89,7 +99,7 @@ plugins=(
     golang
     node npm yarn nvm
     archlinux systemd
-    osx
+    macos
     zsh-autosuggestions zsh-syntax-highlighting zsh-256color zsh-syntax-highlighting-filetypes
 )
 
@@ -180,8 +190,15 @@ else
 fi
 
 # Setup thefuck and it's alias if it is installed.
+# https://github.com/nvbn/thefuck
 if exists thefuck; then
     eval $(thefuck --alias)
+fi
+
+# Prepare zoxide if it's installed.
+# https://github.com/ajeetdsouza/zoxide
+if exists zoxide; then
+    eval "$(zoxide init zsh)"
 fi
 
 # If we have a custom directory for npm modules add it to the path.
@@ -195,12 +212,3 @@ bindkey "[D" backward-word
 
 export PATH=$HOME/.local/bin:$PATH
 
-# Check if the dodo .dotfile exists. If so, get todos.
-if exists dodo; then
-    __todo_pick="$(dodo pick)"
-    __todo_count="$(dodo count)"
-    
-    if [[ ! -s $__todo_pick ]]; then
-        echo "TO ($__todo_count) DO: $__todo_pick"
-    fi
-fi
