@@ -89,7 +89,7 @@ plugins=(
     golang
     node npm yarn nvm
     archlinux systemd
-    osx
+    macos
     zsh-autosuggestions zsh-syntax-highlighting zsh-256color zsh-syntax-highlighting-filetypes
 )
 
