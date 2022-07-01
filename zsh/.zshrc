@@ -212,3 +212,10 @@ bindkey "[D" backward-word
 
 export PATH=$HOME/.local/bin:$PATH
 
+if [[ ! -a $HOME/.zsh_run ]]; then
+     printf "# ZSH personal invocation extensions - anything in here is oddly specific \n# Example: dropbox start 1>/dev/null 2>/dev/null" > $HOME/.zsh_run
+
+else
+    source $HOME/.zsh_run
+
+fi
