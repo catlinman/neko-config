@@ -12,4 +12,4 @@ fi
 
 echo "$bucket"
 
-GOOS=linux go build -o main && zip `printf '%s\n' "${PWD##*/}"`.zip main && aws s3 cp `printf '%s\n' "${PWD##*/}"`.zip "s3://$bucket" && rm main `printf '%s\n' "${PWD##*/}"`.zip
+GOARCH=amd64 CGO_ENABLED=0 GOOS=linux go build -o main && zip `printf '%s\n' "${PWD##*/}"`.zip main && aws s3 cp `printf '%s\n' "${PWD##*/}"`.zip "s3://$bucket" && rm main `printf '%s\n' "${PWD##*/}"`.zip
