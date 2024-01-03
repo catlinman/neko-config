@@ -85,12 +85,11 @@ plugins=(
     ansible docker kubectl
     python pyenv pip pipenv virtualenv
     ruby rails rake gem
-    rust cargo 
+    rust 
     golang
     node npm yarn nvm
     archlinux systemd
-    osx
-    zsh-autosuggestions zsh-syntax-highlighting zsh-256color zsh-syntax-highlighting-filetypes
+    zsh-autosuggestions zsh-256color
 )
 
 # To install the plugins from my custom setup simply "source plugins.sh".
