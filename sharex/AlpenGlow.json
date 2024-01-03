@@ -1,0 +1,21 @@
+{
+  "Name": "AlpenGlow",
+  "BackgroundColor": "39, 31, 56",
+  "LightBackgroundColor": "51, 37, 69",
+  "DarkBackgroundColor": "62, 39, 76",
+  "TextColor": "231, 233, 234",
+  "BorderColor": "62, 39, 76",
+  "CheckerColor": "62, 39, 76",
+  "CheckerColor2": "62, 39, 76",
+  "CheckerSize": 15,
+  "LinkColor": "171, 63, 184",
+  "MenuHighlightColor": "62, 39, 76",
+  "MenuHighlightBorderColor": "113, 53, 115",
+  "MenuBorderColor": "113, 53, 115",
+  "MenuCheckBackgroundColor": "113, 53, 115",
+  "MenuFont": "Segoe UI, 9.75pt",
+  "ContextMenuFont": "Segoe UI, 9.75pt",
+  "ContextMenuOpacity": 100,
+  "SeparatorLightColor": "43, 26, 46",
+  "SeparatorDarkColor": "25, 20, 39"
+}
