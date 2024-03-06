@@ -113,8 +113,8 @@ export LANG=en_US.UTF-8
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Arch compilation flags
-export ARCHFLAGS="-arch x86_64"
+# Compilation flags - uncomment these or change them if you want them
+# export ARCHFLAGS="-arch x86_64"
 
 # Custom dircolors setup.
 if whence dircolors > /dev/null; then
