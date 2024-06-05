@@ -93,7 +93,7 @@ plugins=(
     golang
     node npm yarn nvm
     archlinux systemd
-    zsh-autosuggestions zsh-256color
+    zsh-autosuggestions zsh-256color zsh-github-copilot
 )
 
 # To install the plugins from my custom setup simply "source plugins.sh".
@@ -195,6 +195,10 @@ fi
 # Custom key bindings go in this section.
 bindkey "[C" forward-word
 bindkey "[D" backward-word
+
+# GitHub Copilot keybindings.
+bindkey '^\' zsh_gh_copilot_explain  # bind Ctrl+\ to explain
+bindkey '^[\' zsh_gh_copilot_suggest  # bind Alt+\ to suggest
 
 export PATH=$HOME/.local/bin:$PATH
 
