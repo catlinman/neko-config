@@ -197,8 +197,8 @@ bindkey "[C" forward-word
 bindkey "[D" backward-word
 
 # GitHub Copilot keybindings.
-bindkey '^\' zsh_gh_copilot_explain  # bind Ctrl+\ to explain
-bindkey '^[\' zsh_gh_copilot_suggest  # bind Alt+\ to suggest
+bindkey '^[?' zsh_gh_copilot_suggest  # bind Alt+? to suggest
+bindkey '^[^?' zsh_gh_copilot_explain  # bind Ctrl+Alt+? to explain
 
 export PATH=$HOME/.local/bin:$PATH
 
