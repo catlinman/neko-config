@@ -94,12 +94,16 @@ plugins=(
     node npm yarn nvm
     archlinux systemd
     zsh-autosuggestions zsh-256color zsh-github-copilot
+    zsh_codex # Make sure to configure as stated in https://github.com/tom-doerr/zsh_codex
 )
 
 # To install the plugins from my custom setup simply "source plugins.sh".
 
 # Source the base oh-my-zsh script.
 source $ZSH/oh-my-zsh.sh
+
+# Configure zsh_codex keybind
+bindkey '^X' create_completion
 
 # Colored completion - use LS_COLORS.
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}

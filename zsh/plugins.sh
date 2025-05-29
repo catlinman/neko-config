@@ -7,4 +7,5 @@ git clone https://github.com/loiccoyle/zsh-github-copilot $ZSH_CUSTOM/plugins/zs
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 git clone https://github.com/chrissicool/zsh-256color.git $ZSH_CUSTOM/plugins/zsh-256color
 git clone https://github.com/trapd00r/zsh-syntax-highlighting-filetypes.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting-filetypes
+git clone https://github.com/tom-doerr/zsh_codex.git $ZSH_CUSTOM/plugins/zsh_codex 
 mv $ZSH_CUSTOM/plugins/zsh-syntax-highlighting-filetypes/zsh-syntax-highlighting-filetypes{,.plugin}.zsh
