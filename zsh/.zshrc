@@ -7,6 +7,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# If you're working with Copilot or something else, you might want to just use vanilla zsh.
+if [ "$TERM_PROGRAM" = "vscode" ]; then
+    return
+fi
+
 # Quick command to check if a program exists.
 exists() { [ -x "$(command -v $1)" ]; }
 
