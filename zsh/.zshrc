@@ -12,6 +12,22 @@ if [ "$TERM_PROGRAM" = "vscode" ]; then
     return
 fi
 
+# Load custom aliases from a designated file.
+if [[ ! -a $HOME/.zsh_aliases ]]; then
+    printf "# ZSH custom alias declarations file\n# Example: alias pip=\"pip3\"" > $HOME/.zsh_aliases
+
+else
+    source $HOME/.zsh_aliases
+fi
+
+# Load custom paths from a designated file.
+if [[ ! -a $HOME/.zsh_path ]]; then
+     printf "# ZSH path variable declarations file\n# Example: PATH=~/.npm-global/bin:\$PATH" > $HOME/.zsh_path
+
+else
+    source $HOME/.zsh_path
+fi
+
 # Quick command to check if a program exists.
 exists() { [ -x "$(command -v $1)" ]; }
 
@@ -26,6 +42,19 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         source "$BASE16_SHELL/profile_helper.sh"
 
 base16_neko
+
+# 1Password GPG integration: load environment variables, link, get then insert into the preset for the key.
+# Fill in .zsh_op with OP_ACCOUNT=[VALUE],OP_ITEM,OP_FIELD,OP_GPG_KEYGRIP
+if [[ -a $HOME/.zsh_op ]]; then
+    source $HOME/.zsh_op
+    
+    function gpg_cache () {
+        gpg-connect-agent /bye &> /dev/null
+        eval $(op signin --account $OP_ACCOUNT)
+        op item get $OP_ITEM --fields $OP_FIELD --reveal | /usr/lib/gnupg/gpg-preset-passphrase --preset $OP_GPG_KEYGRIP
+    }
+    gpg_cache
+fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -133,24 +162,6 @@ if whence dircolors > /dev/null; then
 else
     export CLICOLOR=1
     source ~/.osxcolors
-
-fi
-
-# Load custom aliases from a designated file.
-if [[ ! -a $HOME/.zsh_aliases ]]; then
-    printf "# ZSH custom alias declarations file\n# Example: alias pip=\"pip3\"" > $HOME/.zsh_aliases
-
-else
-    source $HOME/.zsh_aliases
-
-fi
-
-# Load custom paths from a designated file.
-if [[ ! -a $HOME/.zsh_path ]]; then
-     printf "# ZSH path variable declarations file\n# Example: PATH=~/.npm-global/bin:\$PATH" > $HOME/.zsh_path
-
-else
-    source $HOME/.zsh_path
 
 fi
 
