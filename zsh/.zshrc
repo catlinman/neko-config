@@ -34,6 +34,11 @@ exists() { [ -x "$(command -v $1)" ]; }
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
+# If you're working with Copilot or something else, you might want to just use vanilla zsh.
+if [ "$TERM_PROGRAM" = "vscode" ]; then
+    return
+fi
+
 # Base16 Shell support. Install via: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 # Don't forget to set your theme via base16 and tab completion. I personally use base16_neko which is a fork of base16_seti.
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -136,9 +141,6 @@ plugins=(
 # Source the base oh-my-zsh script.
 source $ZSH/oh-my-zsh.sh
 
-# Configure zsh_codex keybind
-bindkey '^X' create_completion
-
 # Colored completion - use LS_COLORS.
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
@@ -153,6 +155,9 @@ export GPG_TTY
 
 # Compilation flags - uncomment these or change them if you want them
 # export ARCHFLAGS="-arch x86_64"
+
+# Configure zsh_codex keybind
+bindkey '^X' create_completion
 
 # Custom dircolors setup.
 if whence dircolors > /dev/null; then
@@ -231,3 +236,7 @@ if exists dodo; then
         echo "TO ($__todo_count) DO: $__todo_pick"
     fi
 fi
+
+. "/Users/andrew/.deno/env"
+
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
