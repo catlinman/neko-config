@@ -7,11 +7,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# If you're working with Copilot or something else, you might want to just use vanilla zsh.
-if [ "$TERM_PROGRAM" = "vscode" ]; then
-    return
-fi
-
 # Load custom aliases from a designated file.
 if [[ ! -a $HOME/.zsh_aliases ]]; then
     printf "# ZSH custom alias declarations file\n# Example: alias pip=\"pip3\"" > $HOME/.zsh_aliases
@@ -28,16 +23,25 @@ else
     source $HOME/.zsh_path
 fi
 
+# Install via $ git clone https://github.com/anyenv/anyenv ~/.anyenv
+if [[ -d $HOME/.anyenv ]]; then
+    export PATH="$HOME/.anyenv/bin:$PATH"
+fi
+
 # Quick command to check if a program exists.
 exists() { [ -x "$(command -v $1)" ]; }
 
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+if exists anyenv; then
+    eval "$(anyenv init -)"
+fi
 
 # If you're working with Copilot or something else, you might want to just use vanilla zsh.
 if [ "$TERM_PROGRAM" = "vscode" ]; then
     return
 fi
+
+# Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
 
 # Base16 Shell support. Install via: git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 # Don't forget to set your theme via base16 and tab completion. I personally use base16_neko which is a fork of base16_seti.
@@ -141,6 +145,9 @@ plugins=(
 # Source the base oh-my-zsh script.
 source $ZSH/oh-my-zsh.sh
 
+# Configure zsh_codex keybind
+bindkey '^X' create_completion
+
 # Colored completion - use LS_COLORS.
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
@@ -155,9 +162,6 @@ export GPG_TTY
 
 # Compilation flags - uncomment these or change them if you want them
 # export ARCHFLAGS="-arch x86_64"
-
-# Configure zsh_codex keybind
-bindkey '^X' create_completion
 
 # Custom dircolors setup.
 if whence dircolors > /dev/null; then
@@ -177,14 +181,6 @@ if [[ -d $HOME/.bash-my-aws ]]; then
     source $HOME/.bash-my-aws/aliases
 fi
 
-# Install via $ git clone https://github.com/anyenv/anyenv ~/.anyenv
-if [[ -d $HOME/.anyenv ]]; then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-fi
-
-if exists anyenv; then
-    eval "$(anyenv init -)"
-fi
 
 # Preferred editor for local sessions.
 if exists vim; then
@@ -236,7 +232,3 @@ if exists dodo; then
         echo "TO ($__todo_count) DO: $__todo_pick"
     fi
 fi
-
-. "/Users/andrew/.deno/env"
-
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
