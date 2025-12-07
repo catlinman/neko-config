@@ -56,12 +56,24 @@ base16_neko
 # Fill in .zsh_op with OP_ACCOUNT=[VALUE],OP_ITEM,OP_FIELD,OP_GPG_KEYGRIP
 if [[ -a $HOME/.zsh_op ]]; then
     source $HOME/.zsh_op
-    
+
     function gpg_cache () {
+        # 1. Ensure the agent is running
         gpg-connect-agent /bye &> /dev/null
+
+        # 2. Check if the passphrase is already cached
+        # We query KEYINFO for the grip. The output contains flags; " P " indicates Present.
+        if gpg-connect-agent "KEYINFO $OP_GPG_KEYGRIP" /bye | grep -q " P "; then
+            # Key is already cached. Exit function immediately.
+            return 0
+        fi
+
+        # 3. If not cached, perform the 1Password fetch (The slow part)
+        echo "Initializing GPG key from 1Password..."
         eval $(op signin --account $OP_ACCOUNT)
         op item get $OP_ITEM --fields $OP_FIELD --reveal | /usr/lib/gnupg/gpg-preset-passphrase --preset $OP_GPG_KEYGRIP
     }
+    
     gpg_cache
 fi
 
