@@ -1,2 +1,0 @@
-#!/bin/bash
-for d in `find . -type d -name "go-*"` ; do cd $d ; lambda-deploy-go ; cd .. ; done

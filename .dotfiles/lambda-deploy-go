@@ -1,3 +1,0 @@
-#!/bin/bash
-
-GOARCH=amd64 CGO_ENABLED=0 GOOS=linux go build -o main && zip main.zip main && aws lambda update-function-code --function-name `printf '%s' "${PWD##*/}"` --zip-file fileb://main.zip 2>/dev/null | pwd && rm main main.zip

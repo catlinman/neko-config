@@ -1,4 +1,0 @@
-#!/bin/bash
-# Requires https://github.com/jorgebastida/awslogs
-
-awslogs get /aws/lambda/${PWD##*/} --start="10m ago" --no-group --no-stream --timestamp --watch

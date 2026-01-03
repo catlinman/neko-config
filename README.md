@@ -1,20 +1,17 @@
+# Neko Config
 
-# Neko Config #
+Neko Config is a legacy repository containing a large collection of public configuration files,
+application themes, and syntax highlighting settings for different tools.
 
-Neko Config is a repository containing most of my public configuration files
-as well as application themes and syntax highlighting settings for different
-kinds of code editing environments.
+Over time, parts of this repository have been split out into more the more focused [zealsprince/.dotfiles](https://github.com/zealsprince/.dotfiles) repository (CLI-focused, e.g. Vim/Zsh/Tmux) managed as a standalone repo.
 
-There are also some basic template configuration files that you can use to
-get a headstart when setting up some applications.
+This repo remains useful for application-specific configs, themes, and templates that aren’t actively managed
+as “real dotfiles” anymore.
 
-## What's included? ##
+## What's included?
 
 - Atom configuration
 - SublimeText 3 SyncSettings configuration
-- zshrc configuration file
-- Both Unix Vim (.vimrc) and Windows gVim (_vimrc) configuration files
-- tmux configuration files
 - Blender startup and configuration file
 - TeamSpeak NekoSpeak skin and icon pack
 - cmder setup with mintty and wsltty running zsh
@@ -32,37 +29,37 @@ get a headstart when setting up some applications.
 - GoAccess Service & nginx Proxy Setup
 - CS:GO autoexec configuration
 
-## Screenshots ##
+### Note on “real dotfiles”
 
-### Atom ###
+The actively used CLI dotfiles have moved to:
+
+- `zealsprince/.dotfiles` — Zsh, Vim, Tmux, and user scripts (`bin/`)
+
+Those files live in the `.dotfiles` repo and should be used from there going forward.
+
+## Screenshots
+
+### Atom
 
 ![](https://github.com/catlinman/neko-config/blob/master/atom/preview.png)
 
-### Sublime Text 3 ###
+### Sublime Text 3
 
 ![](https://github.com/catlinman/neko-config/blob/master/sublime/preview.png)
 
-### Vim ###
-
-![](https://github.com/catlinman/neko-config/blob/master/vim/preview.png)
-
-### Blender ###
+### Blender
 
 ![](https://github.com/catlinman/neko-config/blob/master/blender/preview.png)
 
-### zsh ###
-
-![](https://github.com/catlinman/neko-config/blob/master/zsh/preview.png)
-
-### HexChat ###
+### HexChat
 
 ![](https://github.com/catlinman/neko-config/blob/master/hexchat/preview.png)
 
-### TeamSpeak ###
+### TeamSpeak
 
 ![](https://github.com/catlinman/neko-config/blob/master/teamspeak/preview.png)
 
-## Origin ##
+## Origin
 
 This repository used to house a lot of different things but it was rebuilt to
 only contain application configuration files. This means that for any previous
@@ -84,7 +81,7 @@ If you are looking for the split off repositories, here's a quick list.
 - [Hivecom ZNC Skin](https://github.com/catlinman/hivecom-znc)
 - [Hivecom Teamspeak Skin](https://github.com/catlinman/hivecom-teamspeak)
 
-## License ##
+## License
 
 This repository is released under the MIT license. For more information please
 refer to [LICENSE](https://github.com/catlinman/neko-config/blob/master/LICENSE)
